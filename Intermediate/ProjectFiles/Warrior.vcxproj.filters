@@ -44,6 +44,9 @@
     <Filter Include="Source\Warrior\Private">
       <UniqueIdentifier>{E6681345-5F17-340B-AEDF-C61B082F26C6}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Warrior\Private\WarriorGameplayTags.cpp">
+      <Filter>Source\Warrior\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\Warrior\Private\Characters">
       <UniqueIdentifier>{7BCECED2-A4CC-3E8B-8951-987CAD44D2C4}</UniqueIdentifier>
     </Filter>
@@ -68,6 +71,12 @@
     <Filter Include="Source\Warrior\Public">
       <UniqueIdentifier>{BCFCC6DC-7E76-37B0-98D2-C6FE729328D4}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Warrior\Public\WarriorDebugHelper.h">
+      <Filter>Source\Warrior\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Warrior\Public\WarriorGameplayTags.h">
+      <Filter>Source\Warrior\Public</Filter>
+    </ClInclude>
     <Filter Include="Source\Warrior\Public\Characters">
       <UniqueIdentifier>{13225C67-946F-348C-93B3-DE47AC8DA501}</UniqueIdentifier>
     </Filter>
@@ -88,11 +97,6 @@
     </Filter>
     <ClInclude Include="..\..\Source\Warrior\Public\GameModes\WarriorGameModeBase.h">
       <Filter>Source\Warrior\Public\GameModes</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\Warrior\Public\WarriorDebugHelper.h">
-      <Filter>Source\Warrior\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
