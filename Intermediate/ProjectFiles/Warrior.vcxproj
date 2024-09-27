@@ -273,7 +273,13 @@
     <ClCompile Include="..\..\Source\Warrior\Private\Characters\WarriorHeroCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\Components\WarriorInputComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\Controllers\WarriorHeroController.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\DataAssets\Input\DataAsset_InputConfig.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\GameModes\WarriorGameModeBase.cpp">
@@ -283,7 +289,9 @@
     <ClInclude Include="..\..\Source\Warrior\Public\WarriorGameplayTags.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Characters\WarriorBaseCharacter.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Characters\WarriorHeroCharacter.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\Components\WarriorInputComponent.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Controllers\WarriorHeroController.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\DataAssets\Input\DataAsset_InputConfig.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\GameModes\WarriorGameModeBase.h"/>
   </ItemGroup>
   <PropertyGroup>

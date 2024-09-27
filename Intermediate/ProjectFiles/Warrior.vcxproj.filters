@@ -56,11 +56,26 @@
     <ClCompile Include="..\..\Source\Warrior\Private\Characters\WarriorHeroCharacter.cpp">
       <Filter>Source\Warrior\Private\Characters</Filter>
     </ClCompile>
+    <Filter Include="Source\Warrior\Private\Components">
+      <UniqueIdentifier>{7860EA81-1BA3-3C15-BA53-63E72BD87C24}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Warrior\Private\Components\WarriorInputComponent.cpp">
+      <Filter>Source\Warrior\Private\Components</Filter>
+    </ClCompile>
     <Filter Include="Source\Warrior\Private\Controllers">
       <UniqueIdentifier>{427A409D-DA7D-36A6-A7B9-EC8DDDA6ED55}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Warrior\Private\Controllers\WarriorHeroController.cpp">
       <Filter>Source\Warrior\Private\Controllers</Filter>
+    </ClCompile>
+    <Filter Include="Source\Warrior\Private\DataAssets">
+      <UniqueIdentifier>{ABB22B1D-FACF-3493-B143-4301FF2B4DA5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Warrior\Private\DataAssets\Input">
+      <UniqueIdentifier>{D2B9DBBE-AA8B-3899-BDF9-0CE02513BC43}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Warrior\Private\DataAssets\Input\DataAsset_InputConfig.cpp">
+      <Filter>Source\Warrior\Private\DataAssets\Input</Filter>
     </ClCompile>
     <Filter Include="Source\Warrior\Private\GameModes">
       <UniqueIdentifier>{0D1A8259-3380-3B26-91BB-A7128220098B}</UniqueIdentifier>
@@ -86,11 +101,26 @@
     <ClInclude Include="..\..\Source\Warrior\Public\Characters\WarriorHeroCharacter.h">
       <Filter>Source\Warrior\Public\Characters</Filter>
     </ClInclude>
+    <Filter Include="Source\Warrior\Public\Components">
+      <UniqueIdentifier>{F7335DF7-0CC5-3298-8D2F-6B78AE00574F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Warrior\Public\Components\WarriorInputComponent.h">
+      <Filter>Source\Warrior\Public\Components</Filter>
+    </ClInclude>
     <Filter Include="Source\Warrior\Public\Controllers">
       <UniqueIdentifier>{465C914F-3C14-35C1-91F2-13B6441A3F6A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Warrior\Public\Controllers\WarriorHeroController.h">
       <Filter>Source\Warrior\Public\Controllers</Filter>
+    </ClInclude>
+    <Filter Include="Source\Warrior\Public\DataAssets">
+      <UniqueIdentifier>{B9C2672E-C3F8-336D-9D7E-B6C407E4A0FD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Warrior\Public\DataAssets\Input">
+      <UniqueIdentifier>{562BD814-197B-3DC7-B810-0E00762F3764}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Warrior\Public\DataAssets\Input\DataAsset_InputConfig.h">
+      <Filter>Source\Warrior\Public\DataAssets\Input</Filter>
     </ClInclude>
     <Filter Include="Source\Warrior\Public\GameModes">
       <UniqueIdentifier>{3B652AF5-C50C-31D0-A775-F1AFA9747A91}</UniqueIdentifier>
