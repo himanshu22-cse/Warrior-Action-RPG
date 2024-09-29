@@ -18,7 +18,6 @@ public:
 	template<class UserObject, typename CallbackFunc>
 	void BindNativeInputAction(const UDataAsset_InputConfig* InInputConfig, const FGameplayTag& InInputTag, ETriggerEvent TriggerEvent, UserObject* ContextObject, CallbackFunc Func);
 
-
 };
 
 template<class UserObject, typename CallbackFunc>
@@ -29,5 +28,5 @@ inline void UWarriorInputComponent::BindNativeInputAction(const UDataAsset_Input
 	{
 		BindAction(FoundAction, TriggerEvent, ContextObject, Func);
 	}
-	
 }
+ 

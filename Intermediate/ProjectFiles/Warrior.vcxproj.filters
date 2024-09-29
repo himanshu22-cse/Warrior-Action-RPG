@@ -47,6 +47,24 @@
     <ClCompile Include="..\..\Source\Warrior\Private\WarriorGameplayTags.cpp">
       <Filter>Source\Warrior\Private</Filter>
     </ClCompile>
+    <Filter Include="Source\Warrior\Private\AnimInstances">
+      <UniqueIdentifier>{9B98FFC4-A24E-3C78-A4AB-038FDD7FFD34}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Warrior\Private\AnimInstances\WarriorBaseAnimInstance.cpp">
+      <Filter>Source\Warrior\Private\AnimInstances</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\AnimInstances\WarriorCharacterAnimInstance.cpp">
+      <Filter>Source\Warrior\Private\AnimInstances</Filter>
+    </ClCompile>
+    <Filter Include="Source\Warrior\Private\AnimInstances\Hero">
+      <UniqueIdentifier>{726149F8-A992-3C7C-8743-56EAA3EFAD4D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Warrior\Private\AnimInstances\Hero\WarriorHeroAnimInstance.cpp">
+      <Filter>Source\Warrior\Private\AnimInstances\Hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\AnimInstances\Hero\WarriorHeroLinkedAnimLayer.cpp">
+      <Filter>Source\Warrior\Private\AnimInstances\Hero</Filter>
+    </ClCompile>
     <Filter Include="Source\Warrior\Private\Characters">
       <UniqueIdentifier>{7BCECED2-A4CC-3E8B-8951-987CAD44D2C4}</UniqueIdentifier>
     </Filter>
@@ -91,6 +109,24 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Warrior\Public\WarriorGameplayTags.h">
       <Filter>Source\Warrior\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\Warrior\Public\AnimInstances">
+      <UniqueIdentifier>{1E769DC4-FF09-3BE9-AF67-CCCBBC5FF713}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Warrior\Public\AnimInstances\WarriorBaseAnimInstance.h">
+      <Filter>Source\Warrior\Public\AnimInstances</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Warrior\Public\AnimInstances\WarriorCharacterAnimInstance.h">
+      <Filter>Source\Warrior\Public\AnimInstances</Filter>
+    </ClInclude>
+    <Filter Include="Source\Warrior\Public\AnimInstances\Hero">
+      <UniqueIdentifier>{2A5FB8EC-B356-3E23-8B4E-C17CF2E90B3C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Warrior\Public\AnimInstances\Hero\WarriorHeroAnimInstance.h">
+      <Filter>Source\Warrior\Public\AnimInstances\Hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Warrior\Public\AnimInstances\Hero\WarriorHeroLinkedAnimLayer.h">
+      <Filter>Source\Warrior\Public\AnimInstances\Hero</Filter>
     </ClInclude>
     <Filter Include="Source\Warrior\Public\Characters">
       <UniqueIdentifier>{13225C67-946F-348C-93B3-DE47AC8DA501}</UniqueIdentifier>
