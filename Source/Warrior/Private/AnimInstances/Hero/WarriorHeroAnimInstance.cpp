@@ -6,6 +6,7 @@
 void UWarriorHeroAnimInstance::NativeInitializeAnimation()
 {
 	Super::NativeInitializeAnimation();
+
 	if (OwningCharacter)
 	{
 		OwningHeroCharacter = Cast<AWarriorHeroCharacter>(OwningCharacter);
@@ -24,6 +25,7 @@ void UWarriorHeroAnimInstance::NativeThreadSafeUpdateAnimation(float DeltaSecond
 	else
 	{
 		IdleElpasedTime += DeltaSeconds;
+
 		bShouldEnterRelaxState = (IdleElpasedTime >= EnterRelaxtStateThreshold);
 	}
 }

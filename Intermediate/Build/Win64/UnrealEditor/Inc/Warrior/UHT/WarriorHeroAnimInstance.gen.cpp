@@ -59,7 +59,7 @@ struct Z_Construct_UClass_UWarriorHeroAnimInstance_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UWarriorHeroAnimInstance_Statics::NewProp_OwningHeroCharacter = { "OwningHeroCharacter", nullptr, (EPropertyFlags)0x0020080000030015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UWarriorHeroAnimInstance, OwningHeroCharacter), Z_Construct_UClass_AWarriorHeroCharacter_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OwningHeroCharacter_MetaData), NewProp_OwningHeroCharacter_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UWarriorHeroAnimInstance_Statics::NewProp_OwningHeroCharacter = { "OwningHeroCharacter", nullptr, (EPropertyFlags)0x0124080000030015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UWarriorHeroAnimInstance, OwningHeroCharacter), Z_Construct_UClass_AWarriorHeroCharacter_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OwningHeroCharacter_MetaData), NewProp_OwningHeroCharacter_MetaData) };
 void Z_Construct_UClass_UWarriorHeroAnimInstance_Statics::NewProp_bShouldEnterRelaxState_SetBit(void* Obj)
 {
 	((UWarriorHeroAnimInstance*)Obj)->bShouldEnterRelaxState = 1;
@@ -113,10 +113,10 @@ UWarriorHeroAnimInstance::~UWarriorHeroAnimInstance() {}
 struct Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_AnimInstances_Hero_WarriorHeroAnimInstance_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UWarriorHeroAnimInstance, UWarriorHeroAnimInstance::StaticClass, TEXT("UWarriorHeroAnimInstance"), &Z_Registration_Info_UClass_UWarriorHeroAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWarriorHeroAnimInstance), 354527074U) },
+		{ Z_Construct_UClass_UWarriorHeroAnimInstance, UWarriorHeroAnimInstance::StaticClass, TEXT("UWarriorHeroAnimInstance"), &Z_Registration_Info_UClass_UWarriorHeroAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWarriorHeroAnimInstance), 1728656617U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_AnimInstances_Hero_WarriorHeroAnimInstance_h_983644293(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_AnimInstances_Hero_WarriorHeroAnimInstance_h_2275113706(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_AnimInstances_Hero_WarriorHeroAnimInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_AnimInstances_Hero_WarriorHeroAnimInstance_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -16,10 +16,9 @@ class WARRIOR_API UWarriorCharacterAnimInstance : public UWarriorBaseAnimInstanc
 	
 public:
 
-	virtual void NativeInitializeAnimation();
+	virtual void NativeInitializeAnimation() override;
 
-	virtual void NativeThreadSafeUpdateAnimation(float DeltaSeconds);
-
+	virtual void NativeThreadSafeUpdateAnimation(float DeltaSeconds) override;
 
 protected:
 
