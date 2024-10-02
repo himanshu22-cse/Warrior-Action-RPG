@@ -12,6 +12,7 @@
 #include "AbilitySystem/WarriorAbilitySystemComponent.h"
 #include "DataAssets/Start-UpData/DataAsset_HeroStartUpData.h"
 #include "WarriorDebugHelper.h"
+#include "Components/Combat/HeroCombatComponent.h"
 
 AWarriorHeroCharacter::AWarriorHeroCharacter()
 {
@@ -30,6 +31,8 @@ AWarriorHeroCharacter::AWarriorHeroCharacter()
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
+
+	HeroCombatComponent = CreateDefaultSubobject<UHeroCombatComponent>("HeroCombatComponent");
 
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->RotationRate = FRotator(0.f, 500.f, 0.f);

@@ -3,6 +3,8 @@
 
 #include "AbilitySystem/Abilities/WarriorGameplayAbility.h"
 #include "AbilitySystem/WarriorAbilitySystemComponent.h"
+#include "Components/Combat/PawnCombatComponent.h"
+#include "AbilitySystem/Abilities/WarriorHeroGameplayAbility.h"
 
 void UWarriorGameplayAbility::OnGiveAbility(const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilitySpec& Spec)
 {
@@ -28,4 +30,18 @@ void UWarriorGameplayAbility::EndAbility(const FGameplayAbilitySpecHandle Handle
 			ActorInfo->AbilitySystemComponent->ClearAbility(Handle);
 		}
 	}
+}
+
+UPawnCombatComponent* UWarriorGameplayAbility::GetPawnCombatComponentFromActorInfo() const
+{
+
+//"FindComponentByClass" works under hood is iterate all the components actor has and return the first found result,but if we have multiple component derived from this component,this function won't work as expected
+   return GetAvatarActorFromActorInfo()->FindComponentByClass<UPawnCombatComponent>();
+	
+}
+
+UWarriorHeroGameplayAbility* UWarriorGameplayAbility::GetWarriorHeroGameplayAbilityFromActorInfo() const
+{
+	return Cast<UWarriorHeroGameplayAbility>(CurrentActorInfo->AbilitySystemComponent);
+	
 }
