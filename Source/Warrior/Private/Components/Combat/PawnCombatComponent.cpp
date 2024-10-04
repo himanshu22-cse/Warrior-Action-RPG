@@ -18,7 +18,7 @@ void UPawnCombatComponent::RegisterSpawnWeapon(FGameplayTag InWeaponTagToResiste
 
 AWarriorWeaponBase* UPawnCombatComponent::GetCharacterCarriedWeaponByTag(FGameplayTag InWeaponTagToGet) const
 {
-	if (!CharacterCarriedWeapon.Contains(InWeaponTagToGet))
+	if (CharacterCarriedWeapon.Contains(InWeaponTagToGet))
 	{
 		if (AWarriorWeaponBase* const* FoundWeapon = CharacterCarriedWeapon.Find(InWeaponTagToGet))
 		{

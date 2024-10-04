@@ -13,6 +13,8 @@ class WARRIOR_API UWarriorAbilitySystemComponent : public UAbilitySystemComponen
 
 public:
 
+	void OnAbilityInputPressed(FGameplayTag& InInputTag);
 
+	void OnAbilityInputReleased(FGameplayTag& InInputTag);
 	
 };
