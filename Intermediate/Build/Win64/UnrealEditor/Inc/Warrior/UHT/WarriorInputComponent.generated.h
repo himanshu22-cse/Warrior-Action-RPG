@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define WARRIOR_WarriorInputComponent_generated_h
 
-#define FID_Warrior_Source_Warrior_Public_Components_WarriorInputComponent_h_14_INCLASS_NO_PURE_DECLS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_WarriorInputComponent_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUWarriorInputComponent(); \
 	friend struct Z_Construct_UClass_UWarriorInputComponent_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(UWarriorInputComponent)
 
 
-#define FID_Warrior_Source_Warrior_Public_Components_WarriorInputComponent_h_14_ENHANCED_CONSTRUCTORS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_WarriorInputComponent_h_14_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UWarriorInputComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -37,12 +37,12 @@ public: \
 	NO_API virtual ~UWarriorInputComponent();
 
 
-#define FID_Warrior_Source_Warrior_Public_Components_WarriorInputComponent_h_11_PROLOG
-#define FID_Warrior_Source_Warrior_Public_Components_WarriorInputComponent_h_14_GENERATED_BODY \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_WarriorInputComponent_h_11_PROLOG
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_WarriorInputComponent_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Warrior_Source_Warrior_Public_Components_WarriorInputComponent_h_14_INCLASS_NO_PURE_DECLS \
-	FID_Warrior_Source_Warrior_Public_Components_WarriorInputComponent_h_14_ENHANCED_CONSTRUCTORS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_Components_WarriorInputComponent_h_14_INCLASS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_Components_WarriorInputComponent_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -50,7 +50,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> WARRIOR_API UClass* StaticClass<class UWarriorInputComponent>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Warrior_Source_Warrior_Public_Components_WarriorInputComponent_h
+#define CURRENT_FILE_ID FID_Warrior_Action_RPG_Source_Warrior_Public_Components_WarriorInputComponent_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

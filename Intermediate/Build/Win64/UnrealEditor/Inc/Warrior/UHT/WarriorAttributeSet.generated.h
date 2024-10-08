@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define WARRIOR_WarriorAttributeSet_generated_h
 
-#define FID_Warrior_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUWarriorAttributeSet(); \
 	friend struct Z_Construct_UClass_UWarriorAttributeSet_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(UWarriorAttributeSet)
 
 
-#define FID_Warrior_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_13_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UWarriorAttributeSet(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -37,12 +37,12 @@ public: \
 	NO_API virtual ~UWarriorAttributeSet();
 
 
-#define FID_Warrior_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_10_PROLOG
-#define FID_Warrior_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_13_GENERATED_BODY \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_10_PROLOG
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Warrior_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_13_INCLASS_NO_PURE_DECLS \
-	FID_Warrior_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_13_ENHANCED_CONSTRUCTORS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_13_INCLASS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -50,7 +50,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> WARRIOR_API UClass* StaticClass<class UWarriorAttributeSet>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Warrior_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h
+#define CURRENT_FILE_ID FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

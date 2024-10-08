@@ -6,90 +6,17 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "Warrior/Public/DataAssets/Start-UpData/DataAsset_HeroStartUpData.h"
-#include "Runtime/GameplayTags/Classes/GameplayTagContainer.h"
+#include "Warrior/Public/WarriorTypes/WarriorStructTypes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeDataAsset_HeroStartUpData() {}
 
 // Begin Cross Module References
-COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTag();
 UPackage* Z_Construct_UPackage__Script_Warrior();
 WARRIOR_API UClass* Z_Construct_UClass_UDataAsset_HeroStartUpData();
 WARRIOR_API UClass* Z_Construct_UClass_UDataAsset_HeroStartUpData_NoRegister();
 WARRIOR_API UClass* Z_Construct_UClass_UDataAsset_StartUpDataBase();
-WARRIOR_API UClass* Z_Construct_UClass_UWarriorGameplayAbility_NoRegister();
 WARRIOR_API UScriptStruct* Z_Construct_UScriptStruct_FWarriorHeroAbilitySet();
 // End Cross Module References
-
-// Begin ScriptStruct FWarriorHeroAbilitySet
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_WarriorHeroAbilitySet;
-class UScriptStruct* FWarriorHeroAbilitySet::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_WarriorHeroAbilitySet.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_WarriorHeroAbilitySet.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FWarriorHeroAbilitySet, (UObject*)Z_Construct_UPackage__Script_Warrior(), TEXT("WarriorHeroAbilitySet"));
-	}
-	return Z_Registration_Info_UScriptStruct_WarriorHeroAbilitySet.OuterSingleton;
-}
-template<> WARRIOR_API UScriptStruct* StaticStruct<FWarriorHeroAbilitySet>()
-{
-	return FWarriorHeroAbilitySet::StaticStruct();
-}
-struct Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Public/DataAssets/Start-UpData/DataAsset_HeroStartUpData.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InputTag_MetaData[] = {
-		{ "Categories", "InputTag" },
-		{ "Category", "WarriorHeroAbilitySet" },
-		{ "ModuleRelativePath", "Public/DataAssets/Start-UpData/DataAsset_HeroStartUpData.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AbilityToGrant_MetaData[] = {
-		{ "Category", "WarriorHeroAbilitySet" },
-		{ "ModuleRelativePath", "Public/DataAssets/Start-UpData/DataAsset_HeroStartUpData.h" },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FStructPropertyParams NewProp_InputTag;
-	static const UECodeGen_Private::FClassPropertyParams NewProp_AbilityToGrant;
-	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static void* NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FWarriorHeroAbilitySet>();
-	}
-	static const UECodeGen_Private::FStructParams StructParams;
-};
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics::NewProp_InputTag = { "InputTag", nullptr, (EPropertyFlags)0x0010000000010015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FWarriorHeroAbilitySet, InputTag), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InputTag_MetaData), NewProp_InputTag_MetaData) }; // 1298103297
-const UECodeGen_Private::FClassPropertyParams Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics::NewProp_AbilityToGrant = { "AbilityToGrant", nullptr, (EPropertyFlags)0x0014000000010015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FWarriorHeroAbilitySet, AbilityToGrant), Z_Construct_UClass_UClass, Z_Construct_UClass_UWarriorGameplayAbility_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AbilityToGrant_MetaData), NewProp_AbilityToGrant_MetaData) };
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics::NewProp_InputTag,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics::NewProp_AbilityToGrant,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics::StructParams = {
-	(UObject* (*)())Z_Construct_UPackage__Script_Warrior,
-	nullptr,
-	&NewStructOps,
-	"WarriorHeroAbilitySet",
-	Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics::PropPointers,
-	UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics::PropPointers),
-	sizeof(FWarriorHeroAbilitySet),
-	alignof(FWarriorHeroAbilitySet),
-	RF_Public|RF_Transient|RF_MarkAsNative,
-	EStructFlags(0x00000001),
-	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics::Struct_MetaDataParams), Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics::Struct_MetaDataParams)
-};
-UScriptStruct* Z_Construct_UScriptStruct_FWarriorHeroAbilitySet()
-{
-	if (!Z_Registration_Info_UScriptStruct_WarriorHeroAbilitySet.InnerSingleton)
-	{
-		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_WarriorHeroAbilitySet.InnerSingleton, Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics::StructParams);
-	}
-	return Z_Registration_Info_UScriptStruct_WarriorHeroAbilitySet.InnerSingleton;
-}
-// End ScriptStruct FWarriorHeroAbilitySet
 
 // Begin Class UDataAsset_HeroStartUpData
 void UDataAsset_HeroStartUpData::StaticRegisterNativesUDataAsset_HeroStartUpData()
@@ -122,8 +49,8 @@ struct Z_Construct_UClass_UDataAsset_HeroStartUpData_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UDataAsset_HeroStartUpData_Statics::NewProp_HeroStartUpAbilitySet_Inner = { "HeroStartUpAbilitySet", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FWarriorHeroAbilitySet, METADATA_PARAMS(0, nullptr) }; // 683677489
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UDataAsset_HeroStartUpData_Statics::NewProp_HeroStartUpAbilitySet = { "HeroStartUpAbilitySet", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDataAsset_HeroStartUpData, HeroStartUpAbilitySet), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HeroStartUpAbilitySet_MetaData), NewProp_HeroStartUpAbilitySet_MetaData) }; // 683677489
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UDataAsset_HeroStartUpData_Statics::NewProp_HeroStartUpAbilitySet_Inner = { "HeroStartUpAbilitySet", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FWarriorHeroAbilitySet, METADATA_PARAMS(0, nullptr) }; // 3361839617
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UDataAsset_HeroStartUpData_Statics::NewProp_HeroStartUpAbilitySet = { "HeroStartUpAbilitySet", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UDataAsset_HeroStartUpData, HeroStartUpAbilitySet), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HeroStartUpAbilitySet_MetaData), NewProp_HeroStartUpAbilitySet_MetaData) }; // 3361839617
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UDataAsset_HeroStartUpData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDataAsset_HeroStartUpData_Statics::NewProp_HeroStartUpAbilitySet_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UDataAsset_HeroStartUpData_Statics::NewProp_HeroStartUpAbilitySet,
@@ -167,18 +94,15 @@ UDataAsset_HeroStartUpData::~UDataAsset_HeroStartUpData() {}
 // End Class UDataAsset_HeroStartUpData
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_HeroStartUpData_h_Statics
+struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_HeroStartUpData_h_Statics
 {
-	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FWarriorHeroAbilitySet::StaticStruct, Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics::NewStructOps, TEXT("WarriorHeroAbilitySet"), &Z_Registration_Info_UScriptStruct_WarriorHeroAbilitySet, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FWarriorHeroAbilitySet), 683677489U) },
-	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDataAsset_HeroStartUpData, UDataAsset_HeroStartUpData::StaticClass, TEXT("UDataAsset_HeroStartUpData"), &Z_Registration_Info_UClass_UDataAsset_HeroStartUpData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDataAsset_HeroStartUpData), 3117639129U) },
+		{ Z_Construct_UClass_UDataAsset_HeroStartUpData, UDataAsset_HeroStartUpData::StaticClass, TEXT("UDataAsset_HeroStartUpData"), &Z_Registration_Info_UClass_UDataAsset_HeroStartUpData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDataAsset_HeroStartUpData), 2572047211U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_HeroStartUpData_h_206937673(TEXT("/Script/Warrior"),
-	Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_HeroStartUpData_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_HeroStartUpData_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_HeroStartUpData_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_HeroStartUpData_h_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_HeroStartUpData_h_347725652(TEXT("/Script/Warrior"),
+	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_HeroStartUpData_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_HeroStartUpData_h_Statics::ClassInfo),
+	nullptr, 0,
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

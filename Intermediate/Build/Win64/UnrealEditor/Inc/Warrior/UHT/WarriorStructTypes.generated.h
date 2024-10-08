@@ -14,7 +14,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define WARRIOR_WarriorStructTypes_generated_h
 
-#define FID_Warrior_Source_Warrior_Public_WarriorTypes_WarriorStructTypes_h_12_GENERATED_BODY \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorTypes_WarriorStructTypes_h_15_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FWarriorHeroAbilitySet_Statics; \
+	WARRIOR_API static class UScriptStruct* StaticStruct();
+
+
+template<> WARRIOR_API UScriptStruct* StaticStruct<struct FWarriorHeroAbilitySet>();
+
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorTypes_WarriorStructTypes_h_30_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FWarriorHeroWeaponData_Statics; \
 	WARRIOR_API static class UScriptStruct* StaticStruct();
 
@@ -22,7 +29,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> WARRIOR_API UScriptStruct* StaticStruct<struct FWarriorHeroWeaponData>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Warrior_Source_Warrior_Public_WarriorTypes_WarriorStructTypes_h
+#define CURRENT_FILE_ID FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorTypes_WarriorStructTypes_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Games Project\\Project 3\\Warrior\\Source\\Warrior\\Warrior.Build.cs",
-		"C:\\Games Project\\Project 3\\Warrior\\Source\\Warrior.Target.cs",
-		"C:\\Games Project\\Project 3\\Warrior\\Source\\WarriorEditor.Target.cs"
+		"C:\\Games Project\\Warrior-Action-RPG\\Source\\Warrior\\Warrior.Build.cs",
+		"C:\\Games Project\\Warrior-Action-RPG\\Source\\Warrior.Target.cs",
+		"C:\\Games Project\\Warrior-Action-RPG\\Source\\WarriorEditor.Target.cs"
 	],
 	"EngineVersion": "5.4.4"
 }

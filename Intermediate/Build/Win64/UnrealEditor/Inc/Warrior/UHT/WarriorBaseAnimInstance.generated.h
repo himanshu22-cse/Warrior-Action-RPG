@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define WARRIOR_WarriorBaseAnimInstance_generated_h
 
-#define FID_Warrior_Source_Warrior_Public_AnimInstances_WarriorBaseAnimInstance_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_AnimInstances_WarriorBaseAnimInstance_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUWarriorBaseAnimInstance(); \
 	friend struct Z_Construct_UClass_UWarriorBaseAnimInstance_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(UWarriorBaseAnimInstance)
 
 
-#define FID_Warrior_Source_Warrior_Public_AnimInstances_WarriorBaseAnimInstance_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_AnimInstances_WarriorBaseAnimInstance_h_12_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UWarriorBaseAnimInstance(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -37,12 +37,12 @@ public: \
 	NO_API virtual ~UWarriorBaseAnimInstance();
 
 
-#define FID_Warrior_Source_Warrior_Public_AnimInstances_WarriorBaseAnimInstance_h_9_PROLOG
-#define FID_Warrior_Source_Warrior_Public_AnimInstances_WarriorBaseAnimInstance_h_12_GENERATED_BODY \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_AnimInstances_WarriorBaseAnimInstance_h_9_PROLOG
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_AnimInstances_WarriorBaseAnimInstance_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Warrior_Source_Warrior_Public_AnimInstances_WarriorBaseAnimInstance_h_12_INCLASS_NO_PURE_DECLS \
-	FID_Warrior_Source_Warrior_Public_AnimInstances_WarriorBaseAnimInstance_h_12_ENHANCED_CONSTRUCTORS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_AnimInstances_WarriorBaseAnimInstance_h_12_INCLASS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_AnimInstances_WarriorBaseAnimInstance_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -50,7 +50,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> WARRIOR_API UClass* StaticClass<class UWarriorBaseAnimInstance>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Warrior_Source_Warrior_Public_AnimInstances_WarriorBaseAnimInstance_h
+#define CURRENT_FILE_ID FID_Warrior_Action_RPG_Source_Warrior_Public_AnimInstances_WarriorBaseAnimInstance_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

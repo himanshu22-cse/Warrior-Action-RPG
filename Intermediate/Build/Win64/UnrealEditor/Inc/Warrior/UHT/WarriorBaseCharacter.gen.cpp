@@ -118,14 +118,14 @@ AWarriorBaseCharacter::~AWarriorBaseCharacter() {}
 // End Class AWarriorBaseCharacter
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_Characters_WarriorBaseCharacter_h_Statics
+struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorBaseCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AWarriorBaseCharacter, AWarriorBaseCharacter::StaticClass, TEXT("AWarriorBaseCharacter"), &Z_Registration_Info_UClass_AWarriorBaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorBaseCharacter), 3512764152U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_Characters_WarriorBaseCharacter_h_3065481437(TEXT("/Script/Warrior"),
-	Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_Characters_WarriorBaseCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_Characters_WarriorBaseCharacter_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorBaseCharacter_h_3065481437(TEXT("/Script/Warrior"),
+	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorBaseCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorBaseCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

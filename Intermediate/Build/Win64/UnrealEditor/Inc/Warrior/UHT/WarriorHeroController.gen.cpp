@@ -78,14 +78,14 @@ AWarriorHeroController::~AWarriorHeroController() {}
 // End Class AWarriorHeroController
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_Controllers_WarriorHeroController_h_Statics
+struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Controllers_WarriorHeroController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AWarriorHeroController, AWarriorHeroController::StaticClass, TEXT("AWarriorHeroController"), &Z_Registration_Info_UClass_AWarriorHeroController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorHeroController), 1585065472U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_Controllers_WarriorHeroController_h_2166011927(TEXT("/Script/Warrior"),
-	Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_Controllers_WarriorHeroController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_Controllers_WarriorHeroController_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Controllers_WarriorHeroController_h_2166011927(TEXT("/Script/Warrior"),
+	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Controllers_WarriorHeroController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Controllers_WarriorHeroController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

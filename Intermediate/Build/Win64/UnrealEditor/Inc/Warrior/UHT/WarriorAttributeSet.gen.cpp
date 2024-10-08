@@ -77,14 +77,14 @@ UWarriorAttributeSet::~UWarriorAttributeSet() {}
 // End Class UWarriorAttributeSet
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_Statics
+struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UWarriorAttributeSet, UWarriorAttributeSet::StaticClass, TEXT("UWarriorAttributeSet"), &Z_Registration_Info_UClass_UWarriorAttributeSet, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWarriorAttributeSet), 2006289184U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_647747553(TEXT("/Script/Warrior"),
-	Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_647747553(TEXT("/Script/Warrior"),
+	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_WarriorAttributeSet_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
