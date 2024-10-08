@@ -14,7 +14,10 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/PlayerCharacter/Data/DA_InputConfig.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/PlayerCharacter/Input/Actions/IA_UnequipAxe.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/PlayerCharacter/Animation/AM_Hero_Axe_Equip.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/PlayerCharacter/Input/IA_Axe.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/PlayerCharacter/Input/IA_Axe.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Assets/HeroCharacter/SK_Hero.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Assets/HeroCharacter/SK_CharM_Barbarous.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/PlayerCharacter/AnimBP/ABP_Hero.uasset"
 			]
 		}
 	]

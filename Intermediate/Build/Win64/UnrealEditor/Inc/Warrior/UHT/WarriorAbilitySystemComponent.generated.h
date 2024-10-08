@@ -17,6 +17,7 @@ struct FWarriorHeroAbilitySet;
 #define WARRIOR_WarriorAbilitySystemComponent_generated_h
 
 #define FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_WarriorAbilitySystemComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execRemovedGrantedHeroWeaponAbilities); \
 	DECLARE_FUNCTION(execGrantHeroWeaponAbilities);
 
 
