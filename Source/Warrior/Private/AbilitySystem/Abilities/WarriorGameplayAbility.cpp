@@ -4,7 +4,6 @@
 #include "AbilitySystem/Abilities/WarriorGameplayAbility.h"
 #include "AbilitySystem/WarriorAbilitySystemComponent.h"
 #include "Components/Combat/PawnCombatComponent.h"
-#include "AbilitySystem/Abilities/WarriorHeroGameplayAbility.h"
 
 void UWarriorGameplayAbility::OnGiveAbility(const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilitySpec& Spec)
 {
@@ -40,8 +39,8 @@ UPawnCombatComponent* UWarriorGameplayAbility::GetPawnCombatComponentFromActorIn
 	
 }
 
-UWarriorHeroGameplayAbility* UWarriorGameplayAbility::GetWarriorHeroGameplayAbilityFromActorInfo() const
+UWarriorAbilitySystemComponent* UWarriorGameplayAbility::GetWarriorAbilitySystemComponentFromActorInfo() const
 {
-	return Cast<UWarriorHeroGameplayAbility>(CurrentActorInfo->AbilitySystemComponent);
+	return Cast<UWarriorAbilitySystemComponent>(CurrentActorInfo->AbilitySystemComponent);
 	
 }

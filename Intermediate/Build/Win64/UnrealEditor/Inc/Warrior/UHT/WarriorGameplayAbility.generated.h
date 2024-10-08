@@ -10,12 +10,14 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UPawnCombatComponent;
+class UWarriorAbilitySystemComponent;
 #ifdef WARRIOR_WarriorGameplayAbility_generated_h
 #error "WarriorGameplayAbility.generated.h already included, missing '#pragma once' in WarriorGameplayAbility.h"
 #endif
 #define WARRIOR_WarriorGameplayAbility_generated_h
 
 #define FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_Abilities_WarriorGameplayAbility_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetWarriorAbilitySystemComponentFromActorInfo); \
 	DECLARE_FUNCTION(execGetPawnCombatComponentFromActorInfo);
 
 
