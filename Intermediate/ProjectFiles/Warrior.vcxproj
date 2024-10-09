@@ -264,6 +264,9 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\Warrior\Warrior.h"/>
+    <ClCompile Include="..\..\Source\Warrior\Private\WarriorFunctionLibrary.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\WarriorGameplayTags.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -334,6 +337,7 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\Warrior\Public\WarriorDebugHelper.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\WarriorFunctionLibrary.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\WarriorGameplayTags.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\WarriorAbilitySystemComponent.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\WarriorAttributeSet.h"/>
