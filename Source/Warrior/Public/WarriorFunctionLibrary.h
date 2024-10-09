@@ -27,7 +27,7 @@ public:
 	static UWarriorAbilitySystemComponent* NativeGetWarriorASCFromActor(AActor* InActor);
 
 	UFUNCTION(BlueprintCallable, Category = "Warrior|FunctionLibrary")
-	static void AddGameplayTagsIfNone(AActor* InActor, FGameplayTag TagToAdd);
+	static void AddGameplayTagsToActorIfNone(AActor* InActor, FGameplayTag TagToAdd);
 
 	UFUNCTION(BlueprintCallable, Category = "Warrior|FunctionLibrary")
 	static void RemoveGameplayFromActorIfFound(AActor* InActor,FGameplayTag TagToRemove);

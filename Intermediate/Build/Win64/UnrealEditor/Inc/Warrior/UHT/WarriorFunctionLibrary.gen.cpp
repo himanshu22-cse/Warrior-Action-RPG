@@ -71,10 +71,10 @@ UEnum* Z_Construct_UEnum_Warrior_EWarriorConfirmType()
 }
 // End Enum EWarriorConfirmType
 
-// Begin Class UWarriorFunctionLibrary Function AddGameplayTagsIfNone
-struct Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics
+// Begin Class UWarriorFunctionLibrary Function AddGameplayTagsToActorIfNone
+struct Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics
 {
-	struct WarriorFunctionLibrary_eventAddGameplayTagsIfNone_Parms
+	struct WarriorFunctionLibrary_eventAddGameplayTagsToActorIfNone_Parms
 	{
 		AActor* InActor;
 		FGameplayTag TagToAdd;
@@ -90,34 +90,34 @@ struct Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Stati
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics::NewProp_InActor = { "InActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(WarriorFunctionLibrary_eventAddGameplayTagsIfNone_Parms, InActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics::NewProp_TagToAdd = { "TagToAdd", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(WarriorFunctionLibrary_eventAddGameplayTagsIfNone_Parms, TagToAdd), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(0, nullptr) }; // 1298103297
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics::NewProp_InActor,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics::NewProp_TagToAdd,
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics::NewProp_InActor = { "InActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(WarriorFunctionLibrary_eventAddGameplayTagsToActorIfNone_Parms, InActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics::NewProp_TagToAdd = { "TagToAdd", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(WarriorFunctionLibrary_eventAddGameplayTagsToActorIfNone_Parms, TagToAdd), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(0, nullptr) }; // 1298103297
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics::NewProp_InActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics::NewProp_TagToAdd,
 };
-static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UWarriorFunctionLibrary, nullptr, "AddGameplayTagsIfNone", nullptr, nullptr, Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics::PropPointers), sizeof(Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics::WarriorFunctionLibrary_eventAddGameplayTagsIfNone_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics::Function_MetaDataParams), Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics::Function_MetaDataParams) };
-static_assert(sizeof(Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics::WarriorFunctionLibrary_eventAddGameplayTagsIfNone_Parms) < MAX_uint16);
-UFunction* Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone()
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UWarriorFunctionLibrary, nullptr, "AddGameplayTagsToActorIfNone", nullptr, nullptr, Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics::PropPointers), sizeof(Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics::WarriorFunctionLibrary_eventAddGameplayTagsToActorIfNone_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics::Function_MetaDataParams), Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics::WarriorFunctionLibrary_eventAddGameplayTagsToActorIfNone_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone_Statics::FuncParams);
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
-DEFINE_FUNCTION(UWarriorFunctionLibrary::execAddGameplayTagsIfNone)
+DEFINE_FUNCTION(UWarriorFunctionLibrary::execAddGameplayTagsToActorIfNone)
 {
 	P_GET_OBJECT(AActor,Z_Param_InActor);
 	P_GET_STRUCT(FGameplayTag,Z_Param_TagToAdd);
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	UWarriorFunctionLibrary::AddGameplayTagsIfNone(Z_Param_InActor,Z_Param_TagToAdd);
+	UWarriorFunctionLibrary::AddGameplayTagsToActorIfNone(Z_Param_InActor,Z_Param_TagToAdd);
 	P_NATIVE_END;
 }
-// End Class UWarriorFunctionLibrary Function AddGameplayTagsIfNone
+// End Class UWarriorFunctionLibrary Function AddGameplayTagsToActorIfNone
 
 // Begin Class UWarriorFunctionLibrary Function BP_DoesActorHasTag
 struct Z_Construct_UFunction_UWarriorFunctionLibrary_BP_DoesActorHasTag_Statics
@@ -236,7 +236,7 @@ void UWarriorFunctionLibrary::StaticRegisterNativesUWarriorFunctionLibrary()
 {
 	UClass* Class = UWarriorFunctionLibrary::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
-		{ "AddGameplayTagsIfNone", &UWarriorFunctionLibrary::execAddGameplayTagsIfNone },
+		{ "AddGameplayTagsToActorIfNone", &UWarriorFunctionLibrary::execAddGameplayTagsToActorIfNone },
 		{ "BP_DoesActorHasTag", &UWarriorFunctionLibrary::execBP_DoesActorHasTag },
 		{ "RemoveGameplayFromActorIfFound", &UWarriorFunctionLibrary::execRemoveGameplayFromActorIfFound },
 	};
@@ -257,7 +257,7 @@ struct Z_Construct_UClass_UWarriorFunctionLibrary_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsIfNone, "AddGameplayTagsIfNone" }, // 1426458192
+		{ &Z_Construct_UFunction_UWarriorFunctionLibrary_AddGameplayTagsToActorIfNone, "AddGameplayTagsToActorIfNone" }, // 852209678
 		{ &Z_Construct_UFunction_UWarriorFunctionLibrary_BP_DoesActorHasTag, "BP_DoesActorHasTag" }, // 1101614502
 		{ &Z_Construct_UFunction_UWarriorFunctionLibrary_RemoveGameplayFromActorIfFound, "RemoveGameplayFromActorIfFound" }, // 531772590
 	};
@@ -311,10 +311,10 @@ struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Warrio
 		{ EWarriorConfirmType_StaticEnum, TEXT("EWarriorConfirmType"), &Z_Registration_Info_UEnum_EWarriorConfirmType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2514264220U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UWarriorFunctionLibrary, UWarriorFunctionLibrary::StaticClass, TEXT("UWarriorFunctionLibrary"), &Z_Registration_Info_UClass_UWarriorFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWarriorFunctionLibrary), 3834341085U) },
+		{ Z_Construct_UClass_UWarriorFunctionLibrary, UWarriorFunctionLibrary::StaticClass, TEXT("UWarriorFunctionLibrary"), &Z_Registration_Info_UClass_UWarriorFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWarriorFunctionLibrary), 1114189410U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_3756395856(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_412396134(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_Statics::EnumInfo));
