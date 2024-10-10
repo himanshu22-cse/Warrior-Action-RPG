@@ -62,6 +62,9 @@
     <Filter Include="Source\Warrior\Private\AbilitySystem\Abilities">
       <UniqueIdentifier>{F1AAEC36-8D99-3B4E-9B75-F663FA310F2B}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Warrior\Private\AbilitySystem\Abilities\WarriorEnemyGameplayAbility.cpp">
+      <Filter>Source\Warrior\Private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\AbilitySystem\Abilities\WarriorGameplayAbility.cpp">
       <Filter>Source\Warrior\Private\AbilitySystem\Abilities</Filter>
     </ClCompile>
@@ -92,6 +95,9 @@
     <ClCompile Include="..\..\Source\Warrior\Private\Characters\WarriorBaseCharacter.cpp">
       <Filter>Source\Warrior\Private\Characters</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\Characters\WarriorEnemyCharacter.cpp">
+      <Filter>Source\Warrior\Private\Characters</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\Characters\WarriorHeroCharacter.cpp">
       <Filter>Source\Warrior\Private\Characters</Filter>
     </ClCompile>
@@ -107,6 +113,9 @@
     <Filter Include="Source\Warrior\Private\Components\Combat">
       <UniqueIdentifier>{DE6E12D7-65DF-33BB-BEE2-F70F533D028C}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Warrior\Private\Components\Combat\EnemyCombatComponent.cpp">
+      <Filter>Source\Warrior\Private\Components\Combat</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\Components\Combat\HeroCombatComponent.cpp">
       <Filter>Source\Warrior\Private\Components\Combat</Filter>
     </ClCompile>
@@ -131,6 +140,9 @@
     <Filter Include="Source\Warrior\Private\DataAssets\Start-UpData">
       <UniqueIdentifier>{3B06F327-3FA0-3EF8-AF22-B8511EA708DE}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Warrior\Private\DataAssets\Start-UpData\DataAsset_EnemyStartUpData.cpp">
+      <Filter>Source\Warrior\Private\DataAssets\Start-UpData</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\DataAssets\Start-UpData\DataAsset_HeroStartUpData.cpp">
       <Filter>Source\Warrior\Private\DataAssets\Start-UpData</Filter>
     </ClCompile>
@@ -185,6 +197,9 @@
     <Filter Include="Source\Warrior\Public\AbilitySystem\Abilities">
       <UniqueIdentifier>{139FEC8F-6864-3A6A-9615-1F8783976B9A}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\Abilities\WarriorEnemyGameplayAbility.h">
+      <Filter>Source\Warrior\Public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\Abilities\WarriorGameplayAbility.h">
       <Filter>Source\Warrior\Public\AbilitySystem\Abilities</Filter>
     </ClInclude>
@@ -215,6 +230,9 @@
     <ClInclude Include="..\..\Source\Warrior\Public\Characters\WarriorBaseCharacter.h">
       <Filter>Source\Warrior\Public\Characters</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Warrior\Public\Characters\WarriorEnemyCharacter.h">
+      <Filter>Source\Warrior\Public\Characters</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Warrior\Public\Characters\WarriorHeroCharacter.h">
       <Filter>Source\Warrior\Public\Characters</Filter>
     </ClInclude>
@@ -230,6 +248,9 @@
     <Filter Include="Source\Warrior\Public\Components\Combat">
       <UniqueIdentifier>{DCACA185-D3CF-3A2F-92A0-5BB825872675}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Warrior\Public\Components\Combat\EnemyCombatComponent.h">
+      <Filter>Source\Warrior\Public\Components\Combat</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Warrior\Public\Components\Combat\HeroCombatComponent.h">
       <Filter>Source\Warrior\Public\Components\Combat</Filter>
     </ClInclude>
@@ -254,6 +275,9 @@
     <Filter Include="Source\Warrior\Public\DataAssets\Start-UpData">
       <UniqueIdentifier>{741005C9-A6F0-37F0-ABDF-F6F9BA6848AC}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Warrior\Public\DataAssets\Start-UpData\DataAsset_EnemyStartUpData.h">
+      <Filter>Source\Warrior\Public\DataAssets\Start-UpData</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Warrior\Public\DataAssets\Start-UpData\DataAsset_HeroStartUpData.h">
       <Filter>Source\Warrior\Public\DataAssets\Start-UpData</Filter>
     </ClInclude>

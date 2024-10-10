@@ -276,6 +276,9 @@
     <ClCompile Include="..\..\Source\Warrior\Private\AbilitySystem\WarriorAttributeSet.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\AbilitySystem\Abilities\WarriorEnemyGameplayAbility.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\AbilitySystem\Abilities\WarriorGameplayAbility.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -297,6 +300,9 @@
     <ClCompile Include="..\..\Source\Warrior\Private\Characters\WarriorBaseCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\Characters\WarriorEnemyCharacter.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\Characters\WarriorHeroCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -304,6 +310,9 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\Components\WarriorInputComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\Components\Combat\EnemyCombatComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\Components\Combat\HeroCombatComponent.cpp">
@@ -316,6 +325,9 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\DataAssets\Input\DataAsset_InputConfig.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\DataAssets\Start-UpData\DataAsset_EnemyStartUpData.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\DataAssets\Start-UpData\DataAsset_HeroStartUpData.cpp">
@@ -341,6 +353,7 @@
     <ClInclude Include="..\..\Source\Warrior\Public\WarriorGameplayTags.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\WarriorAbilitySystemComponent.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\WarriorAttributeSet.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\Abilities\WarriorEnemyGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\Abilities\WarriorGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\Abilities\WarriorHeroGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AnimInstances\WarriorBaseAnimInstance.h"/>
@@ -348,13 +361,16 @@
     <ClInclude Include="..\..\Source\Warrior\Public\AnimInstances\Hero\WarriorHeroAnimInstance.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AnimInstances\Hero\WarriorHeroLinkedAnimLayer.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Characters\WarriorBaseCharacter.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\Characters\WarriorEnemyCharacter.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Characters\WarriorHeroCharacter.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Components\PawnExtensionComponentBase.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Components\WarriorInputComponent.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\Components\Combat\EnemyCombatComponent.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Components\Combat\HeroCombatComponent.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Components\Combat\PawnCombatComponent.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Controllers\WarriorHeroController.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\DataAssets\Input\DataAsset_InputConfig.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\DataAssets\Start-UpData\DataAsset_EnemyStartUpData.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\DataAssets\Start-UpData\DataAsset_HeroStartUpData.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\DataAssets\Start-UpData\DataAsset_StartUpDataBase.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\GameModes\WarriorGameModeBase.h"/>

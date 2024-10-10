@@ -33,6 +33,8 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/PlayerCharacter/Montages/HeavyAttacks/Hero_Axe_HeavyAttack_1_Montage.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/PlayerCharacter/Montages/HeavyAttacks/Hero_Axe_HeavyAttack_2_Montage.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/AnimNotifyState/AN_SlowMotion.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/PlayerCharacter/BP_EnemyCharacterBase.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/PlayerCharacter/EnemyCharacter/BP_EnemyCharacterBase.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/PlayerCharacter/Animation/AM_Hero_Unequip_Axe.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/PlayerCharacter/Animation/AM_Hero_Axe_Equip.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/PlayerCharacter/Animation/Hero_Axe_LightAttack_1_Montage.uasset",
