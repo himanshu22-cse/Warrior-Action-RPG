@@ -31,14 +31,8 @@ struct Z_Construct_UClass_UDataAsset_EnemyStartUpData_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//class \n" },
-#endif
 		{ "IncludePath", "DataAssets/Start-UpData/DataAsset_EnemyStartUpData.h" },
 		{ "ModuleRelativePath", "Public/DataAssets/Start-UpData/DataAsset_EnemyStartUpData.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "class" },
-#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnemyCombatAbilities_MetaData[] = {
 		{ "Category", "StartUpData" },
@@ -102,10 +96,10 @@ UDataAsset_EnemyStartUpData::~UDataAsset_EnemyStartUpData() {}
 struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_EnemyStartUpData_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDataAsset_EnemyStartUpData, UDataAsset_EnemyStartUpData::StaticClass, TEXT("UDataAsset_EnemyStartUpData"), &Z_Registration_Info_UClass_UDataAsset_EnemyStartUpData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDataAsset_EnemyStartUpData), 212646565U) },
+		{ Z_Construct_UClass_UDataAsset_EnemyStartUpData, UDataAsset_EnemyStartUpData::StaticClass, TEXT("UDataAsset_EnemyStartUpData"), &Z_Registration_Info_UClass_UDataAsset_EnemyStartUpData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDataAsset_EnemyStartUpData), 274858782U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_EnemyStartUpData_h_2546274464(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_EnemyStartUpData_h_1275869100(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_EnemyStartUpData_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_EnemyStartUpData_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

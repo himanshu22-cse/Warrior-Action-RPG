@@ -7,7 +7,6 @@
 #include "DataAsset_EnemyStartUpData.generated.h"
 
 class UWarriorEnemyGameplayAbility;
-//class 
 
 UCLASS()
 class WARRIOR_API UDataAsset_EnemyStartUpData : public UDataAsset_StartUpDataBase
