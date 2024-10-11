@@ -10,19 +10,21 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AWarriorWeaponBase;
+enum class EToggleDamageType : uint8;
 struct FGameplayTag;
 #ifdef WARRIOR_PawnCombatComponent_generated_h
 #error "PawnCombatComponent.generated.h already included, missing '#pragma once' in PawnCombatComponent.h"
 #endif
 #define WARRIOR_PawnCombatComponent_generated_h
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execToggleWeaponCollision); \
 	DECLARE_FUNCTION(execGetCharacterCurrentEquippedWeapon); \
 	DECLARE_FUNCTION(execGetCharacterCarriedWeaponByTag); \
 	DECLARE_FUNCTION(execRegisterSpawnWeapon);
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPawnCombatComponent(); \
 	friend struct Z_Construct_UClass_UPawnCombatComponent_Statics; \
@@ -31,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(UPawnCombatComponent)
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_23_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPawnCombatComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -45,13 +47,13 @@ public: \
 	NO_API virtual ~UPawnCombatComponent();
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_12_PROLOG
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_15_GENERATED_BODY \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_20_PROLOG
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_23_INCLASS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -61,5 +63,14 @@ template<> WARRIOR_API UClass* StaticClass<class UPawnCombatComponent>();
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_Warrior_Action_RPG_Source_Warrior_Public_Components_Combat_PawnCombatComponent_h
 
+
+#define FOREACH_ENUM_ETOGGLEDAMAGETYPE(op) \
+	op(EToggleDamageType::CurrentEquippedWeapon) \
+	op(EToggleDamageType::LeftHand) \
+	op(EToggleDamageType::RightHand) 
+
+enum class EToggleDamageType : uint8;
+template<> struct TIsUEnumClass<EToggleDamageType> { enum { Value = true }; };
+template<> WARRIOR_API UEnum* StaticEnum<EToggleDamageType>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
