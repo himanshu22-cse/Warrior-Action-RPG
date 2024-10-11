@@ -36,8 +36,14 @@ struct Z_Construct_UClass_AWarriorEnemyCharacter_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnemyCombatComponent_MetaData[] = {
 		{ "Category", "Combat" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// End APawn Interface\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Characters/WarriorEnemyCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "End APawn Interface" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_EnemyCombatComponent;
@@ -93,10 +99,10 @@ AWarriorEnemyCharacter::~AWarriorEnemyCharacter() {}
 struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorEnemyCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AWarriorEnemyCharacter, AWarriorEnemyCharacter::StaticClass, TEXT("AWarriorEnemyCharacter"), &Z_Registration_Info_UClass_AWarriorEnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorEnemyCharacter), 4257505538U) },
+		{ Z_Construct_UClass_AWarriorEnemyCharacter, AWarriorEnemyCharacter::StaticClass, TEXT("AWarriorEnemyCharacter"), &Z_Registration_Info_UClass_AWarriorEnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorEnemyCharacter), 3861487821U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorEnemyCharacter_h_3985230951(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorEnemyCharacter_h_1373317281(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorEnemyCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorEnemyCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
