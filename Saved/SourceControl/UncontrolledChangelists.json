@@ -8,7 +8,13 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/AnimNotify/AN_ToggleWeaponCollision.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/LightAttacks/Hero_Axe_LightAttack_1_Montage.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/LightAttack/GA_Hero_LightAttackMaster.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/LightAttack/GA_Hero_LightAttackMaster.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/LightAttacks/Hero_Axe_LightAttack_2_Montage.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/LightAttacks/Hero_Axe_LightAttack_3_Montage.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/LightAttacks/Hero_Axe_LightAttack_4_Montage.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/HeavyAttack/GA_Hero_HeavyAttack_Master.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/HeavyAttacks/Hero_Axe_HeavyAttack_1_Montage.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/HeavyAttacks/Hero_Axe_HeavyAttack_2_Montage.uasset"
 			]
 		}
 	]
