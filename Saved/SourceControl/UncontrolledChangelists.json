@@ -7,7 +7,8 @@
 			"files": [
 				"C:/Games Project/Warrior-Action-RPG/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/AnimNotify/AN_ToggleWeaponCollision.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/LightAttacks/Hero_Axe_LightAttack_1_Montage.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/LightAttacks/Hero_Axe_LightAttack_1_Montage.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/LightAttack/GA_Hero_LightAttackMaster.uasset"
 			]
 		}
 	]
