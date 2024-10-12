@@ -9,10 +9,18 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
 #ifdef WARRIOR_WarriorWeaponBase_generated_h
 #error "WarriorWeaponBase.generated.h already included, missing '#pragma once' in WarriorWeaponBase.h"
 #endif
 #define WARRIOR_WarriorWeaponBase_generated_h
+
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Items_Weapons_WarriorWeaponBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnCollisionBoxEndOverlap); \
+	DECLARE_FUNCTION(execOnCollisionBoxBeginOverlap);
+
 
 #define FID_Warrior_Action_RPG_Source_Warrior_Public_Items_Weapons_WarriorWeaponBase_h_14_INCLASS_NO_PURE_DECLS \
 private: \
@@ -39,6 +47,7 @@ public: \
 #define FID_Warrior_Action_RPG_Source_Warrior_Public_Items_Weapons_WarriorWeaponBase_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_Items_Weapons_WarriorWeaponBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Warrior_Action_RPG_Source_Warrior_Public_Items_Weapons_WarriorWeaponBase_h_14_INCLASS_NO_PURE_DECLS \
 	FID_Warrior_Action_RPG_Source_Warrior_Public_Items_Weapons_WarriorWeaponBase_h_14_ENHANCED_CONSTRUCTORS \
 private: \
