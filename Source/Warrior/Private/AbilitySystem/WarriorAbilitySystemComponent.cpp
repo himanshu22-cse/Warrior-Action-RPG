@@ -1,16 +1,16 @@
 // Himanshu Third Project
 
 #include "AbilitySystem/WarriorAbilitySystemComponent.h"
-#include "AbilitySystem/Abilities/WarriorGameplayAbility.h"
+#include "AbilitySystem/Abilities/WarriorHeroGameplayAbility.h"
 
-void UWarriorAbilitySystemComponent::OnAbilityInputPressed(FGameplayTag& InInputTag)
+void UWarriorAbilitySystemComponent::OnAbilityInputPressed(const FGameplayTag& InInputTag)
 {
 	if (!InInputTag.IsValid())
 	{
 		return;
 	}
 	
-	for (const auto& AbilitySpec : GetActivatableAbilities())
+	for (const FGameplayAbilitySpec& AbilitySpec : GetActivatableAbilities())
 	{
 		if(!AbilitySpec.DynamicAbilityTags.HasTagExact(InInputTag)) continue;
 
@@ -18,7 +18,7 @@ void UWarriorAbilitySystemComponent::OnAbilityInputPressed(FGameplayTag& InInput
 	}
 }
 
-void UWarriorAbilitySystemComponent::OnAbilityInputReleased(FGameplayTag& InInputTag)
+void UWarriorAbilitySystemComponent::OnAbilityInputReleased( const FGameplayTag& InInputTag)
 {
 
 }
@@ -31,7 +31,10 @@ void UWarriorAbilitySystemComponent::GrantHeroWeaponAbilities(const TArray<FWarr
 	}
 	for (const FWarriorHeroAbilitySet& AbilitySet : InDefaultWeaponAbilities)
 	{
-		if (!AbilitySet.IsValid()) continue;
+		if (!AbilitySet.IsValid())
+		{
+			continue;
+		}
 		FGameplayAbilitySpec AbilitySpec(AbilitySet.AbilityToGrant);
 		AbilitySpec.SourceObject = GetAvatarActor();
 		AbilitySpec.Level = ApplyLevel;

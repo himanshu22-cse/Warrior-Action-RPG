@@ -18,6 +18,7 @@ void UDataAsset_EnemyStartUpData::GiveToAbilitySystemComponent(UWarriorAbilitySy
 			FGameplayAbilitySpec AbilitySpec(AbilityClass);
 			AbilitySpec.SourceObject = InASCToGive->GetAvatarActor();
 			AbilitySpec.Level = ApplyLevel;
+
 			InASCToGive->GiveAbility(AbilitySpec);
 		}
 	}

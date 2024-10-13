@@ -22,11 +22,11 @@ public:
 	AWarriorBaseCharacter();
 
 	// Begin IAbilitySystemInterface 
-	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const;
+	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	// End IAbilitySystemInterface
 
 	// Begin IPawnCombatInterface 
-	virtual UPawnCombatComponent* GetPawnCombatComponent()const override;
+	virtual UPawnCombatComponent* GetPawnCombatComponent() const override;
 	// End IPawnCombatInterface
 
 protected:
@@ -47,7 +47,7 @@ protected:
 public:
 	FORCEINLINE UWarriorAbilitySystemComponent* GetWarriorAbilitySystemComponent() const { return WarriorAbilitySystemComponent; }
 
-	FORCEINLINE UWarriorAttributeSet* GetAttributeSet() { return WarriorAttributeSet; }
+	FORCEINLINE UWarriorAttributeSet* GetAttributeSet() const { return WarriorAttributeSet; }
 
 };
 

@@ -18,7 +18,7 @@ public:
 	AWarriorEnemyCharacter();
 
 	// Begin IPawnCombatInterface 
-	virtual UPawnCombatComponent* GetPawnCombatComponent()const override;
+	virtual UPawnCombatComponent* GetPawnCombatComponent() const override;
 	// End IPawnCombatInterface
 
 protected:

@@ -34,7 +34,7 @@ void UDataAsset_StartUpDataBase::GrantAbilities(const TArray<TSubclassOf<UWarrio
 		return;
 	}
 
-	for (const TSubclassOf<UWarriorGameplayAbility>& Ability : InAbilitiesToGive)
+	for (const auto& Ability : InAbilitiesToGive)
 	{
 		if (!Ability) continue;
 

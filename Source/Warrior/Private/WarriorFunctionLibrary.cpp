@@ -8,6 +8,7 @@
 UWarriorAbilitySystemComponent* UWarriorFunctionLibrary::NativeGetWarriorASCFromActor(AActor* InActor)
 {
 	check(InActor);
+
 	return CastChecked<UWarriorAbilitySystemComponent>(UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(InActor));
 }
 
@@ -46,6 +47,8 @@ void UWarriorFunctionLibrary::BP_DoesActorHasTag(AActor* InActor, FGameplayTag T
 
 UPawnCombatComponent* UWarriorFunctionLibrary::NativeGetPawnCombatComponentFromActor(AActor* InActor)
 {
+	check(InActor);
+
 	if (IPawnCombatInterface* PawnCombatInterface = Cast<IPawnCombatInterface>(InActor))
 	{
 		return PawnCombatInterface->GetPawnCombatComponent();

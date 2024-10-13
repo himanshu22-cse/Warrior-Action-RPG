@@ -11,13 +11,17 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AWarriorHeroCharacter;
 class AWarriorHeroController;
+class UGameplayEffect;
 class UHeroCombatComponent;
+struct FGameplayEffectSpecHandle;
+struct FGameplayTag;
 #ifdef WARRIOR_WarriorHeroGameplayAbility_generated_h
 #error "WarriorHeroGameplayAbility.generated.h already included, missing '#pragma once' in WarriorHeroGameplayAbility.h"
 #endif
 #define WARRIOR_WarriorHeroGameplayAbility_generated_h
 
 #define FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_Abilities_WarriorHeroGameplayAbility_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execMakeHeroDamageEffectSpecHandle); \
 	DECLARE_FUNCTION(execGetHeroCombatComponentFromActorInfo); \
 	DECLARE_FUNCTION(execGetWarriorHeroControllerFromActorInfo); \
 	DECLARE_FUNCTION(execGetHeroCharacterFromActorInfo);

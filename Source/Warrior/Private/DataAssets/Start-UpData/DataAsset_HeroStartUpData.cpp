@@ -1,14 +1,14 @@
 // Himanshu Third Project
 
 #include "DataAssets/Start-UpData/DataAsset_HeroStartUpData.h"
-#include "AbilitySystem/Abilities/WarriorGameplayAbility.h"
+#include "AbilitySystem/Abilities/WarriorHeroGameplayAbility.h"
 #include "AbilitySystem/WarriorAbilitySystemComponent.h"
 
 void UDataAsset_HeroStartUpData::GiveToAbilitySystemComponent(UWarriorAbilitySystemComponent* InASCToGive, int32 ApplyLevel)
 {
 	Super::GiveToAbilitySystemComponent(InASCToGive, ApplyLevel);
 
-	for (const FWarriorHeroAbilitySet AbilitySet : HeroStartUpAbilitySet)
+	for (const auto& AbilitySet : HeroStartUpAbilitySets)
 	{
 		if (!AbilitySet.IsValid())
 		{
