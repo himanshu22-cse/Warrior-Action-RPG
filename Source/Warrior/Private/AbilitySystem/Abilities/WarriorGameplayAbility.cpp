@@ -52,7 +52,7 @@ FActiveGameplayEffectHandle UWarriorGameplayAbility::NativeApplyEffectSpecHandle
 
 	check(TargetASC && InSpecHandle.IsValid());
 
-  return GetWarriorAbilitySystemComponentFromActorInfo()->ApplyGameplayEffectSpecToTarget(
+    return GetWarriorAbilitySystemComponentFromActorInfo()->ApplyGameplayEffectSpecToTarget(
 		*InSpecHandle.Data,  //  The .Data member in FGameplayEffectHandle holds the actual information (effect data) regarding the instance of a gameplay effect that has been applied
 	     TargetASC
 		);

@@ -17,7 +17,9 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/HeavyAttacks/Hero_Axe_HeavyAttack_2_Montage.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/GE_Shared_DealDamage.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/CurveTable/CT_HeroWeaponStats.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/HeroWeapon/BP_HeroAxe.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/HeroWeapon/BP_HeroAxe.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Maps/FeatureTestMap.umap",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Data/DA_Hero.uasset"
 			]
 		}
 	]
