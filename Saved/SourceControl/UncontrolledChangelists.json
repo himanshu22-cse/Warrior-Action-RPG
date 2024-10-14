@@ -19,7 +19,21 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/CurveTable/CT_HeroWeaponStats.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/HeroWeapon/BP_HeroAxe.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Maps/FeatureTestMap.umap",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Data/DA_Hero.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Data/DA_Hero.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Enemy_HitReact/GA_Enemy_HitReact_Base.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Enemy_HitReact/GA_Guardian_HitReact.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Assets/Enemies/Gruntling/Enemy_Gruntling_Guardian/Enemy_Gruntling_Guardian_Animation/ExoGame_Gruntling_React_Light_Front.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/ExoGame_Gruntling_React_Light_Front_Montage.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/AM_ExoGame_Gruntling_React_Light_Front_Alt_Montage.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/AM_ExoGame_Gruntling_React_Light_Front_Montage.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/Enemy_HitReact/AM_ExoGame_Gruntling_React_Light_Front_Alt_Montage.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/Enemy_HitReact/AM_ExoGame_Gruntling_React_Light_Front_Montage.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Data/DA_Guardian.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/GA_HitReact_Base.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/GA_Enemy_HitReact_Base.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/ExoGame_Gruntling_React_Light_Front_Alt_Montage.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/ExoGame_Gruntling_React_Light_Front_Montage.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/ExoGame_Gruntling_React_Light_Front_Alt_Montage.uasset"
 			]
 		}
 	]
