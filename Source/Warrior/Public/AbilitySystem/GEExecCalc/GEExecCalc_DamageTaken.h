@@ -15,5 +15,7 @@ public:
 
 	UGEExecCalc_DamageTaken();
 
+// This is where we get hold of all the relevant values for calculating our final damage
+	virtual void Execute_Implementation(const FGameplayEffectCustomExecutionParameters& ExecutionParams, FGameplayEffectCustomExecutionOutput& OutExecutionOutput) const override;
 	
 };
