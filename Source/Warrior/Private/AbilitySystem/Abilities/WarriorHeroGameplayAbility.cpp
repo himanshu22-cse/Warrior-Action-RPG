@@ -3,7 +3,6 @@
 #include "AbilitySystem/Abilities/WarriorHeroGameplayAbility.h"
 #include "Characters/WarriorHeroCharacter.h"
 #include "Controllers/WarriorHeroController.h"
-//#include "Components/Combat/HeroCombatComponent.h"
 #include "AbilitySystem/WarriorAbilitySystemComponent.h"
 #include "WarriorGameplayTags.h"
 
