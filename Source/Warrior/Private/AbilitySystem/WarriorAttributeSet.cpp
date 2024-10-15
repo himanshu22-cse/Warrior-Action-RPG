@@ -4,6 +4,8 @@
 #include "AbilitySystem/WarriorAttributeSet.h"
 #include "GameplayEffectExtension.h"
 #include "WarriorDebugHelper.h"
+#include "WarriorFunctionLibrary.h"
+#include "WarriorGameplayTags.h"
 
 UWarriorAttributeSet::UWarriorAttributeSet()
 {
@@ -47,11 +49,11 @@ void UWarriorAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCal
 
 	    // TODO: Notify the UI
 
-		//TODO: Handle Character Death
-
+		// Handle Character Death
 		if (NewCurrentHealth == 0.f)
 		{
-
+			//"AddGameplayTagsToActorIfNone()" ->prevents us from adding the same tag to this actor multiple times.
+			UWarriorFunctionLibrary::AddGameplayTagsToActorIfNone(Data.Target.GetAvatarActor(), WarriorGameplayTags::Shared_Status_Dead);
 		}
 	}
 }
