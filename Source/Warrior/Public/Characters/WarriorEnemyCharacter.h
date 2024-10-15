@@ -7,6 +7,7 @@
 #include "WarriorEnemyCharacter.generated.h"
 
 class UEnemyCombatComponent;
+class UEnemyUIComponent;
 
 UCLASS()
 class WARRIOR_API AWarriorEnemyCharacter : public AWarriorBaseCharacter
@@ -21,6 +22,10 @@ public:
 	virtual UPawnCombatComponent* GetPawnCombatComponent() const override;
 	// End IPawnCombatInterface
 
+	// Begin IPawnUIInterface
+	virtual UPawnUIComponent* GetPawnUIComponent() const override;
+	// End IPawnUIInterface
+
 protected:
 
 	// Begin APawn Interface
@@ -29,6 +34,9 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combat")
 	TObjectPtr<UEnemyCombatComponent>EnemyCombatComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "UI")
+	TObjectPtr<UEnemyUIComponent>EnemyUIComponent;
  
 private:
 

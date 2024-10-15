@@ -325,6 +325,15 @@
     <ClCompile Include="..\..\Source\Warrior\Private\Components\Combat\PawnCombatComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\Components\UI\EnemyUIComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\Components\UI\HeroUIComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\Components\UI\PawnUIComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\Controllers\WarriorHeroController.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -344,6 +353,9 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\Interfaces\PawnCombatInterface.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\Interfaces\PawnUIInterface.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\Items\Weapons\WarriorHeroWeapon.cpp">
@@ -376,6 +388,9 @@
     <ClInclude Include="..\..\Source\Warrior\Public\Components\Combat\EnemyCombatComponent.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Components\Combat\HeroCombatComponent.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Components\Combat\PawnCombatComponent.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\Components\UI\EnemyUIComponent.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\Components\UI\HeroUIComponent.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\Components\UI\PawnUIComponent.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Controllers\WarriorHeroController.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\DataAssets\Input\DataAsset_InputConfig.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\DataAssets\Start-UpData\DataAsset_EnemyStartUpData.h"/>
@@ -383,6 +398,7 @@
     <ClInclude Include="..\..\Source\Warrior\Public\DataAssets\Start-UpData\DataAsset_StartUpDataBase.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\GameModes\WarriorGameModeBase.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Interfaces\PawnCombatInterface.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\Interfaces\PawnUIInterface.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Items\Weapons\WarriorHeroWeapon.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Items\Weapons\WarriorWeaponBase.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\WarriorTypes\WarriorEnumTypes.h"/>

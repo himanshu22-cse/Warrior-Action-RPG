@@ -11,6 +11,7 @@ class USpringArmComponent;
 class UCameraComponent;
 class UDataAsset_InputConfig;
 class UHeroCombatComponent;
+class UHeroUIComponent;
 struct FInputActionValue;
 
 UCLASS()
@@ -32,6 +33,10 @@ protected:
 	virtual void PossessedBy(AController* NewController) override;
 	// End APawn Interface
 
+	// Begin IPawnUIInterface
+	virtual UPawnUIComponent* GetPawnUIComponent() const override;
+	// End IPawnUIInterface
+
   virtual void BeginPlay() override;
 
   virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -46,8 +51,11 @@ private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UCameraComponent>FollowCamera;
 	
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combat", meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UHeroCombatComponent>HeroCombatComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "UI", meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UHeroUIComponent>HeroUIComponent;
 
 #pragma endregion
 

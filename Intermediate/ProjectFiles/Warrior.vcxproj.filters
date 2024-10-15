@@ -131,6 +131,18 @@
     <ClCompile Include="..\..\Source\Warrior\Private\Components\Combat\PawnCombatComponent.cpp">
       <Filter>Source\Warrior\Private\Components\Combat</Filter>
     </ClCompile>
+    <Filter Include="Source\Warrior\Private\Components\UI">
+      <UniqueIdentifier>{952CF88F-87A2-3289-9F4E-29694B749485}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Warrior\Private\Components\UI\EnemyUIComponent.cpp">
+      <Filter>Source\Warrior\Private\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\Components\UI\HeroUIComponent.cpp">
+      <Filter>Source\Warrior\Private\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\Components\UI\PawnUIComponent.cpp">
+      <Filter>Source\Warrior\Private\Components\UI</Filter>
+    </ClCompile>
     <Filter Include="Source\Warrior\Private\Controllers">
       <UniqueIdentifier>{427A409D-DA7D-36A6-A7B9-EC8DDDA6ED55}</UniqueIdentifier>
     </Filter>
@@ -168,6 +180,9 @@
       <UniqueIdentifier>{0EC747F6-124E-34B8-8780-CAD8AE105416}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Warrior\Private\Interfaces\PawnCombatInterface.cpp">
+      <Filter>Source\Warrior\Private\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\Interfaces\PawnUIInterface.cpp">
       <Filter>Source\Warrior\Private\Interfaces</Filter>
     </ClCompile>
     <Filter Include="Source\Warrior\Private\Items">
@@ -278,6 +293,18 @@
     <ClInclude Include="..\..\Source\Warrior\Public\Components\Combat\PawnCombatComponent.h">
       <Filter>Source\Warrior\Public\Components\Combat</Filter>
     </ClInclude>
+    <Filter Include="Source\Warrior\Public\Components\UI">
+      <UniqueIdentifier>{36D6CE62-8FE2-36D4-9A34-A4ADC10CE9C8}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Warrior\Public\Components\UI\EnemyUIComponent.h">
+      <Filter>Source\Warrior\Public\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Warrior\Public\Components\UI\HeroUIComponent.h">
+      <Filter>Source\Warrior\Public\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Warrior\Public\Components\UI\PawnUIComponent.h">
+      <Filter>Source\Warrior\Public\Components\UI</Filter>
+    </ClInclude>
     <Filter Include="Source\Warrior\Public\Controllers">
       <UniqueIdentifier>{465C914F-3C14-35C1-91F2-13B6441A3F6A}</UniqueIdentifier>
     </Filter>
@@ -315,6 +342,9 @@
       <UniqueIdentifier>{2A69B271-AE9C-3083-BE8E-2D426F1D61A0}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Warrior\Public\Interfaces\PawnCombatInterface.h">
+      <Filter>Source\Warrior\Public\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Warrior\Public\Interfaces\PawnUIInterface.h">
       <Filter>Source\Warrior\Public\Interfaces</Filter>
     </ClInclude>
     <Filter Include="Source\Warrior\Public\Items">

@@ -17,6 +17,7 @@ WARRIOR_API UClass* Z_Construct_UClass_AWarriorBaseCharacter();
 WARRIOR_API UClass* Z_Construct_UClass_AWarriorBaseCharacter_NoRegister();
 WARRIOR_API UClass* Z_Construct_UClass_UDataAsset_StartUpDataBase_NoRegister();
 WARRIOR_API UClass* Z_Construct_UClass_UPawnCombatInterface_NoRegister();
+WARRIOR_API UClass* Z_Construct_UClass_UPawnUIInterface_NoRegister();
 WARRIOR_API UClass* Z_Construct_UClass_UWarriorAbilitySystemComponent_NoRegister();
 WARRIOR_API UClass* Z_Construct_UClass_UWarriorAttributeSet_NoRegister();
 // End Cross Module References
@@ -87,6 +88,7 @@ static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AWarriorBaseCharacter_Statics::D
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AWarriorBaseCharacter_Statics::InterfaceParams[] = {
 	{ Z_Construct_UClass_UAbilitySystemInterface_NoRegister, (int32)VTABLE_OFFSET(AWarriorBaseCharacter, IAbilitySystemInterface), false },  // 2272790346
 	{ Z_Construct_UClass_UPawnCombatInterface_NoRegister, (int32)VTABLE_OFFSET(AWarriorBaseCharacter, IPawnCombatInterface), false },  // 365648325
+	{ Z_Construct_UClass_UPawnUIInterface_NoRegister, (int32)VTABLE_OFFSET(AWarriorBaseCharacter, IPawnUIInterface), false },  // 2914232315
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_AWarriorBaseCharacter_Statics::ClassParams = {
 	&AWarriorBaseCharacter::StaticClass,
@@ -123,10 +125,10 @@ AWarriorBaseCharacter::~AWarriorBaseCharacter() {}
 struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorBaseCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AWarriorBaseCharacter, AWarriorBaseCharacter::StaticClass, TEXT("AWarriorBaseCharacter"), &Z_Registration_Info_UClass_AWarriorBaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorBaseCharacter), 3147658094U) },
+		{ Z_Construct_UClass_AWarriorBaseCharacter, AWarriorBaseCharacter::StaticClass, TEXT("AWarriorBaseCharacter"), &Z_Registration_Info_UClass_AWarriorBaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorBaseCharacter), 3853881100U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorBaseCharacter_h_1202731107(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorBaseCharacter_h_1136969021(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorBaseCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorBaseCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
