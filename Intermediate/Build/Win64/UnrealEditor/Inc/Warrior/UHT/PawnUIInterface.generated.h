@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define WARRIOR_PawnUIInterface_generated_h
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	WARRIOR_API UPawnUIInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -28,7 +28,7 @@ public: \
 	WARRIOR_API virtual ~UPawnUIInterface();
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_16_GENERATED_UINTERFACE_BODY() \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_17_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUPawnUIInterface(); \
 	friend struct Z_Construct_UClass_UPawnUIInterface_Statics; \
@@ -37,15 +37,15 @@ public: \
 	DECLARE_SERIALIZER(UPawnUIInterface)
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_16_GENERATED_BODY \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_17_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_16_GENERATED_UINTERFACE_BODY() \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_17_GENERATED_UINTERFACE_BODY() \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_16_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_17_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IPawnUIInterface() {} \
 public: \
@@ -54,11 +54,11 @@ public: \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_13_PROLOG
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_22_GENERATED_BODY \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_14_PROLOG
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_16_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_Interfaces_PawnUIInterface_h_17_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
