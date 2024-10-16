@@ -25,7 +25,6 @@ void UWarriorAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCal
 	if (!CachedPawnUIInterface.IsValid())
 	{
 		CachedPawnUIInterface = TWeakInterfacePtr<IPawnUIInterface>(Data.Target.GetAvatarActor());
-
 	}
 
 	checkf(CachedPawnUIInterface.IsValid(), TEXT("%s is didn't implement IPawnInterface"),*Data.Target.GetAvatarActor()->GetActorNameOrLabel());
@@ -51,7 +50,7 @@ void UWarriorAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCal
 		{
 			HeroUIComponent->OnCurrentRageChanged.Broadcast(GetCurrentRage() / GetMaxRage());
 		}
-
+	}
 		if (Data.EvaluatedData.Attribute == GetDamageTakenAttribute())
 		{
 			const float OldHealth = GetCurrentHealth();
@@ -72,11 +71,11 @@ void UWarriorAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCal
 			PawnUIComponent->OnCurrentHealthChanged.Broadcast(GetCurrentHealth() / GetMaxHealth());
 
 			// Handle Character Death
-			if (NewCurrentHealth == 0.f)
+			if (GetCurrentHealth() == 0.f)
 			{
 				//"AddGameplayTagsToActorIfNone()" ->prevents us from adding the same tag to this actor multiple times.
 				UWarriorFunctionLibrary::AddGameplayTagsToActorIfNone(Data.Target.GetAvatarActor(), WarriorGameplayTags::Shared_Status_Dead);
 			}
 		}
 	}
-}
+

@@ -203,6 +203,12 @@
     <ClCompile Include="..\..\Source\Warrior\Private\WarriorTypes\WarriorStructTypes.cpp">
       <Filter>Source\Warrior\Private\WarriorTypes</Filter>
     </ClCompile>
+    <Filter Include="Source\Warrior\Private\Widgets">
+      <UniqueIdentifier>{B0031074-0874-3991-AD35-CF5FEEBDBC11}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Warrior\Private\Widgets\WarriorWidgetBase.cpp">
+      <Filter>Source\Warrior\Private\Widgets</Filter>
+    </ClCompile>
     <Filter Include="Source\Warrior\Public">
       <UniqueIdentifier>{BCFCC6DC-7E76-37B0-98D2-C6FE729328D4}</UniqueIdentifier>
     </Filter>
@@ -367,6 +373,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Warrior\Public\WarriorTypes\WarriorStructTypes.h">
       <Filter>Source\Warrior\Public\WarriorTypes</Filter>
+    </ClInclude>
+    <Filter Include="Source\Warrior\Public\Widgets">
+      <UniqueIdentifier>{F590F50B-C821-3919-85DA-044DB0E5C48E}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Warrior\Public\Widgets\WarriorWidgetBase.h">
+      <Filter>Source\Warrior\Public\Widgets</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -56,7 +56,7 @@ public:
 
 private:
 
-	// we use because every time we modify ,the "PostGameplayEffectExecute()" is called and i don't want to run this every time to get if we already we have got hold of it,so to avoid doing every time we can catched our "PawnUIInterface"
+	// we use because every time we modify ,the "PostGameplayEffectExecute()" is called and i don't want to run this every time to get if we already we have got hold of it,so to avoid doing every time we can cached our "PawnUIInterface"
 	TWeakInterfacePtr<IPawnUIInterface> CachedPawnUIInterface;
 
 };
