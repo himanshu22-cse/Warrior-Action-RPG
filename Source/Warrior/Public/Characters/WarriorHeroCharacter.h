@@ -35,6 +35,7 @@ protected:
 
 	// Begin IPawnUIInterface
 	virtual UPawnUIComponent* GetPawnUIComponent() const override;
+	virtual UHeroUIComponent* GetHeroUIComponent() const;
 	// End IPawnUIInterface
 
   virtual void BeginPlay() override;

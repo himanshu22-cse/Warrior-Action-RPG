@@ -80,10 +80,10 @@ UEnemyUIComponent::~UEnemyUIComponent() {}
 struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_EnemyUIComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UEnemyUIComponent, UEnemyUIComponent::StaticClass, TEXT("UEnemyUIComponent"), &Z_Registration_Info_UClass_UEnemyUIComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnemyUIComponent), 1157208639U) },
+		{ Z_Construct_UClass_UEnemyUIComponent, UEnemyUIComponent::StaticClass, TEXT("UEnemyUIComponent"), &Z_Registration_Info_UClass_UEnemyUIComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnemyUIComponent), 3674500053U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_EnemyUIComponent_h_1231757958(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_EnemyUIComponent_h_438409348(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_EnemyUIComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_EnemyUIComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

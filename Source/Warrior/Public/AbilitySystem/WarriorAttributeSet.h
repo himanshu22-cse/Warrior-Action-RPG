@@ -7,6 +7,8 @@
 #include "AbilitySystem/WarriorAbilitySystemComponent.h"
 #include "WarriorAttributeSet.generated.h"
 
+class IPawnUIInterface;
+
 #define ATTRIBUTE_ACCESSORS(ClassName, PropertyName) \
 GAMEPLAYATTRIBUTE_PROPERTY_GETTER(ClassName, PropertyName) \
 GAMEPLAYATTRIBUTE_VALUE_GETTER(PropertyName) \
@@ -51,5 +53,10 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "Damage")
 	FGameplayAttributeData DamageTaken;
 	ATTRIBUTE_ACCESSORS(UWarriorAttributeSet, DamageTaken)
+
+private:
+
+	// we use because every time we modify ,the "PostGameplayEffectExecute()" is called and i don't want to run this every time to get if we already we have got hold of it,so to avoid doing every time we can catched our "PawnUIInterface"
+	TWeakInterfacePtr<IPawnUIInterface> CachedPawnUIInterface;
 
 };
