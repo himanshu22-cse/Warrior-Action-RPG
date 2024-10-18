@@ -79,7 +79,7 @@ void AWarriorAIController::BeginPlay()
 /*
   "SetAvoidanceGroup()" ->how AI characters interact with each other in terms of avoidance.
   *This is particularly useful when you want to group certain AI characters together
-  *allowing them to avoid each other while ignoring other groups.
+  *Allowing them to avoid each other while ignoring other groups.
 */
 		CrowdComp->SetAvoidanceGroup(1);
 
