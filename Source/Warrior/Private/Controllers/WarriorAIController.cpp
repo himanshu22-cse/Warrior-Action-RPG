@@ -12,8 +12,6 @@
 AWarriorAIController::AWarriorAIController(const FObjectInitializer& ObjectInitializer)
 	:Super(ObjectInitializer.SetDefaultSubobjectClass<UCrowdFollowingComponent>("PathFollowingComponent")) // "PathFollowingComponent" ->this is component that's responsible for pathfinding for the AI.
 {
-	if (UCrowdFollowingComponent* CrowdComp = Cast<UCrowdFollowingComponent>(GetPathFollowingComponent()))  //"GetPathFollowingComponent()"-> return PathFollowingComponent
-	{
 
 		AISenseConfig_Sight = CreateDefaultSubobject<UAISenseConfig_Sight>("EnemySenseConfig_Sight");
 		AISenseConfig_Sight->DetectionByAffiliation.bDetectEnemies = true;
@@ -32,8 +30,7 @@ AWarriorAIController::AWarriorAIController(const FObjectInitializer& ObjectIniti
 
 		SetGenericTeamId(FGenericTeamId(1));
 
-		Debug::Print(TEXT("CrowdFollowingComponent"), FColor::Cyan);
-	}	
+		
 }
 
 ETeamAttitude::Type AWarriorAIController::GetTeamAttitudeTowards(const AActor& Other) const
@@ -48,6 +45,50 @@ ETeamAttitude::Type AWarriorAIController::GetTeamAttitudeTowards(const AActor& O
 	}
 
 	return ETeamAttitude::Friendly;
+}
+
+void AWarriorAIController::BeginPlay()
+{
+	Super::BeginPlay();
+
+	if (UCrowdFollowingComponent* CrowdComp = Cast<UCrowdFollowingComponent>(GetPathFollowingComponent()))  //"GetPathFollowingComponent()"-> return PathFollowingComponent
+	{
+		//"SetCrowdSimulationState()" we can use to toggle this crowd avoidance on and off.
+		CrowdComp->SetCrowdSimulationState(bEnableDetourCrowdAvoidance ? ECrowdSimulationState::Enabled : ECrowdSimulationState::Disabled);
+
+		// "SetCrowdAvoidanceQuality()"-> how well AI characters avoid each other in crowded space
+		
+		switch (DetourCrowdAvoidanceQuality)
+		{
+		case 1:CrowdComp->SetCrowdAvoidanceQuality(ECrowdAvoidanceQuality::Low);
+			break;
+
+		case 2:CrowdComp->SetCrowdAvoidanceQuality(ECrowdAvoidanceQuality::Medium);
+			break;
+
+		case 3:CrowdComp->SetCrowdAvoidanceQuality(ECrowdAvoidanceQuality::Good);
+			break;
+
+		case 4:CrowdComp->SetCrowdAvoidanceQuality(ECrowdAvoidanceQuality::High);
+			break;
+
+		default:
+			break;
+		}
+
+/*
+  "SetAvoidanceGroup()" ->how AI characters interact with each other in terms of avoidance.
+  *This is particularly useful when you want to group certain AI characters together
+  *allowing them to avoid each other while ignoring other groups.
+*/
+		CrowdComp->SetAvoidanceGroup(1);
+
+		CrowdComp->SetGroupsToAvoid(1);
+
+//"SetCrowdCollisionQueryRange()" ->how far away an AI character can "see" other characters and obstacles when navigating
+		CrowdComp->SetCrowdCollisionQueryRange(CollisonQueryRange);
+
+	}
 }
 
 void AWarriorAIController::OnEnemyPerceptionUpdated(AActor* Actor, FAIStimulus Stimulus)
