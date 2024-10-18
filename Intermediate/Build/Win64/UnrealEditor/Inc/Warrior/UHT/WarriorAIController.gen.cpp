@@ -31,7 +31,13 @@ struct Z_Construct_UFunction_AWarriorAIController_OnEnemyPerceptionUpdated_Stati
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//\"FAIStimulus\" represents sensory data received by an AI, such as sight or sound\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Controllers/WarriorAIController.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "\"FAIStimulus\" represents sensory data received by an AI, such as sight or sound" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Actor;
@@ -112,7 +118,7 @@ struct Z_Construct_UClass_AWarriorAIController_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AWarriorAIController_OnEnemyPerceptionUpdated, "OnEnemyPerceptionUpdated" }, // 580034833
+		{ &Z_Construct_UFunction_AWarriorAIController_OnEnemyPerceptionUpdated, "OnEnemyPerceptionUpdated" }, // 1027673200
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -167,10 +173,10 @@ AWarriorAIController::~AWarriorAIController() {}
 struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Controllers_WarriorAIController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AWarriorAIController, AWarriorAIController::StaticClass, TEXT("AWarriorAIController"), &Z_Registration_Info_UClass_AWarriorAIController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorAIController), 2136448978U) },
+		{ Z_Construct_UClass_AWarriorAIController, AWarriorAIController::StaticClass, TEXT("AWarriorAIController"), &Z_Registration_Info_UClass_AWarriorAIController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorAIController), 1036741907U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Controllers_WarriorAIController_h_1644395011(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Controllers_WarriorAIController_h_2425170352(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Controllers_WarriorAIController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Controllers_WarriorAIController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

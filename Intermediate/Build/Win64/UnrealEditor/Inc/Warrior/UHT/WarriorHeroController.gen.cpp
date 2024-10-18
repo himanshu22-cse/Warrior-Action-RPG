@@ -10,6 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeWarriorHeroController() {}
 
 // Begin Cross Module References
+AIMODULE_API UClass* Z_Construct_UClass_UGenericTeamAgentInterface_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_APlayerController();
 UPackage* Z_Construct_UPackage__Script_Warrior();
 WARRIOR_API UClass* Z_Construct_UClass_AWarriorHeroController();
@@ -35,6 +36,7 @@ struct Z_Construct_UClass_AWarriorHeroController_Statics
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
+	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AWarriorHeroController>::IsAbstract,
 	};
@@ -45,6 +47,9 @@ UObject* (*const Z_Construct_UClass_AWarriorHeroController_Statics::DependentSin
 	(UObject* (*)())Z_Construct_UPackage__Script_Warrior,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AWarriorHeroController_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AWarriorHeroController_Statics::InterfaceParams[] = {
+	{ Z_Construct_UClass_UGenericTeamAgentInterface_NoRegister, (int32)VTABLE_OFFSET(AWarriorHeroController, IGenericTeamAgentInterface), false },  // 1380835789
+};
 const UECodeGen_Private::FClassParams Z_Construct_UClass_AWarriorHeroController_Statics::ClassParams = {
 	&AWarriorHeroController::StaticClass,
 	"Game",
@@ -52,11 +57,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AWarriorHeroController_
 	DependentSingletons,
 	nullptr,
 	nullptr,
-	nullptr,
+	InterfaceParams,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
 	0,
-	0,
+	UE_ARRAY_COUNT(InterfaceParams),
 	0x009002A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AWarriorHeroController_Statics::Class_MetaDataParams), Z_Construct_UClass_AWarriorHeroController_Statics::Class_MetaDataParams)
 };
@@ -72,7 +77,6 @@ template<> WARRIOR_API UClass* StaticClass<AWarriorHeroController>()
 {
 	return AWarriorHeroController::StaticClass();
 }
-AWarriorHeroController::AWarriorHeroController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(AWarriorHeroController);
 AWarriorHeroController::~AWarriorHeroController() {}
 // End Class AWarriorHeroController
@@ -81,10 +85,10 @@ AWarriorHeroController::~AWarriorHeroController() {}
 struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Controllers_WarriorHeroController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AWarriorHeroController, AWarriorHeroController::StaticClass, TEXT("AWarriorHeroController"), &Z_Registration_Info_UClass_AWarriorHeroController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorHeroController), 1585065472U) },
+		{ Z_Construct_UClass_AWarriorHeroController, AWarriorHeroController::StaticClass, TEXT("AWarriorHeroController"), &Z_Registration_Info_UClass_AWarriorHeroController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorHeroController), 2757846201U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Controllers_WarriorHeroController_h_2166011927(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Controllers_WarriorHeroController_h_3092950862(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Controllers_WarriorHeroController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Controllers_WarriorHeroController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -18,6 +18,10 @@ public:
 
 	AWarriorAIController(const FObjectInitializer& ObjectInitializer);
 
+	// Begin IGenericTeamAgentInterface
+	virtual ETeamAttitude::Type GetTeamAttitudeTowards(const AActor& Other) const;
+	// End IGenericTeamAgentInterface
+
 protected:
 
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly) // Perception means AI agent see the target and move to the target.
@@ -26,7 +30,7 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	TObjectPtr<UAISenseConfig_Sight> AISenseConfig_Sight;
 
-
+	//"FAIStimulus" represents sensory data received by an AI, such as sight or sound
 	UFUNCTION()
 	virtual void OnEnemyPerceptionUpdated(AActor* Actor, FAIStimulus Stimulus);
 
