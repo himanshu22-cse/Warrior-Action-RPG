@@ -35,7 +35,7 @@ protected:
 	//"FAIStimulus" represents sensory data received by an AI, such as sight or sound
 	UFUNCTION()
 	virtual void OnEnemyPerceptionUpdated(AActor* Actor, FAIStimulus Stimulus);
-
+	  
 private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Detour Crowd Avoidance Config")
