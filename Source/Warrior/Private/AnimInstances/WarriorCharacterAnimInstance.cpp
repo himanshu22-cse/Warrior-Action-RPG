@@ -9,7 +9,7 @@ void UWarriorCharacterAnimInstance::NativeInitializeAnimation()
 {
 	OwningCharacter = Cast<AWarriorBaseCharacter>(TryGetPawnOwner());
 
-	if (OwningCharacter)
+	if (OwningCharacter)	
 	{
 		OwningMovementComponent = OwningCharacter->GetCharacterMovement();
 	}
