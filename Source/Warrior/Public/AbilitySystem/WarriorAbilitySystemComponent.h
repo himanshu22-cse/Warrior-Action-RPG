@@ -24,4 +24,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Warrior|Ability")
 	void RemovedGrantedHeroWeaponAbilities(UPARAM(ref) TArray<FGameplayAbilitySpecHandle>& InSpecHandlesToRemove);//"UPARAM(ref)" unreal understand this have a input
 
+	UFUNCTION(BlueprintCallable, Category = "Warrior|Ability")
+	bool TryActivateAbilityByTag(FGameplayTag AbilityTagToActivate);
+
 };
