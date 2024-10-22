@@ -45,7 +45,7 @@ public:
 
 protected:
 
-	TArray<AActor*>OverlappedActors;
+	TArray<AActor*>OverlappedActors; // To prevent the weapon from hitting the target actor twice,we created the array inside the parent class.
 
 private:
 
