@@ -3,6 +3,9 @@
 
 #include "Items/Weapons/WarriorWeaponBase.h"
 #include "Components/BoxComponent.h"
+#include "WarriorFunctionLibrary.h"
+#include "GenericTeamAgentInterface.h"
+
 #include"WarriorDebugHelper.h"
 
 // Sets default values
@@ -30,10 +33,12 @@ void AWarriorWeaponBase::OnCollisionBoxBeginOverlap(UPrimitiveComponent* Overlap
 
 	if (APawn* HitPawn = Cast<APawn>(OtherActor))
 	{
-		if (WeaponOwningPawn != HitPawn) 
+
+		if (UWarriorFunctionLibrary::IsTargetPawnHostile(WeaponOwningPawn, HitPawn))
 		{
-//"ExecuteIfBound()" It is a shorthand for checking if a delegate is bound to a function and, if so, executing that function. This avoids the need to manually check whether a delegate is bound before calling it
-			OnWeaponHitTarget.ExecuteIfBound(OtherActor);
+
+			//"ExecuteIfBound()" It is a shorthand for checking if a delegate is bound to a function and, if so, executing that function. This avoids the need to manually check whether a delegate is bound before calling it
+		OnWeaponHitTarget.ExecuteIfBound(OtherActor);
 		}
 
 		//TODO:Implement hit check for enemy characters
@@ -48,7 +53,7 @@ void AWarriorWeaponBase::OnCollisionBoxEndOverlap(UPrimitiveComponent* Overlappe
 
 	if (APawn* HitPawn = Cast<APawn>(OtherActor))
 	{
-		if (WeaponOwningPawn != HitPawn)
+		if (UWarriorFunctionLibrary::IsTargetPawnHostile(WeaponOwningPawn, HitPawn))
 		{
 			OnWeaponPulledFromTarget.ExecuteIfBound(OtherActor);
 		}
