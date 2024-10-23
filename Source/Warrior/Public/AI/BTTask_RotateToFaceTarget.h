@@ -7,7 +7,7 @@
 #include "BTTask_RotateToFaceTarget.generated.h"
 
 //To save the values of our owning pawn in target actor for use
-struct FRotateToFaceTarget
+struct FRotateToFaceTargetTaskMemory
 {
 	// For Storing values in here UE recommends use weak ptr
 	
@@ -46,6 +46,10 @@ class WARRIOR_API UBTTask_RotateToFaceTarget : public UBTTaskNode
 
 	virtual FString GetStaticDescription() const override;
 	//~ End UBTNode Interface
+
+	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
+	virtual void TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
+	bool HasReachingAnglePrecision(APawn* QueryPawn, AActor* TargetActor)const;
 
 	UPROPERTY(EditAnywhere, Category = "Face Target")
 	float AnglePrecision;
