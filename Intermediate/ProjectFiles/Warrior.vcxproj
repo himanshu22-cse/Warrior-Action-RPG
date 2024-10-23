@@ -292,6 +292,9 @@
     <ClCompile Include="..\..\Source\Warrior\Private\AI\BTService_OrientToTargetActor.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\AI\BTTask_RotateToFaceTarget.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\AnimInstances\WarriorBaseAnimInstance.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -386,6 +389,7 @@
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\Abilities\WarriorHeroGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AI\BTService_OrientToTargetActor.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\AI\BTTask_RotateToFaceTarget.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AnimInstances\WarriorBaseAnimInstance.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AnimInstances\WarriorCharacterAnimInstance.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AnimInstances\Hero\WarriorHeroAnimInstance.h"/>
