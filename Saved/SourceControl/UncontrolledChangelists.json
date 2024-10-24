@@ -7,8 +7,9 @@
 			"files": [
 				"C:/Games Project/Warrior-Action-RPG/Content/StarterContent/Architecture/Floor_400x400.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/Gruntling/BT_Guardian.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/5/P4/ST2GJTE1WM2SWBW1MQY0IK.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/9/FC/8QE50SBAB2U9AR8RQY9VQJ.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/9/FC/8QE50SBAB2U9AR8RQY9VQJ.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/BTDecorator/BTDecorator_DoesActorHaveTag.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/5/P4/ST2GJTE1WM2SWBW1MQY0IK.uasset"
 			]
 		}
 	]

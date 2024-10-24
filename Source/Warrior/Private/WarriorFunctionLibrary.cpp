@@ -69,7 +69,7 @@ UPawnCombatComponent* UWarriorFunctionLibrary::BP_GetPawnCombatComponentFromActo
 
 bool UWarriorFunctionLibrary::IsTargetPawnHostile(APawn* QueryPawn, APawn* TargetPawn)
 {
-	check(QueryPawn);
+	check(QueryPawn && TargetPawn);
 
 	IGenericTeamAgentInterface* QueryTeamPawn = Cast<IGenericTeamAgentInterface>(QueryPawn->GetController());
 	IGenericTeamAgentInterface* TargetTeamPawn = Cast<IGenericTeamAgentInterface>(TargetPawn->GetController());
