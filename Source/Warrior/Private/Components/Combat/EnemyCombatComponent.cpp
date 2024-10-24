@@ -12,7 +12,7 @@ void UEnemyCombatComponent::OnHitTargetActor(AActor* HitActor)
 		return;
 	}
 
-	OverlappedActors.AddUnique(HitActor);
+	OverlappedActors.AddUnique(HitActor); 
 
 	//TODO:Implement block check.
 
