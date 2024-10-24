@@ -17,7 +17,7 @@ struct FRotateToFaceTargetTaskMemory
 
 	bool IsValid() const
 	{
-		OwningPawn.IsValid() && TargetActor.IsValid();
+		return OwningPawn.IsValid() && TargetActor.IsValid();
 	}
 
 	void Reset()

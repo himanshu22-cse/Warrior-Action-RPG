@@ -27,16 +27,18 @@ public:
 	virtual UPawnCombatComponent* GetPawnCombatComponent()const override;
 	// End IPawnCombatInterface
 
+	// Begin IPawnUIInterface
+	virtual UPawnUIComponent* GetPawnUIComponent() const override;
+	virtual UHeroUIComponent* GetHeroUIComponent() const override;
+	// End IPawnUIInterface
+
 protected:
 
 	// Begin APawn Interface
 	virtual void PossessedBy(AController* NewController) override;
 	// End APawn Interface
 
-	// Begin IPawnUIInterface
-	virtual UPawnUIComponent* GetPawnUIComponent() const override;
-	virtual UHeroUIComponent* GetHeroUIComponent() const;
-	// End IPawnUIInterface
+	
 
   virtual void BeginPlay() override;
 
