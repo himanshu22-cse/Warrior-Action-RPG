@@ -13,6 +13,8 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Enemy_HitReact/GA_Enemy_HitReact_Base.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/E/29/WO5HNP79Q6RF418948CV64.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/C/RB/1AFEYK1CNS01W54BJRUBUU.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/BTDecorator/BTDecorator_ShouldAbortAllLogic.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/CurveTable/CT_GuardianStats.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/5/P4/ST2GJTE1WM2SWBW1MQY0IK.uasset"
 			]
 		}
