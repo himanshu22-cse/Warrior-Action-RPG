@@ -7,14 +7,19 @@
 			"files": [
 				"C:/Games Project/Warrior-Action-RPG/Content/StarterContent/Architecture/Floor_400x400.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/Gruntling/BT_Guardian.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/9/FC/8QE50SBAB2U9AR8RQY9VQJ.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/BTDecorator/BTDecorator_DoesActorHaveTag.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayEffect/GE_Enemy_UnderAttack.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Enemy_HitReact/GA_Enemy_HitReact_Base.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/E/29/WO5HNP79Q6RF418948CV64.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/C/RB/1AFEYK1CNS01W54BJRUBUU.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/BTDecorator/BTDecorator_ShouldAbortAllLogic.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/CurveTable/CT_GuardianStats.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/EnemyMeleeAttack/AM_GuardiantMeleeAttack_1_Adjusted.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Assets/Sounds/Creatures/Guardian/SC_Guardian_Attack.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/EnemyMeleeAttack/AM_GuardiantMeleeAttack_2.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/EnemyMeleeAttack/GA_Enemy_MeleeAttack_Base.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayCues/GC_Enemy_HitSound_Stick.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/9/FC/8QE50SBAB2U9AR8RQY9VQJ.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/E/29/WO5HNP79Q6RF418948CV64.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/5/P4/ST2GJTE1WM2SWBW1MQY0IK.uasset"
 			]
 		}
