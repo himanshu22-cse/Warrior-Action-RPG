@@ -15,12 +15,14 @@ class UPawnCombatComponent;
 enum class EWarriorConfirmType : uint8;
 enum class EWarriorValidType : uint8;
 struct FGameplayTag;
+struct FScalableFloat;
 #ifdef WARRIOR_WarriorFunctionLibrary_generated_h
 #error "WarriorFunctionLibrary.generated.h already included, missing '#pragma once' in WarriorFunctionLibrary.h"
 #endif
 #define WARRIOR_WarriorFunctionLibrary_generated_h
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetScalableFloatValueAtLevel); \
 	DECLARE_FUNCTION(execIsTargetPawnHostile); \
 	DECLARE_FUNCTION(execBP_GetPawnCombatComponentFromActor); \
 	DECLARE_FUNCTION(execBP_DoesActorHasTag); \
@@ -28,7 +30,7 @@ struct FGameplayTag;
 	DECLARE_FUNCTION(execAddGameplayTagsToActorIfNone);
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUWarriorFunctionLibrary(); \
 	friend struct Z_Construct_UClass_UWarriorFunctionLibrary_Statics; \
@@ -37,7 +39,7 @@ public: \
 	DECLARE_SERIALIZER(UWarriorFunctionLibrary)
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_18_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UWarriorFunctionLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -51,13 +53,13 @@ public: \
 	NO_API virtual ~UWarriorFunctionLibrary();
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_13_PROLOG
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_17_GENERATED_BODY \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_14_PROLOG
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_18_INCLASS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
