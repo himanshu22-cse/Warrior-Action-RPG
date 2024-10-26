@@ -49,5 +49,7 @@ execution pins.
 	UFUNCTION(BlueprintPure, Category = "Warrior|FunctionLibrary", meta = (CompactNodeTitle = "Get Value At Level"))
 	static float GetScalableFloatValueAtLevel(const FScalableFloat& InScalabelFloat, float InLevel = 1.f);
  
+	UFUNCTION(BlueprintPure, Category = "Warrior|FunctionLibrary")
+	static FGameplayTag ComputeHitReacDirectionTag(AActor* InAttacker, AActor* InVictim, float& OutAngleDifference);
 
 };
