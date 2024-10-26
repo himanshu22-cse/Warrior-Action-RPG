@@ -6,6 +6,7 @@
 #include "Interfaces/PawnCombatInterface.h"
 #include "GenericTeamAgentInterface.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "WarriorGameplayTags.h"
 
 UWarriorAbilitySystemComponent* UWarriorFunctionLibrary::NativeGetWarriorASCFromActor(AActor* InActor)
 {
@@ -106,6 +107,22 @@ FGameplayTag UWarriorFunctionLibrary::ComputeHitReacDirectionTag(AActor* InAttac
 		OutAngleDifference *= -1.f;
 	}
 
+	if (OutAngleDifference >= -45.f && OutAngleDifference <= 45.f)
+	{
+	  return WarriorGameplayTags::Shared_Status_HitReact_Front;
+	}
+	else if(OutAngleDifference >=-45.f && OutAngleDifference <=135.f)
+	{
+		return WarriorGameplayTags::Shared_Status_HitReact_Left;
+	}
+	else if (OutAngleDifference <- 135.f || OutAngleDifference > 135.f)
+	{
+		return WarriorGameplayTags::Shared_Status_HitReact_Back;
+	}
+	else if (OutAngleDifference > 45.f && OutAngleDifference < 135.f)
+	{
+		return WarriorGameplayTags::Shared_Status_HitReact_Right;
+	}
 
-	return FGameplayTag();
+	return WarriorGameplayTags::Shared_Status_HitReact_Front;
 }
