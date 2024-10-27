@@ -52,4 +52,7 @@ execution pins.
 	UFUNCTION(BlueprintPure, Category = "Warrior|FunctionLibrary")
 	static FGameplayTag ComputeHitReacDirectionTag(AActor* InAttacker, AActor* InVictim, float& OutAngleDifference);
 
+	UFUNCTION(BlueprintPure, Category = "Warrior|FunctionLibrary")
+	static bool IsValidBlock(AActor* InAttacker, AActor* InDefender);
+
 };

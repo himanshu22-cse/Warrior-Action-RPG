@@ -22,6 +22,7 @@ struct FScalableFloat;
 #define WARRIOR_WarriorFunctionLibrary_generated_h
 
 #define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execIsValidBlock); \
 	DECLARE_FUNCTION(execComputeHitReacDirectionTag); \
 	DECLARE_FUNCTION(execGetScalableFloatValueAtLevel); \
 	DECLARE_FUNCTION(execIsTargetPawnHostile); \
