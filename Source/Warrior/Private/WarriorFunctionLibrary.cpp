@@ -27,7 +27,7 @@ void UWarriorFunctionLibrary::AddGameplayTagsToActorIfNone(AActor* InActor, FGam
 	}
 }
 
-void UWarriorFunctionLibrary::RemoveGameplayFromActorIfFound(AActor* InActor, FGameplayTag TagToRemove)
+void UWarriorFunctionLibrary::RemoveGameplayTagFromActorIfFound(AActor* InActor, FGameplayTag TagToRemove)
 {
 	UWarriorAbilitySystemComponent* ASC = NativeGetWarriorASCFromActor(InActor);
 
@@ -135,9 +135,10 @@ bool UWarriorFunctionLibrary::IsValidBlock(AActor* InAttacker, AActor* InDefende
 
 	const float DotResult = FVector::DotProduct(InAttacker->GetActorForwardVector(), InDefender->GetActorForwardVector());
 
+	/*
 	const FString DebugString = FString::Printf(TEXT("Dot Result: %f %s"), DotResult, DotResult < -0.1f ? TEXT("Valid Block") : TEXT("InvalidBlock"));
 
 	Debug::Print(DebugString, DotResult < -0.1f ? FColor::Green : FColor::Red);
-
-	return DotResult < -0.1f ? true : false;  // or DotResult < 0.f;
+	*/
+	return DotResult < -0.1f;
 }

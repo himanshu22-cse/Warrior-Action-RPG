@@ -28,7 +28,7 @@ struct FScalableFloat;
 	DECLARE_FUNCTION(execIsTargetPawnHostile); \
 	DECLARE_FUNCTION(execBP_GetPawnCombatComponentFromActor); \
 	DECLARE_FUNCTION(execBP_DoesActorHasTag); \
-	DECLARE_FUNCTION(execRemoveGameplayFromActorIfFound); \
+	DECLARE_FUNCTION(execRemoveGameplayTagFromActorIfFound); \
 	DECLARE_FUNCTION(execAddGameplayTagsToActorIfNone);
 
 
