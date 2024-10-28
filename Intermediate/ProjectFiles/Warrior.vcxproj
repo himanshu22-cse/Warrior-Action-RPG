@@ -277,6 +277,9 @@
     <ClCompile Include="..\..\Source\Warrior\Private\AbilitySystem\WarriorAttributeSet.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\AbilitySystem\Abilities\HeroGameplayAbility_TargetLock.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\AbilitySystem\Abilities\WarriorEnemyGameplayAbility.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -384,6 +387,7 @@
     <ClInclude Include="..\..\Source\Warrior\Public\WarriorGameplayTags.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\WarriorAbilitySystemComponent.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\WarriorAttributeSet.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\Abilities\HeroGameplayAbility_TargetLock.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\Abilities\WarriorEnemyGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\Abilities\WarriorGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\Abilities\WarriorHeroGameplayAbility.h"/>
