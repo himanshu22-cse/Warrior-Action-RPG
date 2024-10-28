@@ -16,7 +16,7 @@ void UEnemyCombatComponent::OnHitTargetActor(AActor* HitActor)
 
 	OverlappedActors.AddUnique(HitActor); 
 
-	//TODO:Implement block check.
+	//Implement block check.
 
 	bool bIsValidBlock = false;
 	
