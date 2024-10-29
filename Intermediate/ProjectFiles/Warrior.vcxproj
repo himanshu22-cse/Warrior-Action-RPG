@@ -289,6 +289,9 @@
     <ClCompile Include="..\..\Source\Warrior\Private\AbilitySystem\Abilities\WarriorHeroGameplayAbility.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\AbilitySystem\AbilityTasks\AbilityTask_ExecuteTaskOnTick.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -391,6 +394,7 @@
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\Abilities\WarriorEnemyGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\Abilities\WarriorGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\Abilities\WarriorHeroGameplayAbility.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\AbilityTasks\AbilityTask_ExecuteTaskOnTick.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AI\BTService_OrientToTargetActor.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\AI\BTTask_RotateToFaceTarget.h"/>
