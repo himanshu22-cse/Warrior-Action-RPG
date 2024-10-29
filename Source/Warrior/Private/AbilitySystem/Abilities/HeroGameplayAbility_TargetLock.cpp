@@ -18,8 +18,8 @@
 void UHeroGameplayAbility_TargetLock::ActivateAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, const FGameplayEventData* TriggerEventData)
 {
 	TryLockOnTarget();
-	Super::ActivateAbility(Handle, ActorInfo, ActivationInfo, TriggerEventData);
 
+	Super::ActivateAbility(Handle, ActorInfo, ActivationInfo, TriggerEventData);
 
 }
 
@@ -28,7 +28,6 @@ void UHeroGameplayAbility_TargetLock::EndAbility(const FGameplayAbilitySpecHandl
 	CleanUp();
 
 	Super::EndAbility(Handle, ActorInfo, ActivationInfo, bReplicateEndAbility, bWasCancelled);
-
 
 }
 
@@ -178,7 +177,7 @@ void UHeroGameplayAbility_TargetLock::OnTargetLockTick(float DeltaTime)
 	if (!CurrentLockedActor || UWarriorFunctionLibrary::NativeDoesActorHaveTag(CurrentLockedActor, WarriorGameplayTags::Shared_Status_Dead) ||
 		UWarriorFunctionLibrary::NativeDoesActorHaveTag(GetHeroCharacterFromActorInfo(), WarriorGameplayTags::Shared_Status_Dead))
 	{
-		//return;
+		return;
 		CancelTargetLockAbility();
 	}
 
