@@ -140,6 +140,14 @@ void UHeroGameplayAbility_TargetLock::SetTargetLockWidgetPosition()
 		true  // world location should be treated as relative to the player's view or position.
 	);
 
+/*
+So for our target log ability we should then need to loap through this widget tree every time.
+
+When we need to set the target log widgets position, we only need to set it the first time when we
+
+draw the widget.
+
+*/
 	if (TargetLockWidgetSize == FVector2D::ZeroVector)
 	{
 		DrawnTargetLockWidget->WidgetTree->ForEachWidget(
