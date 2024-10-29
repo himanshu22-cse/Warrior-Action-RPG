@@ -34,6 +34,10 @@ private:
 
 	void SetTargetLockWidgetPosition();
 
+	void InitTargetLockMovement();
+
+	void ResetTargetLockMovement();
+
 	UFUNCTION(BlueprintCallable)
 	void OnTargetLockTick(float DeltaTime);
 
@@ -48,6 +52,9 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Target Lock")
 	bool bShowPersistentDebugShape = false;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Target Lock")
+	float TargetLockMaxWalkSpeed = 150.f;
 
 	UPROPERTY()
 	TArray<AActor*> AvailableActorsToLock;
@@ -66,5 +73,8 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Target Lock")
 	float TargetLockRotationInterpSpeed = 5.f;
+
+	UPROPERTY()
+	float CachedDefaultMaxWalkSpeed;
 
 };
