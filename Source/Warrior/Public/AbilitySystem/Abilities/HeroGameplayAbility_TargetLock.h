@@ -32,6 +32,8 @@ private:
 
 	void DrawTargetLockWidget();
 
+	void SetTargetLockWidgetPosition();
+
 	UPROPERTY(EditDefaultsOnly, Category = "Target Lock")
 	float BoxTraceDistance = 5000.f;
 
@@ -55,5 +57,8 @@ private:
 
 	UPROPERTY()
 	TObjectPtr<UWarriorWidgetBase>DrawnTargetLockWidget;
+
+	UPROPERTY()
+	FVector2D TargetLockWidgetSize = FVector2D::ZeroVector;
 
 };

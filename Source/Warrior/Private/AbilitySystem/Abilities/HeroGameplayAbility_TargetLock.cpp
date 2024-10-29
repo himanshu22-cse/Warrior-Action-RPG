@@ -6,6 +6,9 @@
 #include "Kismet/GameplayStatics.h"
 #include "Widgets/WarriorWidgetBase.h"
 #include "Controllers/WarriorHeroController.h"
+#include "Blueprint/WidgetLayoutLibrary.h"
+#include "Blueprint/WidgetTree.h"
+#include "Components/SizeBox.h"
 
 #include"WarriorDebugHelper.h"
 
@@ -41,6 +44,7 @@ void UHeroGameplayAbility_TargetLock::TryLockOnTarget()
 	if (CurrentLockedActor)
 	{
 		DrawTargetLockWidget();
+		SetTargetLockWidgetPosition();
 	}
 	else 
 	{
@@ -116,4 +120,41 @@ void UHeroGameplayAbility_TargetLock::DrawTargetLockWidget()
 
 		DrawnTargetLockWidget->AddToViewport();
 	}
+}
+
+void UHeroGameplayAbility_TargetLock::SetTargetLockWidgetPosition()
+{
+	if (!DrawnTargetLockWidget || !CurrentLockedActor)
+	{
+		CancelTargetLockAbility();
+		return;
+	}
+
+	FVector2D ScreenPosition;
+
+//"ProjectWorldLocationToWidgetPosition "convert a 3D world location into 2D screen coordinates, which can then be used to position UI elements (like widgets) on the screen.
+	UWidgetLayoutLibrary::ProjectWorldLocationToWidgetPosition(
+		GetWarriorHeroControllerFromActorInfo(),
+		CurrentLockedActor->GetActorLocation(),
+		ScreenPosition,
+		true  // world location should be treated as relative to the player's view or position.
+	);
+
+	if (TargetLockWidgetSize == FVector2D::ZeroVector)
+	{
+		DrawnTargetLockWidget->WidgetTree->ForEachWidget(
+			[this](UWidget* FoundWidget)
+			{
+				if (USizeBox* FoundSizeBox = Cast<USizeBox>(FoundWidget))
+				{
+					TargetLockWidgetSize.X = FoundSizeBox->GetHeightOverride();
+					TargetLockWidgetSize.Y = FoundSizeBox->GetWidthOverride();
+				}
+			}
+		);
+	}
+
+	ScreenPosition -= (TargetLockWidgetSize / 2.f);
+
+	DrawnTargetLockWidget->SetPositionInViewport(ScreenPosition, false);
 }
