@@ -69,6 +69,9 @@ private:
 
 	void Input_Move(const FInputActionValue& InputActionValue);
 
+	void Input_SwitchTargetTriggered(const FInputActionValue& InputActionValue); // Capture the input
+	void Input_SwitchTargetCompleted(const FInputActionValue& InputActionValue);// notify our ability to switch to different target
+
 	void Input_Look(const FInputActionValue& InputActionValue);
 
 	void Input_AbilityInputPressed(FGameplayTag InInputTag);
