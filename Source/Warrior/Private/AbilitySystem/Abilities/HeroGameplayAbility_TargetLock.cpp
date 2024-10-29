@@ -9,6 +9,8 @@
 #include "Blueprint/WidgetLayoutLibrary.h"
 #include "Blueprint/WidgetTree.h"
 #include "Components/SizeBox.h"
+#include "WarriorFunctionLibrary.h"
+#include "WarriorGameplayTags.h"
 
 #include"WarriorDebugHelper.h"
 
@@ -99,6 +101,9 @@ void UHeroGameplayAbility_TargetLock::CleanUp()
 		DrawnTargetLockWidget->RemoveFromParent();
 	}
 	
+	DrawnTargetLockWidget = nullptr;
+
+	TargetLockWidgetSize = FVector2D::ZeroVector;
 }
 
 AActor* UHeroGameplayAbility_TargetLock::GetNearestTargetFromAvailableActors(const TArray<AActor*>& InAvailableActors)
@@ -165,4 +170,17 @@ draw the widget.
 	ScreenPosition -= (TargetLockWidgetSize / 2.f);
 
 	DrawnTargetLockWidget->SetPositionInViewport(ScreenPosition, false);
+}
+
+void UHeroGameplayAbility_TargetLock::OnTargetLockTick(float DeltaTime)
+{
+	if (!CurrentLockedActor || UWarriorFunctionLibrary::NativeDoesActorHaveTag(CurrentLockedActor, WarriorGameplayTags::Shared_Status_Dead) ||
+		UWarriorFunctionLibrary::NativeDoesActorHaveTag(GetHeroCharacterFromActorInfo(), WarriorGameplayTags::Shared_Status_Dead))
+	{
+		return;
+		CancelTargetLockAbility();
+	}
+
+	// To Update widget position in viewport every frame
+	SetTargetLockWidgetPosition();
 }
