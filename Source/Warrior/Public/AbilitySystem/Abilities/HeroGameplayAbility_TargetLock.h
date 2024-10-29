@@ -22,6 +22,11 @@ private:
 
 	void  TryLockOnTarget();
 	void GetAvailableActorsToLock();
+	
+	void CancelTargetLockAbility();
+	void CleanUp();  // After the ability is ended ,this is the function to cleanup.
+
+	AActor* GetNearestTargetFromAvailableActors(const TArray<AActor*>& InAvailableActors); //Retrieve the nearest target from array.
 
 	UPROPERTY(EditDefaultsOnly, Category = "Target Lock")
 	float BoxTraceDistance = 5000.f;
@@ -36,6 +41,9 @@ private:
 	bool bShowPersistentDebugShape = false;
 
 	UPROPERTY()
-	TArray<AActor*>AvailableActorsToLook;
+	TArray<AActor*> AvailableActorsToLock;
+
+	UPROPERTY()
+	AActor* CurrentLockedActor;
 
 };
