@@ -14,6 +14,7 @@
 #include "WarriorDebugHelper.h"
 #include "Components/Combat/HeroCombatComponent.h"
 #include "Components/UI/HeroUIComponent.h"
+#include "AbilitySystemBlueprintLibrary.h"
 
 AWarriorHeroCharacter::AWarriorHeroCharacter()
 {
@@ -123,12 +124,21 @@ void AWarriorHeroCharacter::Input_Move(const FInputActionValue& InputActionValue
 
 void AWarriorHeroCharacter::Input_SwitchTargetTriggered(const FInputActionValue& InputActionValue)
 {
-
+   SwitchDirection = InputActionValue.Get<FVector2D>();
 }
 
 void AWarriorHeroCharacter::Input_SwitchTargetCompleted(const FInputActionValue& InputActionValue)
 {
+	 
+	FGameplayEventData Data;
 
+	UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(
+		this,
+		SwitchDirection.X > 0.f ? WarriorGameplayTags::Player_Event_SwitchTarget_Right : WarriorGameplayTags::Player_Event_SwitchTarget_Left,
+		Data
+		);
+
+	Debug::Print(TEXT("SwitchDirection:") + SwitchDirection.ToString());
 }
 
 void AWarriorHeroCharacter::Input_Look(const FInputActionValue& InputActionValue)
