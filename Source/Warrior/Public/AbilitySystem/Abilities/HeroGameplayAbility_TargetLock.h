@@ -71,6 +71,9 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Target Lock")
 	TObjectPtr<UInputMappingContext>TargetLockMappingContext;
 
+	UPROPERTY(EditDefaultsOnly, Category = "Target Lock")
+	float TargetLockCameraOffsetDistance = 20.f;
+
 	UPROPERTY()
 	TArray<AActor*> AvailableActorsToLock;
 
