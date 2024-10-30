@@ -9,12 +9,14 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FGameplayTag;
 #ifdef WARRIOR_HeroGameplayAbility_TargetLock_generated_h
 #error "HeroGameplayAbility_TargetLock.generated.h already included, missing '#pragma once' in HeroGameplayAbility_TargetLock.h"
 #endif
 #define WARRIOR_HeroGameplayAbility_TargetLock_generated_h
 
 #define FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_Abilities_HeroGameplayAbility_TargetLock_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execSwitchTarget); \
 	DECLARE_FUNCTION(execOnTargetLockTick);
 
 
