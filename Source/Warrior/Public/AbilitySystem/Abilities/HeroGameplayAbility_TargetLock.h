@@ -7,6 +7,7 @@
 #include "HeroGameplayAbility_TargetLock.generated.h"
 
 class UWarriorWidgetBase;
+class UInputMappingContext;
 
 UCLASS()
 class WARRIOR_API UHeroGameplayAbility_TargetLock : public UWarriorHeroGameplayAbility
@@ -23,12 +24,16 @@ protected:
 private:
 
 	void TryLockOnTarget();
+
 	void GetAvailableActorsToLock();
-	
+
 	void CancelTargetLockAbility();
+
 	void CleanUp();  // After the ability is ended ,this is the function to cleanup.
 
 	AActor* GetNearestTargetFromAvailableActors(const TArray<AActor*>& InAvailableActors); //Retrieve the nearest target from array.
+
+	void InitTargetLockMappingContext();
 
 	void DrawTargetLockWidget();
 
@@ -37,6 +42,8 @@ private:
 	void InitTargetLockMovement();
 
 	void ResetTargetLockMovement();
+
+	void ResetTargetLockMappingContext();
 
 	UFUNCTION(BlueprintCallable)
 	void OnTargetLockTick(float DeltaTime);
@@ -55,6 +62,9 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Target Lock")
 	float TargetLockMaxWalkSpeed = 150.f;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Target Lock")
+	TObjectPtr<UInputMappingContext>TargetLockMappingContext;
 
 	UPROPERTY()
 	TArray<AActor*> AvailableActorsToLock;
