@@ -318,4 +318,4 @@ void UHeroGameplayAbility_TargetLock::SwitchTarget(const FGameplayTag& InSwitchD
 	{
 		CurrentLockedActor = NewTargetToLock;
 	}
-}
+} 
