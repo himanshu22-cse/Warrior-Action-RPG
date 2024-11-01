@@ -22,6 +22,7 @@ struct FHitResult;
 	DECLARE_FUNCTION(execOnProjectileHit);
 
 
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_24_CALLBACK_WRAPPERS
 #define FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_24_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWarriorProjectileBase(); \
@@ -48,6 +49,7 @@ public: \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_24_CALLBACK_WRAPPERS \
 	FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_24_INCLASS_NO_PURE_DECLS \
 	FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_24_ENHANCED_CONSTRUCTORS \
 private: \

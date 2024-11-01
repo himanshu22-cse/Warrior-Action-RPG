@@ -77,6 +77,51 @@ UEnum* Z_Construct_UEnum_Warrior_EProjectileDamagePolicy()
 }
 // End Enum EProjectileDamagePolicy
 
+// Begin Class AWarriorProjectileBase Function BP_OnSpawnProjectileHitFX
+struct WarriorProjectileBase_eventBP_OnSpawnProjectileHitFX_Parms
+{
+	FVector HitLocation;
+};
+static FName NAME_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX = FName(TEXT("BP_OnSpawnProjectileHitFX"));
+void AWarriorProjectileBase::BP_OnSpawnProjectileHitFX(FVector const& HitLocation)
+{
+	WarriorProjectileBase_eventBP_OnSpawnProjectileHitFX_Parms Parms;
+	Parms.HitLocation=HitLocation;
+	ProcessEvent(FindFunctionChecked(NAME_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX),&Parms);
+}
+struct Z_Construct_UFunction_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "DisplayName", "On Spawn Projectile Hit FX" },
+		{ "ModuleRelativePath", "Public/Items/WarriorProjectileBase.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HitLocation_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_HitLocation;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX_Statics::NewProp_HitLocation = { "HitLocation", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(WarriorProjectileBase_eventBP_OnSpawnProjectileHitFX_Parms, HitLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HitLocation_MetaData), NewProp_HitLocation_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX_Statics::NewProp_HitLocation,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWarriorProjectileBase, nullptr, "BP_OnSpawnProjectileHitFX", nullptr, nullptr, Z_Construct_UFunction_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX_Statics::PropPointers), sizeof(WarriorProjectileBase_eventBP_OnSpawnProjectileHitFX_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08C80800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX_Statics::Function_MetaDataParams), Z_Construct_UFunction_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX_Statics::Function_MetaDataParams) };
+static_assert(sizeof(WarriorProjectileBase_eventBP_OnSpawnProjectileHitFX_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class AWarriorProjectileBase Function BP_OnSpawnProjectileHitFX
+
 // Begin Class AWarriorProjectileBase Function OnProjectileBeginOverlap
 struct Z_Construct_UFunction_AWarriorProjectileBase_OnProjectileBeginOverlap_Statics
 {
@@ -279,6 +324,7 @@ struct Z_Construct_UClass_AWarriorProjectileBase_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_AWarriorProjectileBase_BP_OnSpawnProjectileHitFX, "BP_OnSpawnProjectileHitFX" }, // 44854665
 		{ &Z_Construct_UFunction_AWarriorProjectileBase_OnProjectileBeginOverlap, "OnProjectileBeginOverlap" }, // 1140244233
 		{ &Z_Construct_UFunction_AWarriorProjectileBase_OnProjectileHit, "OnProjectileHit" }, // 1123237170
 	};
@@ -344,10 +390,10 @@ struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Items_
 		{ EProjectileDamagePolicy_StaticEnum, TEXT("EProjectileDamagePolicy"), &Z_Registration_Info_UEnum_EProjectileDamagePolicy, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2847725561U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AWarriorProjectileBase, AWarriorProjectileBase::StaticClass, TEXT("AWarriorProjectileBase"), &Z_Registration_Info_UClass_AWarriorProjectileBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorProjectileBase), 928366924U) },
+		{ Z_Construct_UClass_AWarriorProjectileBase, AWarriorProjectileBase::StaticClass, TEXT("AWarriorProjectileBase"), &Z_Registration_Info_UClass_AWarriorProjectileBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorProjectileBase), 947728410U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_2576316102(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_1282330200(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_Statics::EnumInfo));

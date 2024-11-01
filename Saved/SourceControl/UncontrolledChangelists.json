@@ -10,7 +10,9 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/Assets/Enemies/Gruntling/Enemy_Gruntling_Guardian/SK_Gruntling_Guardian_Skeleton.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Projectile/EnemyProjectile/GA_Glacer_Projectile.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/Gruntling/Glacer/BT_Glacer.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Maps/FeatureTestMap.umap"
+				"C:/Games Project/Warrior-Action-RPG/Content/Maps/FeatureTestMap.umap",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Projectile/BP_ProjectileBase.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Projectile/BP_Projectile_Glacer.uasset"
 			]
 		}
 	]
