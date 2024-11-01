@@ -6,6 +6,7 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "Warrior/Public/Items/WarriorProjectileBase.h"
+#include "GameplayAbilities/Public/GameplayEffectTypes.h"
 #include "Runtime/Engine/Classes/Engine/HitResult.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeWarriorProjectileBase() {}
@@ -18,6 +19,7 @@ ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
 ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayEffectSpecHandle();
 NIAGARA_API UClass* Z_Construct_UClass_UNiagaraComponent_NoRegister();
 UPackage* Z_Construct_UPackage__Script_Warrior();
 WARRIOR_API UClass* Z_Construct_UClass_AWarriorProjectileBase();
@@ -315,12 +317,18 @@ struct Z_Construct_UClass_AWarriorProjectileBase_Statics
 		{ "Category", "Projectile" },
 		{ "ModuleRelativePath", "Public/Items/WarriorProjectileBase.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ProjectileDamageEffectSpecHandle_MetaData[] = {
+		{ "Category", "Projectile" },
+		{ "ExposeOnSpawn", "true" },
+		{ "ModuleRelativePath", "Public/Items/WarriorProjectileBase.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ProjectileCollisionBox;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ProjectileNiagaraComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ProjectileMovementComp;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ProjectileDamagePolicy_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ProjectileDamagePolicy;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ProjectileDamageEffectSpecHandle;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -339,12 +347,14 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWarriorProjec
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWarriorProjectileBase_Statics::NewProp_ProjectileMovementComp = { "ProjectileMovementComp", nullptr, (EPropertyFlags)0x01240800000b001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorProjectileBase, ProjectileMovementComp), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ProjectileMovementComp_MetaData), NewProp_ProjectileMovementComp_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AWarriorProjectileBase_Statics::NewProp_ProjectileDamagePolicy_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AWarriorProjectileBase_Statics::NewProp_ProjectileDamagePolicy = { "ProjectileDamagePolicy", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorProjectileBase, ProjectileDamagePolicy), Z_Construct_UEnum_Warrior_EProjectileDamagePolicy, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ProjectileDamagePolicy_MetaData), NewProp_ProjectileDamagePolicy_MetaData) }; // 2847725561
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AWarriorProjectileBase_Statics::NewProp_ProjectileDamageEffectSpecHandle = { "ProjectileDamageEffectSpecHandle", nullptr, (EPropertyFlags)0x0021080000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorProjectileBase, ProjectileDamageEffectSpecHandle), Z_Construct_UScriptStruct_FGameplayEffectSpecHandle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ProjectileDamageEffectSpecHandle_MetaData), NewProp_ProjectileDamageEffectSpecHandle_MetaData) }; // 3383902265
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWarriorProjectileBase_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorProjectileBase_Statics::NewProp_ProjectileCollisionBox,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorProjectileBase_Statics::NewProp_ProjectileNiagaraComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorProjectileBase_Statics::NewProp_ProjectileMovementComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorProjectileBase_Statics::NewProp_ProjectileDamagePolicy_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorProjectileBase_Statics::NewProp_ProjectileDamagePolicy,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorProjectileBase_Statics::NewProp_ProjectileDamageEffectSpecHandle,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AWarriorProjectileBase_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AWarriorProjectileBase_Statics::DependentSingletons[])() = {
@@ -390,10 +400,10 @@ struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Items_
 		{ EProjectileDamagePolicy_StaticEnum, TEXT("EProjectileDamagePolicy"), &Z_Registration_Info_UEnum_EProjectileDamagePolicy, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2847725561U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AWarriorProjectileBase, AWarriorProjectileBase::StaticClass, TEXT("AWarriorProjectileBase"), &Z_Registration_Info_UClass_AWarriorProjectileBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorProjectileBase), 947728410U) },
+		{ Z_Construct_UClass_AWarriorProjectileBase, AWarriorProjectileBase::StaticClass, TEXT("AWarriorProjectileBase"), &Z_Registration_Info_UClass_AWarriorProjectileBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorProjectileBase), 2384705128U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_1282330200(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_2127829229(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_Statics::EnumInfo));

@@ -67,12 +67,14 @@ void AWarriorProjectileBase::OnProjectileHit(UPrimitiveComponent* HitComponent, 
 	{
 		bIsValidBlock = UWarriorFunctionLibrary::IsValidBlock(this, HitPawn);
 	}
+
+	FGameplayEventData Data;
+	Data.Instigator = this;
+	Data.Target = HitPawn;
 	
 	if (bIsValidBlock)
 	{
-		FGameplayEventData Data;
-		Data.Instigator = this;
-		Data.Target = HitPawn;
+		
 
 		UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(
 			HitPawn,
@@ -84,6 +86,7 @@ void AWarriorProjectileBase::OnProjectileHit(UPrimitiveComponent* HitComponent, 
 	else
 	{
 		//Apply Damage Projectile
+		HandleApplyProjectileDamage(HitPawn, Data);
 	}
 
 	Destroy();
@@ -92,4 +95,20 @@ void AWarriorProjectileBase::OnProjectileHit(UPrimitiveComponent* HitComponent, 
 void AWarriorProjectileBase::OnProjectileBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 
+}
+
+void AWarriorProjectileBase::HandleApplyProjectileDamage(APawn* InHitPawn, const FGameplayEventData& InPayload)
+{
+	checkf(ProjectileDamageEffectSpecHandle.IsValid(), TEXT("Forgot to assign a valid spec handle to the projectile: %s"), *GetActorNameOrLabel());
+
+	const bool bWasApplied = UWarriorFunctionLibrary::ApplyGameplayEffectSpecHandleToTargetActor(GetInstigator(), InHitPawn, ProjectileDamageEffectSpecHandle);
+
+	if (bWasApplied)
+	{
+		UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(
+			InHitPawn,
+			WarriorGameplayTags::Shared_Event_HitReact,
+			InPayload
+		);
+	}
 }
