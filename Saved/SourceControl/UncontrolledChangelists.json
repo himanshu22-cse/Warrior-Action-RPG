@@ -5,20 +5,11 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Games Project/Warrior-Action-RPG/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/Gruntling/Glacer/BT_Glacer.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/EQS/EQS_FindShootProjectileLocation.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/3/N8/X4PL1QF03137PS99JTVIVK.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/EQS/EQSContext_TargetActor.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Maps/FeatureTestMap.umap",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/BB_Enemy_Base.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Projectile/EnemyProjectile/GA_Glacer_Projectile.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/AM_ExoGame_Gruntling_Cast.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Data/DA_Glacer.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Projectile/BP_ProjectileBase.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Projectile/BP_Projectile_Glacer.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Assets/Enemies/Gruntling/Enemy_Gruntling_Guardian/Enemy_Gruntling_Guardian_Animation/AM_ExoGame_Gruntling_Cast.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/Gruntling/Glacer/EQS_FindShootProjectileLocation.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Projectile/EnemyProjectile/GA_Glacer_Projectile.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/Gruntling/Glacer/BT_Glacer.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Projectile/BP_Projectile_Glacer.uasset"
 			]
 		}
 	]
