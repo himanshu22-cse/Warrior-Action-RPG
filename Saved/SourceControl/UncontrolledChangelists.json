@@ -13,7 +13,8 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/Maps/FeatureTestMap.umap",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Projectile/BP_ProjectileBase.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Projectile/BP_Projectile_Glacer.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/CurveTable/CT_GlacerStats.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/CurveTable/CT_GlacerStats.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/EQS/EQS_FindShootProjectileLocation.uasset"
 			]
 		}
 	]
