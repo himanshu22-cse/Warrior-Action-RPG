@@ -5,11 +5,12 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Games Project/Warrior-Action-RPG/Content/StarterContent/Architecture/Floor_400x400.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Projectile/BP_Projectile_Glacer.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/StarterContent/Audio/Collapse01.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/AM_ExoGame_Gruntling_Cast.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Assets/Enemies/Gruntling/Enemy_Gruntling_Guardian/SK_Gruntling_Guardian_Skeleton.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Projectile/EnemyProjectile/GA_Glacer_Projectile.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/Gruntling/Glacer/BT_Glacer.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/Gruntling/Glacer/BT_Glacer.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Maps/FeatureTestMap.umap"
 			]
 		}
 	]
