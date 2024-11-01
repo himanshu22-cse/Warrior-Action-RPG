@@ -14,7 +14,11 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Projectile/BP_ProjectileBase.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Projectile/BP_Projectile_Glacer.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/CurveTable/CT_GlacerStats.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/EQS/EQS_FindShootProjectileLocation.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/EQS/EQS_FindShootProjectileLocation.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/EnemyMeleeAttack/GA_Glacer_MeleeAttack_1.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/EnemyMeleeAttack/AM_Glacer_MeleeAttack_1.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Data/DA_Glacer.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/EnemyMeleeAttack/GA_Enemy_MeleeAttack_1.uasset"
 			]
 		}
 	]
