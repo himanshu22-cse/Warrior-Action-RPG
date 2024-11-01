@@ -9,10 +9,18 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
 #ifdef WARRIOR_WarriorProjectileBase_generated_h
 #error "WarriorProjectileBase.generated.h already included, missing '#pragma once' in WarriorProjectileBase.h"
 #endif
 #define WARRIOR_WarriorProjectileBase_generated_h
+
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnProjectileBeginOverlap); \
+	DECLARE_FUNCTION(execOnProjectileHit);
+
 
 #define FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_24_INCLASS_NO_PURE_DECLS \
 private: \
@@ -39,6 +47,7 @@ public: \
 #define FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_24_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_24_INCLASS_NO_PURE_DECLS \
 	FID_Warrior_Action_RPG_Source_Warrior_Public_Items_WarriorProjectileBase_h_24_ENHANCED_CONSTRUCTORS \
 private: \
