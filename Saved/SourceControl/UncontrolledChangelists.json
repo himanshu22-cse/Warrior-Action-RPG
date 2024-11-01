@@ -18,7 +18,10 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/EnemyMeleeAttack/GA_Glacer_MeleeAttack_1.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/EnemyMeleeAttack/AM_Glacer_MeleeAttack_1.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Data/DA_Glacer.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/EnemyMeleeAttack/GA_Enemy_MeleeAttack_1.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/EnemyMeleeAttack/GA_Enemy_MeleeAttack_1.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/EnemyMeleeAttack/GA_Enemy_MeleeAttack_Base.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayCues/GC_Enemy_AttackWarning.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/EnemyMeleeAttack/AM_GuardiantMeleeAttack_1_Adjusted.uasset"
 			]
 		}
 	]
