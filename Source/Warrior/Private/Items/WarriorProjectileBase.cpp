@@ -53,7 +53,7 @@ void AWarriorProjectileBase::OnProjectileHit(UPrimitiveComponent* HitComponent, 
 
 	APawn* HitPawn = Cast<APawn>(OtherActor);
 
-	if (HitPawn ||!UWarriorFunctionLibrary::IsTargetPawnHostile(GetInstigator(), HitPawn))
+	if (!HitPawn ||!UWarriorFunctionLibrary::IsTargetPawnHostile(GetInstigator(), HitPawn))
 	{
 		Destroy();
 		return;
@@ -74,8 +74,6 @@ void AWarriorProjectileBase::OnProjectileHit(UPrimitiveComponent* HitComponent, 
 	
 	if (bIsValidBlock)
 	{
-		
-
 		UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(
 			HitPawn,
 			WarriorGameplayTags::Player_Event_SuccessfulBlock,
