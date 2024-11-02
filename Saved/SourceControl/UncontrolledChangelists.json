@@ -80,6 +80,8 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayCues/GC_Giant_DeathSound.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/BP_EnemyCharacterBase.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/CurveTable/CT_HeroStats.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/FrostGiant/AIC_FrostGiant.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/FrostGiant/BT_FrostGiant.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Assets/Enemies/Enemy_Frost_Giant/Enemy_Frost_Giant_All_Animation/AM_ExoGame_Troll_React_Death.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/AM_ExoGame_Troll_React_Death.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/GA_Enemy_DrawBossBar_Enemy.uasset",
