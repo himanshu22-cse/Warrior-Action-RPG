@@ -1,6 +1,5 @@
 // Himanshu Third Project
 
-
 #include "Components/UI/EnemyUIComponent.h"
 #include "Widgets/WarriorWidgetBase.h"
 
@@ -23,4 +22,6 @@ void UEnemyUIComponent::RemoveEnemyDrawnWidgetIfAny()
 			DrawnWidget->RemoveFromParent();
 		}
 	}
+
+	EnemyDrawnWidgets.Empty();
 }
