@@ -19,7 +19,6 @@ void UPawnCombatComponent::RegisterSpawnWeapon(FGameplayTag InWeaponTagToResiste
 	{
 		CurrentEquippedWeaponTag = InWeaponTagToResister;
 	}
-
 }
 
 AWarriorWeaponBase* UPawnCombatComponent::GetCharacterCarriedWeaponByTag(FGameplayTag InWeaponTagToGet) const
@@ -48,23 +47,14 @@ void UPawnCombatComponent::ToggleWeaponCollision(bool bShouldEnable, EToggleDama
 {
 	if (ToggleDamageType == EToggleDamageType::CurrentEquippedWeapon)
 	{
-	  AWarriorWeaponBase* WeaponToToggle = GetCharacterCurrentEquippedWeapon();
-
-	  check(WeaponToToggle);
-
-	  if (bShouldEnable)
-	  {
-		  WeaponToToggle->GetWeaponCollisionBox()->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
-	  }
-	  else
-	  {
-		  WeaponToToggle->GetWeaponCollisionBox()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-		  OverlappedActors.Empty(); // We clear this array at the end of or notify state toggle weapon collision.
-
-	  }
+		ToggleCurrentEquippedWeapon(bShouldEnable);
 	}
 
-	//TODO : Handle body collision boxes.
+	//Handle body collision boxes.
+	else
+	{
+		ToggleBodyCollisionBoxCollision(bShouldEnable, ToggleDamageType);
+	}
 }
 
 void UPawnCombatComponent::OnHitTargetActor(AActor* HitActor)
@@ -73,6 +63,29 @@ void UPawnCombatComponent::OnHitTargetActor(AActor* HitActor)
 }
 
 void UPawnCombatComponent::OnWeaponPulledFromTargetActor(AActor* InteractedActor)
+{
+
+}
+
+void UPawnCombatComponent::ToggleCurrentEquippedWeapon(bool bShouldEnable)
+{
+	AWarriorWeaponBase* WeaponToToggle = GetCharacterCurrentEquippedWeapon();
+
+	check(WeaponToToggle);
+
+	if (bShouldEnable)
+	{
+		WeaponToToggle->GetWeaponCollisionBox()->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	}
+	else
+	{
+		WeaponToToggle->GetWeaponCollisionBox()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		OverlappedActors.Empty(); // We clear this array at the end of or notify state toggle weapon collision.
+
+	}
+}
+
+void UPawnCombatComponent::ToggleBodyCollisionBoxCollision(bool bShouldEnable, EToggleDamageType ToggleDamageType)
 {
 
 }

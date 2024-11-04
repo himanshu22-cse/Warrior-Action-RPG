@@ -45,6 +45,10 @@ public:
 
 protected:
 
+	virtual void ToggleCurrentEquippedWeapon(bool bShouldEnable);
+
+	virtual void ToggleBodyCollisionBoxCollision(bool bShouldEnable, EToggleDamageType ToggleDamageType);
+
 	TArray<AActor*>OverlappedActors; // To prevent the weapon from hitting the target actor twice,we created the array inside the parent class.
 
 private:
