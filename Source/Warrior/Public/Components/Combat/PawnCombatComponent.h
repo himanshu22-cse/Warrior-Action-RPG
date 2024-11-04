@@ -45,7 +45,7 @@ public:
 
 protected:
 
-	virtual void ToggleCurrentEquippedWeapon(bool bShouldEnable);
+	virtual void ToggleCurrentEquippedWeaponCollision(bool bShouldEnable);
 
 	virtual void ToggleBodyCollisionBoxCollision(bool bShouldEnable, EToggleDamageType ToggleDamageType);
 

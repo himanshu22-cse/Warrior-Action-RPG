@@ -47,7 +47,7 @@ void UPawnCombatComponent::ToggleWeaponCollision(bool bShouldEnable, EToggleDama
 {
 	if (ToggleDamageType == EToggleDamageType::CurrentEquippedWeapon)
 	{
-		ToggleCurrentEquippedWeapon(bShouldEnable);
+		ToggleCurrentEquippedWeaponCollision(bShouldEnable);
 	}
 
 	//Handle body collision boxes.
@@ -67,7 +67,7 @@ void UPawnCombatComponent::OnWeaponPulledFromTargetActor(AActor* InteractedActor
 
 }
 
-void UPawnCombatComponent::ToggleCurrentEquippedWeapon(bool bShouldEnable)
+void UPawnCombatComponent::ToggleCurrentEquippedWeaponCollision(bool bShouldEnable)
 {
 	AWarriorWeaponBase* WeaponToToggle = GetCharacterCurrentEquippedWeapon();
 
