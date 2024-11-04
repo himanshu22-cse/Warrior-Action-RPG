@@ -153,9 +153,17 @@ struct Z_Construct_UClass_AWarriorEnemyCharacter_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Characters/WarriorEnemyCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LeftHandCollisionBoxAttachBoneName_MetaData[] = {
+		{ "Category", "Combat" },
+		{ "ModuleRelativePath", "Public/Characters/WarriorEnemyCharacter.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RightHandCollisionBox_MetaData[] = {
 		{ "Category", "Combat" },
 		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Characters/WarriorEnemyCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RightHandCollisionBoxAttachBoneName_MetaData[] = {
+		{ "Category", "Combat" },
 		{ "ModuleRelativePath", "Public/Characters/WarriorEnemyCharacter.h" },
 	};
 #endif // WITH_METADATA
@@ -163,7 +171,9 @@ struct Z_Construct_UClass_AWarriorEnemyCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_EnemyUIComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_EnemyHealthWidgetComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LeftHandCollisionBox;
+	static const UECodeGen_Private::FNamePropertyParams NewProp_LeftHandCollisionBoxAttachBoneName;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_RightHandCollisionBox;
+	static const UECodeGen_Private::FNamePropertyParams NewProp_RightHandCollisionBoxAttachBoneName;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -179,13 +189,17 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWarriorEnemyC
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWarriorEnemyCharacter_Statics::NewProp_EnemyUIComponent = { "EnemyUIComponent", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorEnemyCharacter, EnemyUIComponent), Z_Construct_UClass_UEnemyUIComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnemyUIComponent_MetaData), NewProp_EnemyUIComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWarriorEnemyCharacter_Statics::NewProp_EnemyHealthWidgetComponent = { "EnemyHealthWidgetComponent", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorEnemyCharacter, EnemyHealthWidgetComponent), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnemyHealthWidgetComponent_MetaData), NewProp_EnemyHealthWidgetComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWarriorEnemyCharacter_Statics::NewProp_LeftHandCollisionBox = { "LeftHandCollisionBox", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorEnemyCharacter, LeftHandCollisionBox), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LeftHandCollisionBox_MetaData), NewProp_LeftHandCollisionBox_MetaData) };
+const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_AWarriorEnemyCharacter_Statics::NewProp_LeftHandCollisionBoxAttachBoneName = { "LeftHandCollisionBoxAttachBoneName", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorEnemyCharacter, LeftHandCollisionBoxAttachBoneName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LeftHandCollisionBoxAttachBoneName_MetaData), NewProp_LeftHandCollisionBoxAttachBoneName_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWarriorEnemyCharacter_Statics::NewProp_RightHandCollisionBox = { "RightHandCollisionBox", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorEnemyCharacter, RightHandCollisionBox), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RightHandCollisionBox_MetaData), NewProp_RightHandCollisionBox_MetaData) };
+const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_AWarriorEnemyCharacter_Statics::NewProp_RightHandCollisionBoxAttachBoneName = { "RightHandCollisionBoxAttachBoneName", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorEnemyCharacter, RightHandCollisionBoxAttachBoneName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RightHandCollisionBoxAttachBoneName_MetaData), NewProp_RightHandCollisionBoxAttachBoneName_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWarriorEnemyCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorEnemyCharacter_Statics::NewProp_EnemyCombatComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorEnemyCharacter_Statics::NewProp_EnemyUIComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorEnemyCharacter_Statics::NewProp_EnemyHealthWidgetComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorEnemyCharacter_Statics::NewProp_LeftHandCollisionBox,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorEnemyCharacter_Statics::NewProp_LeftHandCollisionBoxAttachBoneName,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorEnemyCharacter_Statics::NewProp_RightHandCollisionBox,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorEnemyCharacter_Statics::NewProp_RightHandCollisionBoxAttachBoneName,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AWarriorEnemyCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AWarriorEnemyCharacter_Statics::DependentSingletons[])() = {
@@ -228,10 +242,10 @@ AWarriorEnemyCharacter::~AWarriorEnemyCharacter() {}
 struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorEnemyCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AWarriorEnemyCharacter, AWarriorEnemyCharacter::StaticClass, TEXT("AWarriorEnemyCharacter"), &Z_Registration_Info_UClass_AWarriorEnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorEnemyCharacter), 3345330306U) },
+		{ Z_Construct_UClass_AWarriorEnemyCharacter, AWarriorEnemyCharacter::StaticClass, TEXT("AWarriorEnemyCharacter"), &Z_Registration_Info_UClass_AWarriorEnemyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorEnemyCharacter), 3993949844U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorEnemyCharacter_h_4153222436(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorEnemyCharacter_h_1507144383(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorEnemyCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_Characters_WarriorEnemyCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
