@@ -23,6 +23,9 @@ public:
 	UPROPERTY(BlueprintAssignable)
 	FWaitSpawnEnemiesDelegate OnSpawnFinished;
 
+	UPROPERTY(BlueprintAssignable)
+	FWaitSpawnEnemiesDelegate DidNotSpawn;
+
 	//~ Begin UGameplayTask Interface
 	virtual void Activate() override;
 	virtual void OnDestroy(bool bInOwnerFinished) override;
@@ -46,5 +49,6 @@ private:
 
 	void OnGameplayEventReceived(const FGameplayEventData* InPayload);
 
+	void OnEnemyClassLoaded();
 
 };

@@ -186,8 +186,12 @@ struct Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnSpawnFinished_MetaData[] = {
 		{ "ModuleRelativePath", "Public/AbilitySystem/AbilityTasks/AbilityTask_WaitSpawnEnemies.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DidNotSpawn_MetaData[] = {
+		{ "ModuleRelativePath", "Public/AbilitySystem/AbilityTasks/AbilityTask_WaitSpawnEnemies.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnSpawnFinished;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_DidNotSpawn;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -200,8 +204,10 @@ struct Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies_Statics::NewProp_OnSpawnFinished = { "OnSpawnFinished", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAbilityTask_WaitSpawnEnemies, OnSpawnFinished), Z_Construct_UDelegateFunction_Warrior_WaitSpawnEnemiesDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnSpawnFinished_MetaData), NewProp_OnSpawnFinished_MetaData) }; // 2770422
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies_Statics::NewProp_DidNotSpawn = { "DidNotSpawn", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAbilityTask_WaitSpawnEnemies, DidNotSpawn), Z_Construct_UDelegateFunction_Warrior_WaitSpawnEnemiesDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DidNotSpawn_MetaData), NewProp_DidNotSpawn_MetaData) }; // 2770422
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies_Statics::NewProp_OnSpawnFinished,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies_Statics::NewProp_DidNotSpawn,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies_Statics::DependentSingletons[])() = {
@@ -245,10 +251,10 @@ UAbilityTask_WaitSpawnEnemies::~UAbilityTask_WaitSpawnEnemies() {}
 struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_AbilityTasks_AbilityTask_WaitSpawnEnemies_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies, UAbilityTask_WaitSpawnEnemies::StaticClass, TEXT("UAbilityTask_WaitSpawnEnemies"), &Z_Registration_Info_UClass_UAbilityTask_WaitSpawnEnemies, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAbilityTask_WaitSpawnEnemies), 1449066953U) },
+		{ Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies, UAbilityTask_WaitSpawnEnemies::StaticClass, TEXT("UAbilityTask_WaitSpawnEnemies"), &Z_Registration_Info_UClass_UAbilityTask_WaitSpawnEnemies, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAbilityTask_WaitSpawnEnemies), 3430144388U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_AbilityTasks_AbilityTask_WaitSpawnEnemies_h_1036408087(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_AbilityTasks_AbilityTask_WaitSpawnEnemies_h_948475035(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_AbilityTasks_AbilityTask_WaitSpawnEnemies_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_AbilityTasks_AbilityTask_WaitSpawnEnemies_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
