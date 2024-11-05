@@ -11,7 +11,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeAbilityTask_WaitSpawnEnemies() {}
 
 // Begin Cross Module References
-COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilityTask();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UGameplayAbility_NoRegister();
@@ -84,7 +83,6 @@ struct Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Stat
 		int32 NumToSpawn;
 		FVector SpawnOrigin;
 		float RandomSpawnRadius;
-		FRotator SpawnRotation;
 		UAbilityTask_WaitSpawnEnemies* ReturnValue;
 	};
 #if WITH_METADATA
@@ -101,9 +99,6 @@ struct Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Stat
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpawnOrigin_MetaData[] = {
 		{ "NativeConst", "" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpawnRotation_MetaData[] = {
-		{ "NativeConst", "" },
-	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OwningAbility;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_EventTag;
@@ -111,7 +106,6 @@ struct Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Stat
 	static const UECodeGen_Private::FIntPropertyParams NewProp_NumToSpawn;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_SpawnOrigin;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_RandomSpawnRadius;
-	static const UECodeGen_Private::FStructPropertyParams NewProp_SpawnRotation;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -122,7 +116,6 @@ const UECodeGen_Private::FSoftClassPropertyParams Z_Construct_UFunction_UAbility
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Statics::NewProp_NumToSpawn = { "NumToSpawn", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AbilityTask_WaitSpawnEnemies_eventWaitSpawnEnemies_Parms, NumToSpawn), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Statics::NewProp_SpawnOrigin = { "SpawnOrigin", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AbilityTask_WaitSpawnEnemies_eventWaitSpawnEnemies_Parms, SpawnOrigin), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnOrigin_MetaData), NewProp_SpawnOrigin_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Statics::NewProp_RandomSpawnRadius = { "RandomSpawnRadius", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AbilityTask_WaitSpawnEnemies_eventWaitSpawnEnemies_Parms, RandomSpawnRadius), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Statics::NewProp_SpawnRotation = { "SpawnRotation", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AbilityTask_WaitSpawnEnemies_eventWaitSpawnEnemies_Parms, SpawnRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnRotation_MetaData), NewProp_SpawnRotation_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AbilityTask_WaitSpawnEnemies_eventWaitSpawnEnemies_Parms, ReturnValue), Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Statics::NewProp_OwningAbility,
@@ -131,7 +124,6 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAbili
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Statics::NewProp_NumToSpawn,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Statics::NewProp_SpawnOrigin,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Statics::NewProp_RandomSpawnRadius,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Statics::NewProp_SpawnRotation,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies_Statics::PropPointers) < 2048);
@@ -154,10 +146,9 @@ DEFINE_FUNCTION(UAbilityTask_WaitSpawnEnemies::execWaitSpawnEnemies)
 	P_GET_PROPERTY(FIntProperty,Z_Param_NumToSpawn);
 	P_GET_STRUCT_REF(FVector,Z_Param_Out_SpawnOrigin);
 	P_GET_PROPERTY(FFloatProperty,Z_Param_RandomSpawnRadius);
-	P_GET_STRUCT_REF(FRotator,Z_Param_Out_SpawnRotation);
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	*(UAbilityTask_WaitSpawnEnemies**)Z_Param__Result=UAbilityTask_WaitSpawnEnemies::WaitSpawnEnemies(Z_Param_OwningAbility,Z_Param_EventTag,Z_Param_SoftEnemyClassToSpawn,Z_Param_NumToSpawn,Z_Param_Out_SpawnOrigin,Z_Param_RandomSpawnRadius,Z_Param_Out_SpawnRotation);
+	*(UAbilityTask_WaitSpawnEnemies**)Z_Param__Result=UAbilityTask_WaitSpawnEnemies::WaitSpawnEnemies(Z_Param_OwningAbility,Z_Param_EventTag,Z_Param_SoftEnemyClassToSpawn,Z_Param_NumToSpawn,Z_Param_Out_SpawnOrigin,Z_Param_RandomSpawnRadius);
 	P_NATIVE_END;
 }
 // End Class UAbilityTask_WaitSpawnEnemies Function WaitSpawnEnemies
@@ -195,7 +186,7 @@ struct Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies, "WaitSpawnEnemies" }, // 3103953609
+		{ &Z_Construct_UFunction_UAbilityTask_WaitSpawnEnemies_WaitSpawnEnemies, "WaitSpawnEnemies" }, // 1126635213
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -251,10 +242,10 @@ UAbilityTask_WaitSpawnEnemies::~UAbilityTask_WaitSpawnEnemies() {}
 struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_AbilityTasks_AbilityTask_WaitSpawnEnemies_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies, UAbilityTask_WaitSpawnEnemies::StaticClass, TEXT("UAbilityTask_WaitSpawnEnemies"), &Z_Registration_Info_UClass_UAbilityTask_WaitSpawnEnemies, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAbilityTask_WaitSpawnEnemies), 3430144388U) },
+		{ Z_Construct_UClass_UAbilityTask_WaitSpawnEnemies, UAbilityTask_WaitSpawnEnemies::StaticClass, TEXT("UAbilityTask_WaitSpawnEnemies"), &Z_Registration_Info_UClass_UAbilityTask_WaitSpawnEnemies, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAbilityTask_WaitSpawnEnemies), 2847755417U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_AbilityTasks_AbilityTask_WaitSpawnEnemies_h_948475035(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_AbilityTasks_AbilityTask_WaitSpawnEnemies_h_3827560099(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_AbilityTasks_AbilityTask_WaitSpawnEnemies_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_AbilityTasks_AbilityTask_WaitSpawnEnemies_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
