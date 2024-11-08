@@ -80,12 +80,12 @@ void UAbilityTask_WaitSpawnEnemies::OnEnemyClassLoaded()
 
    for (int32 i = 0; i < CachedNumToSpawn; i++)
    {
-       FVector RandomLocation;
-       UNavigationSystemV1::K2_GetRandomLocationInNavigableRadius(World, CachedSpawnOrigin, RandomLocation, CachedRandomSpawnRadius);
+      FVector RandomLocation;
+      UNavigationSystemV1::K2_GetRandomLocationInNavigableRadius(World, CachedSpawnOrigin, RandomLocation, CachedRandomSpawnRadius);
 
-       RandomLocation += FVector(0.f, 0.f, 150.f);
+      RandomLocation += FVector(0.f, 0.f, 150.f);
 
-       const FRotator SpawnFacingRotation = AbilitySystemComponent->GetAvatarActor()->GetActorForwardVector().ToOrientationRotator();
+      const FRotator SpawnFacingRotation = AbilitySystemComponent->GetAvatarActor()->GetActorForwardVector().ToOrientationRotator();
 
      AWarriorEnemyCharacter* SpawnedEnemy = World->SpawnActor<AWarriorEnemyCharacter>(LoadedClass, RandomLocation, SpawnFacingRotation, SpawnParam);
 
