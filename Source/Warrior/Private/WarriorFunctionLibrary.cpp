@@ -35,7 +35,6 @@ void UWarriorFunctionLibrary::RemoveGameplayTagFromActorIfFound(AActor* InActor,
 	{
 		ASC->RemoveLooseGameplayTag(TagToRemove);
 	}
-
 }
 
 bool UWarriorFunctionLibrary::NativeDoesActorHaveTag(AActor* InActor, FGameplayTag TagToCheck)

@@ -130,6 +130,7 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/HeavyAttacks/Hero_Axe_HeavyAttack_1_Montage.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Hero_HeavyAttack/GA_Hero_HeavyAttack_Axe.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Montages/HeavyAttacks/Hero_Axe_HeavyAttack_2_Montage.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayEffect/GE_Hero_GainRage.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayEffect/GE_Hero_RageConsume.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Shared/GE_Shared_DealDamage.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Assets/HeroCharacter/Animations/Axe/AM_Hero_Axe_Shout_Adjusted.uasset",
