@@ -25,7 +25,11 @@ WARRIOR_API void FOnEquippedWeaponChangedDelegate_DelegateWrapper(const FMultica
 WARRIOR_API void FOnAbilityIconSlotUpdatedDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnAbilityIconSlotUpdatedDelegate, FGameplayTag AbilityInputTag, const TSoftObjectPtr<UMaterialInterface>& SoftAbilityIconMaterial);
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_HeroUIComponent_h_18_INCLASS_NO_PURE_DECLS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_HeroUIComponent_h_14_DELEGATE \
+WARRIOR_API void FOnAbilityCooldownBeginDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnAbilityCooldownBeginDelegate, FGameplayTag AbilityInputTag, float TotalCooldownTime, float RemainingCooldownTime);
+
+
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_HeroUIComponent_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUHeroUIComponent(); \
 	friend struct Z_Construct_UClass_UHeroUIComponent_Statics; \
@@ -34,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(UHeroUIComponent)
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_HeroUIComponent_h_18_ENHANCED_CONSTRUCTORS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_HeroUIComponent_h_19_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UHeroUIComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -48,12 +52,12 @@ public: \
 	NO_API virtual ~UHeroUIComponent();
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_HeroUIComponent_h_15_PROLOG
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_HeroUIComponent_h_18_GENERATED_BODY \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_HeroUIComponent_h_16_PROLOG
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_HeroUIComponent_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_HeroUIComponent_h_18_INCLASS_NO_PURE_DECLS \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_HeroUIComponent_h_18_ENHANCED_CONSTRUCTORS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_HeroUIComponent_h_19_INCLASS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_Components_UI_HeroUIComponent_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
