@@ -94,7 +94,7 @@ void UWarriorAbilitySystemComponent::RemovedGrantedHeroWeaponAbilities(UPARAM(re
 			ClearAbility(SpecHandle);
 		}
 	}
-	InSpecHandlesToRemove.Empty();
+	  InSpecHandlesToRemove.Empty();
 }
 
 bool UWarriorAbilitySystemComponent::TryActivateAbilityByTag(FGameplayTag AbilityTagToActivate)

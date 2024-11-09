@@ -7,6 +7,7 @@
 #include "UObject/GeneratedCppIncludes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeWarrior_init() {}
+	WARRIOR_API UFunction* Z_Construct_UDelegateFunction_Warrior_OnAbilityIconSlotUpdatedDelegate__DelegateSignature();
 	WARRIOR_API UFunction* Z_Construct_UDelegateFunction_Warrior_OnAbilityTaskTickDelegate__DelegateSignature();
 	WARRIOR_API UFunction* Z_Construct_UDelegateFunction_Warrior_OnEquippedWeaponChangedDelegate__DelegateSignature();
 	WARRIOR_API UFunction* Z_Construct_UDelegateFunction_Warrior_OnPercentChangedDelegate__DelegateSignature();
@@ -17,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeWarrior_init() {}
 		if (!Z_Registration_Info_UPackage__Script_Warrior.OuterSingleton)
 		{
 			static UObject* (*const SingletonFuncArray[])() = {
+				(UObject* (*)())Z_Construct_UDelegateFunction_Warrior_OnAbilityIconSlotUpdatedDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_Warrior_OnAbilityTaskTickDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_Warrior_OnEquippedWeaponChangedDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_Warrior_OnPercentChangedDelegate__DelegateSignature,
@@ -27,13 +29,13 @@ void EmptyLinkFunctionForGeneratedCodeWarrior_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x030F29D5,
-				0xFE348919,
+				0x21FB25B5,
+				0x93F88D8C,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_Warrior.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_Warrior.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_Warrior(Z_Construct_UPackage__Script_Warrior, TEXT("/Script/Warrior"), Z_Registration_Info_UPackage__Script_Warrior, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x030F29D5, 0xFE348919));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_Warrior(Z_Construct_UPackage__Script_Warrior, TEXT("/Script/Warrior"), Z_Registration_Info_UPackage__Script_Warrior, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x21FB25B5, 0x93F88D8C));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
