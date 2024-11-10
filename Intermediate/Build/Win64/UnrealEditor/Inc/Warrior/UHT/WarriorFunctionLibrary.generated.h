@@ -11,11 +11,15 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
 class APawn;
+class UObject;
 class UPawnCombatComponent;
 enum class EWarriorConfirmType : uint8;
+enum class EWarriorCountDownActionInput : uint8;
+enum class EWarriorCountDownActionOutput : uint8;
 enum class EWarriorValidType : uint8;
 struct FGameplayEffectSpecHandle;
 struct FGameplayTag;
+struct FLatentActionInfo;
 struct FScalableFloat;
 #ifdef WARRIOR_WarriorFunctionLibrary_generated_h
 #error "WarriorFunctionLibrary.generated.h already included, missing '#pragma once' in WarriorFunctionLibrary.h"
@@ -23,6 +27,7 @@ struct FScalableFloat;
 #define WARRIOR_WarriorFunctionLibrary_generated_h
 
 #define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execCountDown); \
 	DECLARE_FUNCTION(execApplyGameplayEffectSpecHandleToTargetActor); \
 	DECLARE_FUNCTION(execIsValidBlock); \
 	DECLARE_FUNCTION(execComputeHitReacDirectionTag); \
