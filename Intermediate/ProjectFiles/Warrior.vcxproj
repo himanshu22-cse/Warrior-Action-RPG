@@ -385,6 +385,9 @@
     <ClCompile Include="..\..\Source\Warrior\Private\Items\Weapons\WarriorWeaponBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\WarriorTypes\WarriorCountDownAction.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\WarriorTypes\WarriorStructTypes.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -432,6 +435,7 @@
     <ClInclude Include="..\..\Source\Warrior\Public\Items\WarriorProjectileBase.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Items\Weapons\WarriorHeroWeapon.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Items\Weapons\WarriorWeaponBase.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\WarriorTypes\WarriorCountDownAction.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\WarriorTypes\WarriorEnumTypes.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\WarriorTypes\WarriorStructTypes.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Widgets\WarriorWidgetBase.h"/>
