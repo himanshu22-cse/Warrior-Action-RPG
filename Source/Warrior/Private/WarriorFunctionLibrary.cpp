@@ -159,35 +159,35 @@ void UWarriorFunctionLibrary::CountDown(const UObject* WorldContextObject, float
 
 	if (GEngine)
 	{
-	 World = GEngine->GetWorldFromContextObject(WorldContextObject, EGetWorldErrorMode::LogAndReturnNull);
+		World = GEngine->GetWorldFromContextObject(WorldContextObject, EGetWorldErrorMode::LogAndReturnNull);
 	}
 
 	if (!World)
 	{
 		return;
-    }
+	}
 
-	 FLatentActionManager& LatentActionManager = World->GetLatentActionManager();
+	FLatentActionManager& LatentActionManager = World->GetLatentActionManager();
+	FWarriorCountDownAction* FoundAction = LatentActionManager.FindExistingAction<FWarriorCountDownAction>(LatentInfo.CallbackTarget, LatentInfo.UUID);
 
-	 FWarriorCountDownAction* FoundAction =  LatentActionManager.FindExistingAction<FWarriorCountDownAction>(LatentInfo.CallbackTarget, LatentInfo.UUID);
+	if (CountDownInput == EWarriorCountDownActionInput::Start)
+	{
+		if (!FoundAction)
+		{
+			LatentActionManager.AddNewAction(
+				LatentInfo.CallbackTarget,
+				LatentInfo.UUID,
+				new FWarriorCountDownAction(TotalTime, UpdateInterval, OutRemainingTime, CountDownOutput, LatentInfo) // This won't cause a memory leak because this created counter action will be managed by this Latent Action Manager automatically
+			);
+		}
+	}
 
-	 if ( CountDownInput == EWarriorCountDownActionInput::Start)
-	 {
-		 if (!FoundAction)
-		 {
-			 LatentActionManager.AddNewAction(
-				 LatentInfo.CallbackTarget,
-				 LatentInfo.UUID,
-				 new FWarriorCountDownAction(TotalTime, UpdateInterval, OutRemainingTime, CountDownOutput, LatentInfo) // This won't cause a memory leak because this created counter action will be managed by this Latent Action Manager automatically
-				 );
-		 }
-	 }
-
-	 if (CountDownInput == EWarriorCountDownActionInput::Cancel)
-	 {
-		 if (FoundAction)
-		 {
-			 FoundAction->CancelAction();
-		 }
-	 }
+	if (CountDownInput == EWarriorCountDownActionInput::Cancel)
+	{
+		if (FoundAction)
+		{
+			FoundAction->CancelAction();
+		}
+	}
 }
+

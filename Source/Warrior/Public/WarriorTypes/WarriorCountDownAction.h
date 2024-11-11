@@ -13,6 +13,7 @@ public:
 	FWarriorCountDownAction(float InTotalCountDownTime, float InUpdateInterval, float& InOutRemainingTime, EWarriorCountDownActionOutput& InCountDownOutput, const FLatentActionInfo& LatentInfo)
 		: bNeedToCancel(false)
 		, TotalCountDownTime(InTotalCountDownTime)
+		, UpdateInterval(InUpdateInterval)
 		, OutRemainingTime(InOutRemainingTime)
 		, CountDownOutput(InCountDownOutput)
 		, ExecutionFunction(LatentInfo.ExecutionFunction)
@@ -23,11 +24,12 @@ public:
 	{
 	}
 
+	virtual void UpdateOperation(FLatentResponse& Response) override;
 	void CancelAction();
 
 private:
 
-	bool bNeedToCancel;
+	bool bNeedToCancel; // Cancel for latent action
 	float TotalCountDownTime;
 	float UpdateInterval;
 	float& OutRemainingTime;
@@ -35,6 +37,7 @@ private:
 	FName ExecutionFunction;
 	int32 OutputLink;
 	FWeakObjectPtr CallbackTarget;
-	float ElapsedInterval;
+	float ElapsedInterval; //elapsed time between two events
 	float ElapsedTimeSinceStart;
 };
+
