@@ -23,6 +23,8 @@ public:
 	{
 	}
 
+	void CancelAction();
+
 private:
 
 	bool bNeedToCancel;
