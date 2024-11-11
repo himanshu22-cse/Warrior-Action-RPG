@@ -13,7 +13,7 @@ void FWarriorCountDownAction::UpdateOperation(FLatentResponse& Response)
 
 		return;
 	}
-
+	
 	if (ElapsedTimeSinceStart >= TotalCountDownTime)
 	{
 		CountDownOutput = EWarriorCountDownActionOutput::Completed;
