@@ -82,13 +82,11 @@ void UWarriorGameplayAbility::ApplyGameplayEffectSpecHandleToHitResults(const FG
 	{
 		if (APawn* HitPawn = Cast<APawn>(Hit.GetActor()))
 		{
-			if (UWarriorFunctionLibrary::IsTargetPawnHostile(OwningPawn, OwningPawn))
+			if (UWarriorFunctionLibrary::IsTargetPawnHostile(OwningPawn, HitPawn))
 			{
 				FActiveGameplayEffectHandle ActiveGameplayEffectHandle = NativeApplyEffectSpecHandleToTarget(HitPawn, InSpecHandle);
-
 				if (ActiveGameplayEffectHandle.WasSuccessfullyApplied())
 				{
-					
 					FGameplayEventData Data;
 					Data.Instigator = OwningPawn;
 					Data.Target = HitPawn;
@@ -100,7 +98,6 @@ void UWarriorGameplayAbility::ApplyGameplayEffectSpecHandleToHitResults(const FG
 					);
 				}
 			}
-
 		}
 	}
 }
