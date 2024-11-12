@@ -161,6 +161,8 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/2/SA/PD4M1IXMJRBK3VLG0J0S6I.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Stones/GA_Hero_PickUp_Stones.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Data/DA_Hero.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Input/Actions/IA_PickUpStones.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Input/IMC_Default.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/SpecialWeapon/GA_Hero_LightWeaponAbility_Axe.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/SpecialWeapon/GA_Hero_HeavyWeaponAbility.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/AnimNotify/AN_SendGameplayEvent.uasset",

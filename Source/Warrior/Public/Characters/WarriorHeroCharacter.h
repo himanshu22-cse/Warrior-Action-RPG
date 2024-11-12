@@ -65,12 +65,15 @@ private:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "CharacterData", meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UDataAsset_InputConfig>InputConfigDataAsset;
 
+	UPROPERTY()
+	FVector2D SwitchDirection = FVector2D::ZeroVector;
+
 	void Input_Move(const FInputActionValue& InputActionValue);
 
 	void Input_SwitchTargetTriggered(const FInputActionValue& InputActionValue); // Capture the input
 	void Input_SwitchTargetCompleted(const FInputActionValue& InputActionValue);// notify our ability to switch to different target
 
-	FVector2D SwitchDirection = FVector2D::ZeroVector;
+	void Input_PickUpStonesStarted(const FInputActionValue& InputActionValue);
 
 	void Input_Look(const FInputActionValue& InputActionValue);
 
