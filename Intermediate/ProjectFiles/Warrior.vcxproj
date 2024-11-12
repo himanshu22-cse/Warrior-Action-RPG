@@ -379,6 +379,12 @@
     <ClCompile Include="..\..\Source\Warrior\Private\Items\WarriorProjectileBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\Items\PickUps\WarriorPickUpBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\Items\PickUps\WarriorStoneBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\Items\Weapons\WarriorHeroWeapon.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -433,6 +439,8 @@
     <ClInclude Include="..\..\Source\Warrior\Public\Interfaces\PawnCombatInterface.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Interfaces\PawnUIInterface.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Items\WarriorProjectileBase.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\Items\PickUps\WarriorPickUpBase.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\Items\PickUps\WarriorStoneBase.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Items\Weapons\WarriorHeroWeapon.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Items\Weapons\WarriorWeaponBase.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\WarriorTypes\WarriorCountDownAction.h"/>
