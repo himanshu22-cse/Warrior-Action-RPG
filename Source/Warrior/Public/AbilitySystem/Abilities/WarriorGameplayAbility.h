@@ -21,7 +21,7 @@ UCLASS()
 class WARRIOR_API UWarriorGameplayAbility : public UGameplayAbility
 {
 	GENERATED_BODY()
-	
+
 protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "WarriorAbility")

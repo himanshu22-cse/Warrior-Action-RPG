@@ -15,6 +15,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define WARRIOR_HeroGameplayAbility_PickUpStones_generated_h
 
 #define FID_Warrior_Action_RPG_Source_Warrior_Public_AbilitySystem_Abilities_HeroGameplayAbility_PickUpStones_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execConsumeStones); \
 	DECLARE_FUNCTION(execCollectStones);
 
 
