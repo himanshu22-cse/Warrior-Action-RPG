@@ -7,7 +7,9 @@
 			"files": [
 				"C:/Games Project/Warrior-Action-RPG/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameMode/BP_SurvivalGameMode.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Maps/GameModeTestMap.umap"
+				"C:/Games Project/Warrior-Action-RPG/Content/Maps/GameModeTestMap.umap",
+				"C:/Games Project/Warrior-Action-RPG/Content/GameModes/DataTable/DT_EnemyWaveSpawner.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/GameModes/DataTable/DT_EnemyWaveSpawner.uasset"
 			]
 		}
 	]

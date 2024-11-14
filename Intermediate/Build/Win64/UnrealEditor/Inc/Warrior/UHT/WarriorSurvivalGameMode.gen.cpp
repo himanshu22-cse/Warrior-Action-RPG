@@ -10,12 +10,17 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeWarriorSurvivalGameMode() {}
 
 // Begin Cross Module References
+ENGINE_API UClass* Z_Construct_UClass_UDataTable_NoRegister();
+ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTableRowBase();
 UPackage* Z_Construct_UPackage__Script_Warrior();
+WARRIOR_API UClass* Z_Construct_UClass_AWarriorEnemyCharacter_NoRegister();
 WARRIOR_API UClass* Z_Construct_UClass_AWarriorGameModeBase();
 WARRIOR_API UClass* Z_Construct_UClass_AWarriorSurvivalGameMode();
 WARRIOR_API UClass* Z_Construct_UClass_AWarriorSurvivalGameMode_NoRegister();
 WARRIOR_API UEnum* Z_Construct_UEnum_Warrior_EWarriorSurvialGameModeState();
 WARRIOR_API UFunction* Z_Construct_UDelegateFunction_Warrior_OnSurvialGameModeStateChangedDelegate__DelegateSignature();
+WARRIOR_API UScriptStruct* Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo();
+WARRIOR_API UScriptStruct* Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow();
 // End Cross Module References
 
 // Begin Enum EWarriorSurvialGameModeState
@@ -125,6 +130,155 @@ void FOnSurvialGameModeStateChangedDelegate_DelegateWrapper(const FMulticastScri
 }
 // End Delegate FOnSurvialGameModeStateChangedDelegate
 
+// Begin ScriptStruct FWarriorEnemyWaveSpawnerInfo
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerInfo;
+class UScriptStruct* FWarriorEnemyWaveSpawnerInfo::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerInfo.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerInfo.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo, (UObject*)Z_Construct_UPackage__Script_Warrior(), TEXT("WarriorEnemyWaveSpawnerInfo"));
+	}
+	return Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerInfo.OuterSingleton;
+}
+template<> WARRIOR_API UScriptStruct* StaticStruct<FWarriorEnemyWaveSpawnerInfo>()
+{
+	return FWarriorEnemyWaveSpawnerInfo::StaticStruct();
+}
+struct Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/GameModes/WarriorSurvivalGameMode.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SoftEnemyClassToSpawn_MetaData[] = {
+		{ "Category", "WarriorEnemyWaveSpawnerInfo" },
+		{ "ModuleRelativePath", "Public/GameModes/WarriorSurvivalGameMode.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MinPerSpawnCount_MetaData[] = {
+		{ "Category", "WarriorEnemyWaveSpawnerInfo" },
+		{ "ModuleRelativePath", "Public/GameModes/WarriorSurvivalGameMode.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxPerSpawnCount_MetaData[] = {
+		{ "Category", "WarriorEnemyWaveSpawnerInfo" },
+		{ "ModuleRelativePath", "Public/GameModes/WarriorSurvivalGameMode.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FSoftClassPropertyParams NewProp_SoftEnemyClassToSpawn;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_MinPerSpawnCount;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_MaxPerSpawnCount;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FWarriorEnemyWaveSpawnerInfo>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+};
+const UECodeGen_Private::FSoftClassPropertyParams Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::NewProp_SoftEnemyClassToSpawn = { "SoftEnemyClassToSpawn", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::SoftClass, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FWarriorEnemyWaveSpawnerInfo, SoftEnemyClassToSpawn), Z_Construct_UClass_AWarriorEnemyCharacter_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SoftEnemyClassToSpawn_MetaData), NewProp_SoftEnemyClassToSpawn_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::NewProp_MinPerSpawnCount = { "MinPerSpawnCount", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FWarriorEnemyWaveSpawnerInfo, MinPerSpawnCount), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MinPerSpawnCount_MetaData), NewProp_MinPerSpawnCount_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::NewProp_MaxPerSpawnCount = { "MaxPerSpawnCount", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FWarriorEnemyWaveSpawnerInfo, MaxPerSpawnCount), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxPerSpawnCount_MetaData), NewProp_MaxPerSpawnCount_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::NewProp_SoftEnemyClassToSpawn,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::NewProp_MinPerSpawnCount,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::NewProp_MaxPerSpawnCount,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::StructParams = {
+	(UObject* (*)())Z_Construct_UPackage__Script_Warrior,
+	nullptr,
+	&NewStructOps,
+	"WarriorEnemyWaveSpawnerInfo",
+	Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::PropPointers,
+	UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::PropPointers),
+	sizeof(FWarriorEnemyWaveSpawnerInfo),
+	alignof(FWarriorEnemyWaveSpawnerInfo),
+	RF_Public|RF_Transient|RF_MarkAsNative,
+	EStructFlags(0x00000001),
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::Struct_MetaDataParams), Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::Struct_MetaDataParams)
+};
+UScriptStruct* Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo()
+{
+	if (!Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerInfo.InnerSingleton)
+	{
+		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerInfo.InnerSingleton, Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::StructParams);
+	}
+	return Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerInfo.InnerSingleton;
+}
+// End ScriptStruct FWarriorEnemyWaveSpawnerInfo
+
+// Begin ScriptStruct FWarriorEnemyWaveSpawnerTableRow
+static_assert(std::is_polymorphic<FWarriorEnemyWaveSpawnerTableRow>() == std::is_polymorphic<FTableRowBase>(), "USTRUCT FWarriorEnemyWaveSpawnerTableRow cannot be polymorphic unless super FTableRowBase is polymorphic");
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerTableRow;
+class UScriptStruct* FWarriorEnemyWaveSpawnerTableRow::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerTableRow.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerTableRow.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow, (UObject*)Z_Construct_UPackage__Script_Warrior(), TEXT("WarriorEnemyWaveSpawnerTableRow"));
+	}
+	return Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerTableRow.OuterSingleton;
+}
+template<> WARRIOR_API UScriptStruct* StaticStruct<FWarriorEnemyWaveSpawnerTableRow>()
+{
+	return FWarriorEnemyWaveSpawnerTableRow::StaticStruct();
+}
+struct Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/GameModes/WarriorSurvivalGameMode.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnemyWaveSpawnerDefinition_MetaData[] = {
+		{ "Category", "WarriorEnemyWaveSpawnerTableRow" },
+		{ "ModuleRelativePath", "Public/GameModes/WarriorSurvivalGameMode.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TotalEnemyToSpawnThisWave_MetaData[] = {
+		{ "Category", "WarriorEnemyWaveSpawnerTableRow" },
+		{ "ModuleRelativePath", "Public/GameModes/WarriorSurvivalGameMode.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EnemyWaveSpawnerDefinition_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_EnemyWaveSpawnerDefinition;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_TotalEnemyToSpawnThisWave;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FWarriorEnemyWaveSpawnerTableRow>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::NewProp_EnemyWaveSpawnerDefinition_Inner = { "EnemyWaveSpawnerDefinition", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo, METADATA_PARAMS(0, nullptr) }; // 2099128578
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::NewProp_EnemyWaveSpawnerDefinition = { "EnemyWaveSpawnerDefinition", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FWarriorEnemyWaveSpawnerTableRow, EnemyWaveSpawnerDefinition), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnemyWaveSpawnerDefinition_MetaData), NewProp_EnemyWaveSpawnerDefinition_MetaData) }; // 2099128578
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::NewProp_TotalEnemyToSpawnThisWave = { "TotalEnemyToSpawnThisWave", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FWarriorEnemyWaveSpawnerTableRow, TotalEnemyToSpawnThisWave), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TotalEnemyToSpawnThisWave_MetaData), NewProp_TotalEnemyToSpawnThisWave_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::NewProp_EnemyWaveSpawnerDefinition_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::NewProp_EnemyWaveSpawnerDefinition,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::NewProp_TotalEnemyToSpawnThisWave,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::StructParams = {
+	(UObject* (*)())Z_Construct_UPackage__Script_Warrior,
+	Z_Construct_UScriptStruct_FTableRowBase,
+	&NewStructOps,
+	"WarriorEnemyWaveSpawnerTableRow",
+	Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::PropPointers,
+	UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::PropPointers),
+	sizeof(FWarriorEnemyWaveSpawnerTableRow),
+	alignof(FWarriorEnemyWaveSpawnerTableRow),
+	RF_Public|RF_Transient|RF_MarkAsNative,
+	EStructFlags(0x00000001),
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::Struct_MetaDataParams), Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::Struct_MetaDataParams)
+};
+UScriptStruct* Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow()
+{
+	if (!Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerTableRow.InnerSingleton)
+	{
+		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerTableRow.InnerSingleton, Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::StructParams);
+	}
+	return Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerTableRow.InnerSingleton;
+}
+// End ScriptStruct FWarriorEnemyWaveSpawnerTableRow
+
 // Begin Class AWarriorSurvivalGameMode
 void AWarriorSurvivalGameMode::StaticRegisterNativesAWarriorSurvivalGameMode()
 {
@@ -149,10 +303,16 @@ struct Z_Construct_UClass_AWarriorSurvivalGameMode_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnSurvialGameModeStateChanged_MetaData[] = {
 		{ "ModuleRelativePath", "Public/GameModes/WarriorSurvivalGameMode.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FWarriorEnemyWaveSpawnerDataTable_MetaData[] = {
+		{ "AllowAbstract", "true" },
+		{ "Category", "WaveDefinition" },
+		{ "ModuleRelativePath", "Public/GameModes/WarriorSurvivalGameMode.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FBytePropertyParams NewProp_CurrentSurvialGameModeState_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_CurrentSurvialGameModeState;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnSurvialGameModeStateChanged;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_FWarriorEnemyWaveSpawnerDataTable;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -163,10 +323,12 @@ struct Z_Construct_UClass_AWarriorSurvivalGameMode_Statics
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AWarriorSurvivalGameMode_Statics::NewProp_CurrentSurvialGameModeState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AWarriorSurvivalGameMode_Statics::NewProp_CurrentSurvialGameModeState = { "CurrentSurvialGameModeState", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorSurvivalGameMode, CurrentSurvialGameModeState), Z_Construct_UEnum_Warrior_EWarriorSurvialGameModeState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentSurvialGameModeState_MetaData), NewProp_CurrentSurvialGameModeState_MetaData) }; // 197778781
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AWarriorSurvivalGameMode_Statics::NewProp_OnSurvialGameModeStateChanged = { "OnSurvialGameModeStateChanged", nullptr, (EPropertyFlags)0x0020180010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorSurvivalGameMode, OnSurvialGameModeStateChanged), Z_Construct_UDelegateFunction_Warrior_OnSurvialGameModeStateChangedDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnSurvialGameModeStateChanged_MetaData), NewProp_OnSurvialGameModeStateChanged_MetaData) }; // 320274975
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWarriorSurvivalGameMode_Statics::NewProp_FWarriorEnemyWaveSpawnerDataTable = { "FWarriorEnemyWaveSpawnerDataTable", nullptr, (EPropertyFlags)0x0124080000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AWarriorSurvivalGameMode, FWarriorEnemyWaveSpawnerDataTable), Z_Construct_UClass_UDataTable_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FWarriorEnemyWaveSpawnerDataTable_MetaData), NewProp_FWarriorEnemyWaveSpawnerDataTable_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AWarriorSurvivalGameMode_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorSurvivalGameMode_Statics::NewProp_CurrentSurvialGameModeState_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorSurvivalGameMode_Statics::NewProp_CurrentSurvialGameModeState,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorSurvivalGameMode_Statics::NewProp_OnSurvialGameModeStateChanged,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AWarriorSurvivalGameMode_Statics::NewProp_FWarriorEnemyWaveSpawnerDataTable,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AWarriorSurvivalGameMode_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AWarriorSurvivalGameMode_Statics::DependentSingletons[])() = {
@@ -212,13 +374,17 @@ struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameMo
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EWarriorSurvialGameModeState_StaticEnum, TEXT("EWarriorSurvialGameModeState"), &Z_Registration_Info_UEnum_EWarriorSurvialGameModeState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 197778781U) },
 	};
+	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
+		{ FWarriorEnemyWaveSpawnerInfo::StaticStruct, Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics::NewStructOps, TEXT("WarriorEnemyWaveSpawnerInfo"), &Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerInfo, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FWarriorEnemyWaveSpawnerInfo), 2099128578U) },
+		{ FWarriorEnemyWaveSpawnerTableRow::StaticStruct, Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::NewStructOps, TEXT("WarriorEnemyWaveSpawnerTableRow"), &Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerTableRow, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FWarriorEnemyWaveSpawnerTableRow), 2687382395U) },
+	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AWarriorSurvivalGameMode, AWarriorSurvivalGameMode::StaticClass, TEXT("AWarriorSurvivalGameMode"), &Z_Registration_Info_UClass_AWarriorSurvivalGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorSurvivalGameMode), 771723620U) },
+		{ Z_Construct_UClass_AWarriorSurvivalGameMode, AWarriorSurvivalGameMode::StaticClass, TEXT("AWarriorSurvivalGameMode"), &Z_Registration_Info_UClass_AWarriorSurvivalGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorSurvivalGameMode), 2398883843U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_1240167341(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_250258347(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_Statics::ClassInfo),
-	nullptr, 0,
+	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_Statics::ScriptStructInfo),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

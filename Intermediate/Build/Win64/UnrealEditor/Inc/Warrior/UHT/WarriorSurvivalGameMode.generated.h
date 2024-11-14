@@ -15,11 +15,26 @@ enum class EWarriorSurvialGameModeState : uint8;
 #endif
 #define WARRIOR_WarriorSurvivalGameMode_generated_h
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_20_DELEGATE \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_22_DELEGATE \
 WARRIOR_API void FOnSurvialGameModeStateChangedDelegate_DelegateWrapper(const FMulticastScriptDelegate& OnSurvialGameModeStateChangedDelegate, EWarriorSurvialGameModeState CurrentState);
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_26_INCLASS_NO_PURE_DECLS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_27_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerInfo_Statics; \
+	WARRIOR_API static class UScriptStruct* StaticStruct();
+
+
+template<> WARRIOR_API UScriptStruct* StaticStruct<struct FWarriorEnemyWaveSpawnerInfo>();
+
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_43_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics; \
+	WARRIOR_API static class UScriptStruct* StaticStruct(); \
+	typedef FTableRowBase Super;
+
+
+template<> WARRIOR_API UScriptStruct* StaticStruct<struct FWarriorEnemyWaveSpawnerTableRow>();
+
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_56_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWarriorSurvivalGameMode(); \
 	friend struct Z_Construct_UClass_AWarriorSurvivalGameMode_Statics; \
@@ -28,7 +43,7 @@ public: \
 	DECLARE_SERIALIZER(AWarriorSurvivalGameMode)
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_26_ENHANCED_CONSTRUCTORS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_56_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AWarriorSurvivalGameMode(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -42,12 +57,12 @@ public: \
 	NO_API virtual ~AWarriorSurvivalGameMode();
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_23_PROLOG
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_26_GENERATED_BODY \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_53_PROLOG
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_56_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_26_INCLASS_NO_PURE_DECLS \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_26_ENHANCED_CONSTRUCTORS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_56_INCLASS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_56_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
