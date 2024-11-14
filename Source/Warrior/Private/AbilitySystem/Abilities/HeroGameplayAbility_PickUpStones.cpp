@@ -62,6 +62,7 @@ void UHeroGameplayAbility_PickUpStones::ConsumeStones()
 	if (CollectedStones.IsEmpty())
 	{
 		CancelAbility(GetCurrentAbilitySpecHandle(), GetCurrentActorInfo(), GetCurrentActivationInfoRef(), true);
+		return;
 	}
 
 	for (AWarriorStoneBase* CollectedStone : CollectedStones)

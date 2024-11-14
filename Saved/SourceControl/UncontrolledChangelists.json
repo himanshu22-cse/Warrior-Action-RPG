@@ -5,11 +5,25 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Games Project/Warrior-Action-RPG/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/BP_EnemyCharacterBase.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Shared/GA_Enemy_SpawnStone_Base.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/9/PU/6QNMTPA4HES1N8RNJWGLS4.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/CurveTable/CT_HeroStats.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Shared/GA_Guardian_SpawnStone.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Data/DA_Guardian.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/BP_EnemyCharacterBase.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/CurveTable/CT_GuardianStats.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Stones/GA_Hero_PickUp_Stones.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/D/U4/A54MU5ZH4AZ6E0AFKHJCKQ.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/C/AE/R8FTZS9MCGB5R8SVTAZXL5.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/A/SJ/QMFY1SBTCWAS5UNAOMKQJ8.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/5/AK/T178XZOLHVHEYU7IZLHTRF.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/4/X2/4TMBN2T2IKC2N5G8UHCVGF.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/2/SA/PD4M1IXMJRBK3VLG0J0S6I.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/2/E1/Y3IK2QD6U628LJJYZ96NKC.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/2/28/GJP1IQ9OEY51WSEV3BMNIQ.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/1/NB/ANTEQ6EWI6BLDVUKGY40NQ.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/1/A1/NZR36VUO6KUMG9G76KTIC6.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/0/66/M1SDAM507VVHFQVFO01J4M.uasset"
 			]
 		}
 	]
