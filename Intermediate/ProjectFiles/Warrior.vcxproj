@@ -373,6 +373,9 @@
     <ClCompile Include="..\..\Source\Warrior\Private\GameModes\WarriorGameModeBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\GameModes\WarriorSurvivalGameMode.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\Interfaces\PawnCombatInterface.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -440,6 +443,7 @@
     <ClInclude Include="..\..\Source\Warrior\Public\DataAssets\Start-UpData\DataAsset_HeroStartUpData.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\DataAssets\Start-UpData\DataAsset_StartUpDataBase.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\GameModes\WarriorGameModeBase.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\GameModes\WarriorSurvivalGameMode.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Interfaces\PawnCombatInterface.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Interfaces\PawnUIInterface.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Items\WarriorProjectileBase.h"/>
