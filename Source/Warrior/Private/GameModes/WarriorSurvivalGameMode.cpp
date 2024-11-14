@@ -78,5 +78,5 @@ void AWarriorSurvivalGameMode::SetCurrentSurvialGameModeState(EWarriorSurvialGam
 
 bool AWarriorSurvivalGameMode::HasFinishedAllWaves() const
 {
-	return CurrentWaveCount >= TotalWavesToSpawn;    // if true means we have finished all waves.
+	return CurrentWaveCount > TotalWavesToSpawn;    // if true means we have finished all waves.
 }
