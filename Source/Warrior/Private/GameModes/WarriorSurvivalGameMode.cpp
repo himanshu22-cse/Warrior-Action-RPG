@@ -64,9 +64,6 @@ void AWarriorSurvivalGameMode::Tick(float DeltaTime)
 			
 		}
 	}
-
-
-
 }
 
 void AWarriorSurvivalGameMode::SetCurrentSurvialGameModeState(EWarriorSurvialGameModeState InState)
