@@ -73,7 +73,6 @@ template<> WARRIOR_API UClass* StaticClass<AWarriorGameModeBase>()
 {
 	return AWarriorGameModeBase::StaticClass();
 }
-AWarriorGameModeBase::AWarriorGameModeBase(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(AWarriorGameModeBase);
 AWarriorGameModeBase::~AWarriorGameModeBase() {}
 // End Class AWarriorGameModeBase
