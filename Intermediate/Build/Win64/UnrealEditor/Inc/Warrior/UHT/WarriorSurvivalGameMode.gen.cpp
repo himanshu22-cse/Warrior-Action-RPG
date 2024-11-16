@@ -282,9 +282,56 @@ UScriptStruct* Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow()
 }
 // End ScriptStruct FWarriorEnemyWaveSpawnerTableRow
 
+// Begin Class AWarriorSurvivalGameMode Function OnEnemyDestroyed
+struct Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed_Statics
+{
+	struct WarriorSurvivalGameMode_eventOnEnemyDestroyed_Parms
+	{
+		AActor* DestroyedActor;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/GameModes/WarriorSurvivalGameMode.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DestroyedActor;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed_Statics::NewProp_DestroyedActor = { "DestroyedActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(WarriorSurvivalGameMode_eventOnEnemyDestroyed_Parms, DestroyedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed_Statics::NewProp_DestroyedActor,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWarriorSurvivalGameMode, nullptr, "OnEnemyDestroyed", nullptr, nullptr, Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed_Statics::PropPointers), sizeof(Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed_Statics::WarriorSurvivalGameMode_eventOnEnemyDestroyed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed_Statics::Function_MetaDataParams), Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed_Statics::WarriorSurvivalGameMode_eventOnEnemyDestroyed_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AWarriorSurvivalGameMode::execOnEnemyDestroyed)
+{
+	P_GET_OBJECT(AActor,Z_Param_DestroyedActor);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnEnemyDestroyed(Z_Param_DestroyedActor);
+	P_NATIVE_END;
+}
+// End Class AWarriorSurvivalGameMode Function OnEnemyDestroyed
+
 // Begin Class AWarriorSurvivalGameMode
 void AWarriorSurvivalGameMode::StaticRegisterNativesAWarriorSurvivalGameMode()
 {
+	UClass* Class = AWarriorSurvivalGameMode::StaticClass();
+	static const FNameNativePtrPair Funcs[] = {
+		{ "OnEnemyDestroyed", &AWarriorSurvivalGameMode::execOnEnemyDestroyed },
+	};
+	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
 IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AWarriorSurvivalGameMode);
 UClass* Z_Construct_UClass_AWarriorSurvivalGameMode_NoRegister()
@@ -371,6 +418,10 @@ struct Z_Construct_UClass_AWarriorSurvivalGameMode_Statics
 	static const UECodeGen_Private::FMapPropertyParams NewProp_PreLoadedEnemyClassMap;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_AWarriorSurvivalGameMode_OnEnemyDestroyed, "OnEnemyDestroyed" }, // 4245079357
+	};
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AWarriorSurvivalGameMode>::IsAbstract,
 	};
@@ -423,11 +474,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AWarriorSurvivalGameMod
 	"Game",
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
-	nullptr,
+	FuncInfo,
 	Z_Construct_UClass_AWarriorSurvivalGameMode_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
-	0,
+	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_AWarriorSurvivalGameMode_Statics::PropPointers),
 	0,
 	0x009002ACu,
@@ -461,10 +512,10 @@ struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameMo
 		{ FWarriorEnemyWaveSpawnerTableRow::StaticStruct, Z_Construct_UScriptStruct_FWarriorEnemyWaveSpawnerTableRow_Statics::NewStructOps, TEXT("WarriorEnemyWaveSpawnerTableRow"), &Z_Registration_Info_UScriptStruct_WarriorEnemyWaveSpawnerTableRow, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FWarriorEnemyWaveSpawnerTableRow), 1555226298U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AWarriorSurvivalGameMode, AWarriorSurvivalGameMode::StaticClass, TEXT("AWarriorSurvivalGameMode"), &Z_Registration_Info_UClass_AWarriorSurvivalGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorSurvivalGameMode), 133050481U) },
+		{ Z_Construct_UClass_AWarriorSurvivalGameMode, AWarriorSurvivalGameMode::StaticClass, TEXT("AWarriorSurvivalGameMode"), &Z_Registration_Info_UClass_AWarriorSurvivalGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AWarriorSurvivalGameMode), 1970688054U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_405749323(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_3347490295(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_Statics::ScriptStructInfo),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorSurvivalGameMode_h_Statics::EnumInfo));

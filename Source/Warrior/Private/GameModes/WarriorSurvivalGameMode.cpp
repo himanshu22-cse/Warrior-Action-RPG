@@ -107,6 +107,8 @@ void AWarriorSurvivalGameMode::PreLoadNextWaveEnemies()
 		return;
 	}
 
+	PreLoadedEnemyClassMap.Empty();
+
 	for (const FWarriorEnemyWaveSpawnerInfo& SpawnerInfo : GetCurrentWaveSpawnerTableRow()->EnemyWaveSpawnerDefinitions)
 	{
 		if (SpawnerInfo.SoftEnemyClassToSpawn.IsNull())
@@ -123,7 +125,6 @@ void AWarriorSurvivalGameMode::PreLoadNextWaveEnemies()
 					{
 						PreLoadedEnemyClassMap.Emplace(SpawnerInfo.SoftEnemyClassToSpawn, LoadedEnemyClass);
 
-						Debug::Print(LoadedEnemyClass->GetName() + TEXT(" is loaded"));
 					}
 				}
 			)
@@ -172,6 +173,7 @@ int32 AWarriorSurvivalGameMode::TrySpawnWaveEnemies()
 			
 			if (SpawnedEnemy)
 			{
+				SpawnedEnemy->OnDestroyed.AddUniqueDynamic(this, &ThisClass::OnEnemyDestroyed);
 				EnemiesSpawnedThisTime++;
 				TotalSpawnedEnemiesThisWaveCounter++;
 			}
@@ -188,4 +190,21 @@ int32 AWarriorSurvivalGameMode::TrySpawnWaveEnemies()
 bool AWarriorSurvivalGameMode::ShouldKeepSpawnEnemies() const
 {
 	return TotalSpawnedEnemiesThisWaveCounter < GetCurrentWaveSpawnerTableRow()->TotalEnemyToSpawnThisWave;
+}
+
+void AWarriorSurvivalGameMode::OnEnemyDestroyed(AActor* DestroyedActor)
+{
+	CurrentSpawnedEnemiesCounter--;
+
+	if (ShouldKeepSpawnEnemies())
+	{
+		CurrentSpawnedEnemiesCounter += TrySpawnWaveEnemies();
+	}
+	else if (CurrentSpawnedEnemiesCounter == 0)
+	{
+		TotalSpawnedEnemiesThisWaveCounter = 0;
+		CurrentSpawnedEnemiesCounter = 0;
+
+		SetCurrentSurvialGameModeState(EWarriorSurvialGameModeState::WaveCompleted);
+	}
 }

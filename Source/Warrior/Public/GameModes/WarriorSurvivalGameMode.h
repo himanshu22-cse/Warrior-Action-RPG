@@ -73,6 +73,9 @@ protected:
 
 	bool ShouldKeepSpawnEnemies() const;
 
+	UFUNCTION()
+	void OnEnemyDestroyed(AActor* DestroyedActor);
+
 	UPROPERTY()
 	EWarriorSurvialGameModeState CurrentSurvialGameModeState;
 
