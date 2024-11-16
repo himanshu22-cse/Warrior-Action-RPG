@@ -43,7 +43,7 @@ struct FWarriorEnemyWaveSpawnerTableRow : public FTableRowBase
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere)
-	TArray<FWarriorEnemyWaveSpawnerInfo> EnemyWaveSpawnerDefinition;
+	TArray<FWarriorEnemyWaveSpawnerInfo>EnemyWaveSpawnerDefinitions;
 
 	UPROPERTY(EditAnywhere)
 	int32 TotalEnemyToSpawnThisWave = 1;
@@ -69,6 +69,10 @@ protected:
 
 	void PreLoadNextWaveEnemies();
 
+	int32 TrySpawnWaveEnemies();
+
+	bool ShouldKeepSpawnEnemies() const;
+
 	UPROPERTY()
 	EWarriorSurvialGameModeState CurrentSurvialGameModeState;
 
@@ -83,6 +87,15 @@ protected:
 
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = "WaveDefinition", meta = (AllowPrivateAccess = "true"))
 	int32 CurrentWaveCount = 1;
+
+	UPROPERTY()
+	int32 CurrentSpawnedEnemiesCounter = 0;
+
+	UPROPERTY()
+	int32 TotalSpawnedEnemiesThisWaveCounter = 0;
+
+	UPROPERTY()
+	TArray<AActor*> TargetPointsArray;
 
 	UPROPERTY()
 	float TimePassedSinceStart = 0.f;
