@@ -24,11 +24,12 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Hero_SpecialAbility/GA_Hero_Rage.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Widgets/TemplateWidgets/WarriorButton.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Widgets/TemplateWidgets/TPWBP_PauseScreenButton.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Widgets/GameModeWidgets/WBP_LoseScreen.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Maps/FeatureTestMap.umap",
+				"C:/Games Project/Warrior-Action-RPG/Content/Generic/BP_WarriorGameInstance.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Widgets/GameModeWidgets/WBP_LoadScreen.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/9/ZM/2YT6T52JLTWNFFBROMW4NZ.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/9/PU/6QNMTPA4HES1N8RNJWGLS4.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Widgets/GameModeWidgets/WBP_LoseScreen.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Maps/FeatureTestMap.umap",
 				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/3/HW/Q7JQZQ8ASSN61L5GKVIT1N.uasset"
 			]
 		}

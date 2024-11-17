@@ -26,6 +26,7 @@ UPackage* Z_Construct_UPackage__Script_Warrior();
 WARRIOR_API UClass* Z_Construct_UClass_UPawnCombatComponent_NoRegister();
 WARRIOR_API UClass* Z_Construct_UClass_UWarriorFunctionLibrary();
 WARRIOR_API UClass* Z_Construct_UClass_UWarriorFunctionLibrary_NoRegister();
+WARRIOR_API UClass* Z_Construct_UClass_UWarriorGameInstance_NoRegister();
 WARRIOR_API UEnum* Z_Construct_UEnum_Warrior_EWarriorConfirmType();
 WARRIOR_API UEnum* Z_Construct_UEnum_Warrior_EWarriorCountDownActionInput();
 WARRIOR_API UEnum* Z_Construct_UEnum_Warrior_EWarriorCountDownActionOutput();
@@ -474,6 +475,57 @@ DEFINE_FUNCTION(UWarriorFunctionLibrary::execGetScalableFloatValueAtLevel)
 }
 // End Class UWarriorFunctionLibrary Function GetScalableFloatValueAtLevel
 
+// Begin Class UWarriorFunctionLibrary Function GetWarriorGameInstance
+struct Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics
+{
+	struct WarriorFunctionLibrary_eventGetWarriorGameInstance_Parms
+	{
+		const UObject* WorldContextObject;
+		UWarriorGameInstance* ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Warrior|FunctionLibrary" },
+		{ "ModuleRelativePath", "Public/WarriorFunctionLibrary.h" },
+		{ "WorldContext", "WorldContextObject" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(WarriorFunctionLibrary_eventGetWarriorGameInstance_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(WarriorFunctionLibrary_eventGetWarriorGameInstance_Parms, ReturnValue), Z_Construct_UClass_UWarriorGameInstance_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics::NewProp_WorldContextObject,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UWarriorFunctionLibrary, nullptr, "GetWarriorGameInstance", nullptr, nullptr, Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics::PropPointers), sizeof(Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics::WarriorFunctionLibrary_eventGetWarriorGameInstance_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics::Function_MetaDataParams), Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics::WarriorFunctionLibrary_eventGetWarriorGameInstance_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UWarriorFunctionLibrary::execGetWarriorGameInstance)
+{
+	P_GET_OBJECT(UObject,Z_Param_WorldContextObject);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(UWarriorGameInstance**)Z_Param__Result=UWarriorFunctionLibrary::GetWarriorGameInstance(Z_Param_WorldContextObject);
+	P_NATIVE_END;
+}
+// End Class UWarriorFunctionLibrary Function GetWarriorGameInstance
+
 // Begin Class UWarriorFunctionLibrary Function IsTargetPawnHostile
 struct Z_Construct_UFunction_UWarriorFunctionLibrary_IsTargetPawnHostile_Statics
 {
@@ -648,6 +700,7 @@ void UWarriorFunctionLibrary::StaticRegisterNativesUWarriorFunctionLibrary()
 		{ "ComputeHitReacDirectionTag", &UWarriorFunctionLibrary::execComputeHitReacDirectionTag },
 		{ "CountDown", &UWarriorFunctionLibrary::execCountDown },
 		{ "GetScalableFloatValueAtLevel", &UWarriorFunctionLibrary::execGetScalableFloatValueAtLevel },
+		{ "GetWarriorGameInstance", &UWarriorFunctionLibrary::execGetWarriorGameInstance },
 		{ "IsTargetPawnHostile", &UWarriorFunctionLibrary::execIsTargetPawnHostile },
 		{ "IsValidBlock", &UWarriorFunctionLibrary::execIsValidBlock },
 		{ "RemoveGameplayTagFromActorIfFound", &UWarriorFunctionLibrary::execRemoveGameplayTagFromActorIfFound },
@@ -676,6 +729,7 @@ struct Z_Construct_UClass_UWarriorFunctionLibrary_Statics
 		{ &Z_Construct_UFunction_UWarriorFunctionLibrary_ComputeHitReacDirectionTag, "ComputeHitReacDirectionTag" }, // 1743736440
 		{ &Z_Construct_UFunction_UWarriorFunctionLibrary_CountDown, "CountDown" }, // 3485635287
 		{ &Z_Construct_UFunction_UWarriorFunctionLibrary_GetScalableFloatValueAtLevel, "GetScalableFloatValueAtLevel" }, // 2947431709
+		{ &Z_Construct_UFunction_UWarriorFunctionLibrary_GetWarriorGameInstance, "GetWarriorGameInstance" }, // 1078260669
 		{ &Z_Construct_UFunction_UWarriorFunctionLibrary_IsTargetPawnHostile, "IsTargetPawnHostile" }, // 203024054
 		{ &Z_Construct_UFunction_UWarriorFunctionLibrary_IsValidBlock, "IsValidBlock" }, // 3015361979
 		{ &Z_Construct_UFunction_UWarriorFunctionLibrary_RemoveGameplayTagFromActorIfFound, "RemoveGameplayTagFromActorIfFound" }, // 2219379183
@@ -727,10 +781,10 @@ UWarriorFunctionLibrary::~UWarriorFunctionLibrary() {}
 struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UWarriorFunctionLibrary, UWarriorFunctionLibrary::StaticClass, TEXT("UWarriorFunctionLibrary"), &Z_Registration_Info_UClass_UWarriorFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWarriorFunctionLibrary), 804580310U) },
+		{ Z_Construct_UClass_UWarriorFunctionLibrary, UWarriorFunctionLibrary::StaticClass, TEXT("UWarriorFunctionLibrary"), &Z_Registration_Info_UClass_UWarriorFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UWarriorFunctionLibrary), 1833213963U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_1574351858(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_2901661024(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

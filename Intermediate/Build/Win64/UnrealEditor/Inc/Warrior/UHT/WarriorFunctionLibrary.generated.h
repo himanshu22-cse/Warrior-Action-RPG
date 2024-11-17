@@ -13,6 +13,7 @@ class AActor;
 class APawn;
 class UObject;
 class UPawnCombatComponent;
+class UWarriorGameInstance;
 enum class EWarriorConfirmType : uint8;
 enum class EWarriorCountDownActionInput : uint8;
 enum class EWarriorCountDownActionOutput : uint8;
@@ -26,7 +27,8 @@ struct FScalableFloat;
 #endif
 #define WARRIOR_WarriorFunctionLibrary_generated_h
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetWarriorGameInstance); \
 	DECLARE_FUNCTION(execCountDown); \
 	DECLARE_FUNCTION(execApplyGameplayEffectSpecHandleToTargetActor); \
 	DECLARE_FUNCTION(execIsValidBlock); \
@@ -39,7 +41,7 @@ struct FScalableFloat;
 	DECLARE_FUNCTION(execAddGameplayTagsToActorIfNone);
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_19_INCLASS_NO_PURE_DECLS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUWarriorFunctionLibrary(); \
 	friend struct Z_Construct_UClass_UWarriorFunctionLibrary_Statics; \
@@ -48,7 +50,7 @@ public: \
 	DECLARE_SERIALIZER(UWarriorFunctionLibrary)
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_19_ENHANCED_CONSTRUCTORS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_20_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UWarriorFunctionLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -62,13 +64,13 @@ public: \
 	NO_API virtual ~UWarriorFunctionLibrary();
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_15_PROLOG
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_19_GENERATED_BODY \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_16_PROLOG
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_19_INCLASS_NO_PURE_DECLS \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_19_ENHANCED_CONSTRUCTORS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_20_INCLASS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorFunctionLibrary_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
