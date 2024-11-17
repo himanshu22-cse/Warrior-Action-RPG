@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define WARRIOR_WarriorGameModeBase_generated_h
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorGameModeBase_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorGameModeBase_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAWarriorGameModeBase(); \
 	friend struct Z_Construct_UClass_AWarriorGameModeBase_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(AWarriorGameModeBase)
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorGameModeBase_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorGameModeBase_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AWarriorGameModeBase(AWarriorGameModeBase&&); \
@@ -35,12 +35,12 @@ public: \
 	NO_API virtual ~AWarriorGameModeBase();
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorGameModeBase_h_9_PROLOG
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorGameModeBase_h_12_GENERATED_BODY \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorGameModeBase_h_10_PROLOG
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorGameModeBase_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorGameModeBase_h_12_INCLASS_NO_PURE_DECLS \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorGameModeBase_h_12_ENHANCED_CONSTRUCTORS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorGameModeBase_h_13_INCLASS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_GameModes_WarriorGameModeBase_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
