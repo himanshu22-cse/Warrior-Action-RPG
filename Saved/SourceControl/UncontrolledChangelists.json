@@ -18,7 +18,11 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/Gruntling/Glacer/BT_Glacer.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/SpawnEnemy/GA_Enemies_SummonEnemyBase.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Hero_Death/GA_Hero_Death.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayEffect/GE_Hero_Static.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayEffect/GE_Hero_Static.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/GameModes/BP_WarriorGameMode.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Dummy/BT_Dummy.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Hero_SpecialAbility/GA_Hero_Rage.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/3/HW/Q7JQZQ8ASSN61L5GKVIT1N.uasset"
 			]
 		}
 	]
