@@ -9,12 +9,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UWorld;
+struct FGameplayTag;
 #ifdef WARRIOR_WarriorGameInstance_generated_h
 #error "WarriorGameInstance.generated.h already included, missing '#pragma once' in WarriorGameInstance.h"
 #endif
 #define WARRIOR_WarriorGameInstance_generated_h
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_13_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FWarriorGameLevelSet_Statics; \
+	WARRIOR_API static class UScriptStruct* StaticStruct();
+
+
+template<> WARRIOR_API UScriptStruct* StaticStruct<struct FWarriorGameLevelSet>();
+
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetGameLevelByTag);
+
+
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_31_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUWarriorGameInstance(); \
 	friend struct Z_Construct_UClass_UWarriorGameInstance_Statics; \
@@ -23,7 +36,7 @@ public: \
 	DECLARE_SERIALIZER(UWarriorGameInstance)
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_31_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UWarriorGameInstance(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -37,12 +50,13 @@ public: \
 	NO_API virtual ~UWarriorGameInstance();
 
 
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_10_PROLOG
-#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_13_GENERATED_BODY \
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_28_PROLOG
+#define FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_31_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_13_INCLASS_NO_PURE_DECLS \
-	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_13_ENHANCED_CONSTRUCTORS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_31_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_31_INCLASS_NO_PURE_DECLS \
+	FID_Warrior_Action_RPG_Source_Warrior_Public_WarriorGameInstance_h_31_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
