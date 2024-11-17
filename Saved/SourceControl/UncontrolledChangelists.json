@@ -15,7 +15,8 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/GameModeTestMap/2/F3/QQEEY251467HNN7GCOEW9R.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/GameModeTestMap/1/R6/CH0N05VK737DZB99XZCXR6.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/CurveTable/CT_HeroStats.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/Gruntling/Glacer/BT_Glacer.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/Gruntling/Glacer/BT_Glacer.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/SpawnEnemy/GA_Enemies_SummonEnemyBase.uasset"
 			]
 		}
 	]
