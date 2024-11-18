@@ -400,6 +400,9 @@
     <ClCompile Include="..\..\Source\Warrior\Private\Items\Weapons\WarriorWeaponBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Warrior\Private\SaveGame\WarriorSaveGame.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Warrior\Private\WarriorTypes\WarriorCountDownAction.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -455,6 +458,7 @@
     <ClInclude Include="..\..\Source\Warrior\Public\Items\PickUps\WarriorStoneBase.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Items\Weapons\WarriorHeroWeapon.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\Items\Weapons\WarriorWeaponBase.h"/>
+    <ClInclude Include="..\..\Source\Warrior\Public\SaveGame\WarriorSaveGame.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\WarriorTypes\WarriorCountDownAction.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\WarriorTypes\WarriorEnumTypes.h"/>
     <ClInclude Include="..\..\Source\Warrior\Public\WarriorTypes\WarriorStructTypes.h"/>
