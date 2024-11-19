@@ -41,6 +41,8 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/Gruntling/Guardian/BT_Guardian.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Projectile/BP_Projectile_Glacer.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/Gruntling/Glacer/BP_Gruntling_Glacer.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Hero_HeavyAttack/GA_Hero_HeavyAttack_Master.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Equipping/GA_Hero_Equip_Axe.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Widgets/GameModeWidgets/WBP_LoadScreen.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/9/ZM/2YT6T52JLTWNFFBROMW4NZ.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/__ExternalActors__/Maps/FeatureTestMap/9/PU/6QNMTPA4HES1N8RNJWGLS4.uasset",
