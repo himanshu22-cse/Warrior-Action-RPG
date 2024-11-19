@@ -22,7 +22,7 @@ void UWarriorCharacterAnimInstance::NativeThreadSafeUpdateAnimation(float DeltaS
 		return;
 	}
 
-	GroundSpeed = OwningCharacter->GetVelocity().Size2D();
+	GroundSpeed = OwningCharacter->GetVelocity().Size2D(); // "Size2D()" ignoring vertical movement like jumping or falling
 
 	bHasAcceleration = OwningMovementComponent->GetCurrentAcceleration().SizeSquared2D() > 0.f;
 

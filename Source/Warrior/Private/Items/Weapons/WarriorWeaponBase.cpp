@@ -40,8 +40,6 @@ void AWarriorWeaponBase::OnCollisionBoxBeginOverlap(UPrimitiveComponent* Overlap
 			//"ExecuteIfBound()" It is a shorthand for checking if a delegate is bound to a function and, if so, executing that function. This avoids the need to manually check whether a delegate is bound before calling it
 		OnWeaponHitTarget.ExecuteIfBound(OtherActor);
 		}
-
-		//TODO:Implement hit check for enemy characters
 	}
 }
 

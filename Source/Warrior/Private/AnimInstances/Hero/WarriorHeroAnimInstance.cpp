@@ -19,12 +19,12 @@ void UWarriorHeroAnimInstance::NativeThreadSafeUpdateAnimation(float DeltaSecond
 
 	if (bHasAcceleration)
 	{
-		IdleElpasedTime = 0.f;
+		IdleElpasedTime = 0.f; // the character is no longer idle.
 		bShouldEnterRelaxState = false;
 	}
 	else
 	{
-		IdleElpasedTime += DeltaSeconds;
+		IdleElpasedTime += DeltaSeconds; //how long the character has been idle.
 
 		bShouldEnterRelaxState = (IdleElpasedTime >= EnterRelaxtStateThreshold);
 	}
