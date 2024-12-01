@@ -9,7 +9,7 @@ void UWarriorHeroAnimInstance::NativeInitializeAnimation()
 
 	if (OwningCharacter)
 	{
-		OwningHeroCharacter = Cast<AWarriorHeroCharacter>(OwningCharacter);
+		OwningHeroCharacter = Cast<AWarriorHeroCharacter>(OwningCharacter); // By casting we getting hold of our hero character reference.
 	}
 }
 

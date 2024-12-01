@@ -15,7 +15,7 @@ struct FWarriorInputActionConfig
 {
 	GENERATED_BODY()
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (Category ="InputTag"))
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (Category ="InputTag")) //"meta = (Category ="InputTag"))" we only allowed to select a tag that starts with "InputTag" for this variable
 	FGameplayTag InputTag;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
@@ -38,6 +38,7 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	TObjectPtr<UInputMappingContext>DefaultMappingContext;
 
+	//"meta = (TitleProperty = "InputTag") " ->we'll be using this input action's name as the name for the rows inside of this array.
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (TitleProperty = "InputTag"))
 	TArray<FWarriorInputActionConfig>NativeInputActions;
 

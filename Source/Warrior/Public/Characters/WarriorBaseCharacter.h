@@ -54,6 +54,7 @@ protected:
 	TSoftObjectPtr<UDataAsset_StartUpDataBase> CharacterStartUpData;
 
 public:
+
 	FORCEINLINE UWarriorAbilitySystemComponent* GetWarriorAbilitySystemComponent() const { return WarriorAbilitySystemComponent; }
 
 	FORCEINLINE UWarriorAttributeSet* GetAttributeSet() const { return WarriorAttributeSet; }

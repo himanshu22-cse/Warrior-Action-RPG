@@ -7,7 +7,11 @@
 #include "WarriorFunctionLibrary.h"
 #include "WarriorGameplayTags.h"
 
-void UWarriorGameplayAbility::OnGiveAbility(const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilitySpec& Spec)
+/*
+ FGameplayAbilitySpec->Specification of our gameplay ability, many things that can tell us 
+ For example, its ability class, the ability level and its current active status.
+ */
+ void UWarriorGameplayAbility::OnGiveAbility(const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilitySpec& Spec)
 {
 	Super::OnGiveAbility(ActorInfo, Spec);
 

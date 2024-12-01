@@ -12,7 +12,7 @@ AWarriorBaseCharacter::AWarriorBaseCharacter()
 	PrimaryActorTick.bCanEverTick = false;
 	PrimaryActorTick.bStartWithTickEnabled = false;
 
-	GetMesh()->bReceivesDecals = false;
+	GetMesh()->bReceivesDecals = false; //the mesh will not receive any visual effects.
 
 	WarriorAbilitySystemComponent = CreateDefaultSubobject<UWarriorAbilitySystemComponent>(TEXT("WarriorAbilitySystemComponent"));
 
@@ -42,9 +42,10 @@ void AWarriorBaseCharacter::PossessedBy(AController* NewController)
 
 	if (WarriorAbilitySystemComponent)
 	{
-		WarriorAbilitySystemComponent->InitAbilityActorInfo(this, this);
+		WarriorAbilitySystemComponent->InitAbilityActorInfo(this, this);  // Initialized the abilities.
 
- 		ensureMsgf(!CharacterStartUpData.IsNull(), TEXT("Forgot to assign start up data to %s"), *GetName());
+		//ensureMsgf is a function that is used to check a condition and print a message if the condition is not met.
+ 		ensureMsgf(!CharacterStartUpData.IsNull(), TEXT("Forgot to assign start up data to %s"), *GetName()); 
 	}
 }
 

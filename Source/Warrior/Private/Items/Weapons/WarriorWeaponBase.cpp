@@ -27,17 +27,25 @@ AWarriorWeaponBase::AWarriorWeaponBase()
 
 void AWarriorWeaponBase::OnCollisionBoxBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+
+	/*
+	GetInstigator() is typically used in the context of a UGameplayEffect, UDamageType, or any system that involves damage or action initiation. 
+	It returns the actor responsible for initiating the action
+	*/
+
 	APawn* WeaponOwningPawn = GetInstigator<APawn>();
 
 	checkf(WeaponOwningPawn, TEXT("Forgot to assign an instiagtor as the owning pawn for the weapon: %s"), *GetName());
 
 	if (APawn* HitPawn = Cast<APawn>(OtherActor))
 	{
-
 		if (UWarriorFunctionLibrary::IsTargetPawnHostile(WeaponOwningPawn, HitPawn))
 		{
 
-			//"ExecuteIfBound()" It is a shorthand for checking if a delegate is bound to a function and, if so, executing that function. This avoids the need to manually check whether a delegate is bound before calling it
+		/*
+		"ExecuteIfBound()" It is a shorthand for checking if a delegate is bound to a function and, if so, executing that function.
+		 This avoids the need to manually check whether a delegate is bound before calling it
+		*/
 		OnWeaponHitTarget.ExecuteIfBound(OtherActor);
 		}
 	}
