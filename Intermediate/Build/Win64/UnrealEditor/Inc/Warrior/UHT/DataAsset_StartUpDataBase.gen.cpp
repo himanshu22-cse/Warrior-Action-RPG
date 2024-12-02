@@ -45,7 +45,13 @@ struct Z_Construct_UClass_UDataAsset_StartUpDataBase_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StartUpGameplayEffects_MetaData[] = {
 		{ "Category", "StartUpData" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// For Hit React or Death,etc\n" },
+#endif
 		{ "ModuleRelativePath", "Public/DataAssets/Start-UpData/DataAsset_StartUpDataBase.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "For Hit React or Death,etc" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_ActivateOnGivenAbilities_Inner;
@@ -117,10 +123,10 @@ UDataAsset_StartUpDataBase::~UDataAsset_StartUpDataBase() {}
 struct Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_StartUpDataBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDataAsset_StartUpDataBase, UDataAsset_StartUpDataBase::StaticClass, TEXT("UDataAsset_StartUpDataBase"), &Z_Registration_Info_UClass_UDataAsset_StartUpDataBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDataAsset_StartUpDataBase), 47922068U) },
+		{ Z_Construct_UClass_UDataAsset_StartUpDataBase, UDataAsset_StartUpDataBase::StaticClass, TEXT("UDataAsset_StartUpDataBase"), &Z_Registration_Info_UClass_UDataAsset_StartUpDataBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDataAsset_StartUpDataBase), 317576065U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_StartUpDataBase_h_2235793502(TEXT("/Script/Warrior"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_StartUpDataBase_h_3797615600(TEXT("/Script/Warrior"),
 	Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_StartUpDataBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Warrior_Action_RPG_Source_Warrior_Public_DataAssets_Start_UpData_DataAsset_StartUpDataBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

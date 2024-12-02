@@ -8,7 +8,10 @@
 				"C:/Games Project/Warrior-Action-RPG/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
 				"C:/Games Project/Warrior-Action-RPG/Content/Maps/MainMenuMap.umap",
 				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Shared/GA_Shared_SpawnWeapon_Base.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/GA_Hero_Spawn_Axe.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/GA_Hero_Spawn_Axe.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/AnimBP/MasterAnimLayer_Zero.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Equipping/GA_Hero_Equip_Axe.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/ABP_Hero.uasset"
 			]
 		}
 	]

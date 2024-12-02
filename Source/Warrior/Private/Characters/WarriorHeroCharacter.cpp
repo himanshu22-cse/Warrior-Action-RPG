@@ -119,7 +119,7 @@ void AWarriorHeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 UPawnUIComponent* AWarriorHeroCharacter::GetPawnUIComponent() const
 {
 	return HeroUIComponent;
-}
+}	
 
 UHeroUIComponent* AWarriorHeroCharacter::GetHeroUIComponent() const
 {
@@ -206,3 +206,4 @@ void AWarriorHeroCharacter::Input_AbilityInputReleased(FGameplayTag InInputTag)
 {
 	WarriorAbilitySystemComponent->OnAbilityInputReleased(InInputTag);
 }
+

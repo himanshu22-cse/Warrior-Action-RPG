@@ -25,7 +25,7 @@ protected:
 	TArray<TSubclassOf<UWarriorGameplayAbility>>ActivateOnGivenAbilities;
 
 	UPROPERTY(EditDefaultsOnly, Category = "StartUpData")
-	TArray<TSubclassOf<UWarriorGameplayAbility>>ReactiveAbilities;
+	TArray<TSubclassOf<UWarriorGameplayAbility>>ReactiveAbilities; // For Hit React or Death,etc
 
 	UPROPERTY(EditDefaultsOnly, Category = "StartUpData")
 	TArray < TSubclassOf <UGameplayEffect>>StartUpGameplayEffects;
