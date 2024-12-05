@@ -29,7 +29,6 @@ AWarriorAIController::AWarriorAIController(const FObjectInitializer& ObjectIniti
 		EnemyPerceptionComponent->OnTargetPerceptionUpdated.AddUniqueDynamic(this, &ThisClass::OnEnemyPerceptionUpdated);
 
 		SetGenericTeamId(FGenericTeamId(1));
-
 		
 }
 
@@ -65,7 +64,7 @@ void AWarriorAIController::BeginPlay()
 
 		case 2:CrowdComp->SetCrowdAvoidanceQuality(ECrowdAvoidanceQuality::Medium);
 			break;
-
+				
 		case 3:CrowdComp->SetCrowdAvoidanceQuality(ECrowdAvoidanceQuality::Good);
 			break;
 

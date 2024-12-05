@@ -10,7 +10,7 @@ UBTService_OrientToTargetActor::UBTService_OrientToTargetActor()
 {
 	NodeName = TEXT("Native Orient Rotation To Target Actor"); //  Native Service
 
-	INIT_SERVICE_NODE_NOTIFY_FLAGS(); // We have to call this macro in order to Native Service Properly
+	INIT_SERVICE_NODE_NOTIFY_FLAGS(); // We have to call this macro in order to Native Service work Properly
 
 	RotationInterpSpeed = 5.f;
 	Interval = 0.f;  // defines time span between subsequent ticks of the service(inherited from parent class)

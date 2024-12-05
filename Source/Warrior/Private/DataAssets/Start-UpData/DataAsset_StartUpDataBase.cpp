@@ -16,7 +16,7 @@ void UDataAsset_StartUpDataBase::GiveToAbilitySystemComponent(UWarriorAbilitySys
 		{
 			if (!EffectClass)continue;
 
-			UGameplayEffect* EffectCDO = EffectClass->GetDefaultObject<UGameplayEffect>(); // "GetDefaultObject"b is a template function ue has and directly cast to it, and "Effect 'CDO' " is Class Default Object. 
+			UGameplayEffect* EffectCDO = EffectClass->GetDefaultObject<UGameplayEffect>(); // "GetDefaultObject" is a template function ue has and directly cast to it, and "Effect 'CDO' " is Class Default Object. 
 			InASCToGive->ApplyGameplayEffectToSelf(
 				EffectCDO,
 				ApplyLevel,
