@@ -154,7 +154,7 @@ void AWarriorHeroCharacter::Input_Move(const FInputActionValue& InputActionValue
 
 void AWarriorHeroCharacter::Input_SwitchTargetTriggered(const FInputActionValue& InputActionValue)
 {
-   SwitchDirection = InputActionValue.Get<FVector2D>();
+    SwitchDirection = InputActionValue.Get<FVector2D>();
 }
 
 void AWarriorHeroCharacter::Input_SwitchTargetCompleted(const FInputActionValue& InputActionValue)

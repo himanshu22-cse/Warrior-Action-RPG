@@ -25,6 +25,10 @@ AWarriorWeaponBase* UPawnCombatComponent::GetCharacterCarriedWeaponByTag(FGamepl
 {
 	if (CharacterCarriedWeapon.Contains(InWeaponTagToGet))
 	{
+
+		 // You’re not modifying the weapon pointer stored in the map.
+         //But you are allowed to read it and dereference it.
+		
 		if (AWarriorWeaponBase* const* FoundWeapon = CharacterCarriedWeapon.Find(InWeaponTagToGet))
 		{
 			return *FoundWeapon;

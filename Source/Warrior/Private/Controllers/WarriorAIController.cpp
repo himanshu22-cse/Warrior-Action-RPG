@@ -102,5 +102,4 @@ void AWarriorAIController::OnEnemyPerceptionUpdated(AActor* Actor, FAIStimulus S
 			}
 		}
 	}
-
 }

@@ -5,16 +5,8 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Games Project/Warrior-Action-RPG/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Maps/MainMenuMap.umap",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Shared/GA_Shared_SpawnWeapon_Base.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/GA_Hero_Spawn_Axe.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/AnimBP/MasterAnimLayer_Zero.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Equipping/GA_Hero_Equip_Axe.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/ABP_Hero.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/Hero_LightAttack/GA_Hero_LightAttack_Axe.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/Gruntling/Guardian/BT_Guardian.uasset",
-				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/Character/EnemyCharacter/EQS/EQSContext_TargetActor.uasset"
+				"C:/Games Project/Warrior-Action-RPG/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Games Project/Warrior-Action-RPG/Content/Blueprints/GameplayAbility/GA_Hero_Spawn_Axe.uasset"
 			]
 		}
 	]
